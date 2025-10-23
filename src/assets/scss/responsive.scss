@@ -1,0 +1,25 @@
+// -----------------------------------------------------------------------------
+// Responsive font-size system
+// Sets root font-size for rem units across different breakpoints.
+// Used in projects where main responsiveness is based on rem units.
+// -----------------------------------------------------------------------------
+
+@use './utils/mixins' as *;
+@use './utils/functions' as *;
+
+html {
+  font-size: to-rem(size(base)); // 16px
+
+  @include mq(lg) {
+    font-size: to-rem(size(sm)); // 14px
+  }
+
+  @include mq(xl) {
+    font-size: to-rem(size(base)); // 16px
+  }
+
+  @include mq(ultra) {
+    font-size: to-rem(26px);
+  }
+}
+

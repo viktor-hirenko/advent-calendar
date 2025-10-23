@@ -5,8 +5,8 @@
  *   based on the current language and app-config localization
  */
 
-// Global SCSS variables/mixins are auto-imported via vite.config.ts
-import './assets/scss/main.scss'
+import '@/design/tokens.css'
+import '@/assets/scss/main.scss'
 
 import { createApp, watch } from 'vue'
 import App from './App.vue'

@@ -1,7 +1,0 @@
-@use '../../design/tokens.css';
-@use './tokens' as *;
-@use './utils/mixins' as *;
-@use './utils/functions' as *;
-@forward './tokens';
-@forward './utils/mixins';
-@forward './utils/functions';

@@ -1,0 +1,13 @@
+// -----------------------------------------------------------------------------
+// SCSS Core
+// Centralized access to tokens, functions, and mixins.
+// Injected globally via Vite to avoid @use imports in every component.
+// -----------------------------------------------------------------------------
+
+@use './tokens' as *;
+@use './utils/functions' as *;
+@use './utils/mixins' as *;
+@forward './tokens';
+@forward './utils/functions';
+@forward './utils/mixins';
+

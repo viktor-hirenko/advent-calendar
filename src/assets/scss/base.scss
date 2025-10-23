@@ -9,12 +9,47 @@
 }
 
 body {
+  margin: 0;
+  padding: 0;
   min-height: 100vh;
   line-height: 1.6;
+  background-color: var(--color-layer-1);
+  color: var(--color-text-primary);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizelegibility;
 
   @include font-family(primary);
   @include font-size(base);
+}
+
+#app {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 100dvh;
+  margin: 0 auto;
+  flex-direction: column;
+  background-color: var(--color-layer-1);
+
+  @include font-family(primary);
+}
+
+/* Utility classes */
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* Scroll lock utility for modals */
+.scroll-lock {
+  overflow: hidden;
+  touch-action: none;
 }

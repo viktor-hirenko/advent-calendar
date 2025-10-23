@@ -17,7 +17,7 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         // Global SCSS imports - available in all components
-        additionalData: `@use "@/assets/scss/globals.scss" as *;`,
+        additionalData: `@use "@/assets/scss/core" as *;`,
       },
     },
   },
