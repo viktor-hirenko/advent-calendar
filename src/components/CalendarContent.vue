@@ -31,14 +31,6 @@
   // Types
   import type { CalendarDay, TaskCard as TaskCardType, LocalizedText } from '@/types/app-config'
 
-  // Props and Emits
-  interface MobileContentEmits {
-    'day-click': [day: CalendarDay]
-    'terms-click': []
-  }
-
-  const emit = defineEmits<MobileContentEmits>()
-
   // Constants
   const SCROLL_FORWARD_THRESHOLD = 0.7
   const SCROLL_BACKWARD_THRESHOLD = 0.7
@@ -362,7 +354,6 @@
 
     scrollToTaskCard(day.date)
     scrollDayEnsureVisible(day.id)
-    emit('day-click', day)
   }
 
   /**
@@ -388,9 +379,7 @@
    * Handles terms and conditions button click.
    */
   function handleTermsClick() {
-    // Open local modal instead of navigating; still emit for external listeners if any
     showTerms.value = true
-    emit('terms-click')
   }
 
   /**

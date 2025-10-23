@@ -23,8 +23,6 @@
   defineProps<CalendarDaysProps>()
   const emit = defineEmits<CalendarDaysEmits>()
 
-  // Component now works with placeholders from days array
-
   function handleDayClick(day: CalendarDay) {
     emit('day-click', day)
   }

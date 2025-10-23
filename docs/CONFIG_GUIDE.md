@@ -39,7 +39,7 @@
 | `tasks[].id` | `string` (унікальний) | Використовується для `key` та аналітики. |
 | `tasks[].title`, `description`, `buttonText` | `LocalizedText` | Контент картки. В описі дозволені базові HTML-теги, які проходять через `DOMPurify` (`<strong>` за замовчуванням). |
 | `tasks[].targetUrl` | `string` | Індивідуальний URL для кнопки (опційно). |
-| `termsButton` | `LocalizedText` | Текст кнопки переходу до умов у футері. Подія `terms-click` підіймається у батьківський компонент. |
+| `termsButton` | `LocalizedText` | Текст кнопки переходу до умов у футері. Відкриває модальне вікно `TermsModal`. |
 | `taskStatus.finishesIn`, `finished`, `dayUnit` | `LocalizedText` | Підписи для таймера та бейджів завершених задач. `dayUnit` — суфікс до кількості днів (напр., “d”, “Tg”). |
 
 ### 3.1 Робота з завданнями
