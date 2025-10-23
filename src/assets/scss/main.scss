@@ -1,8 +1,6 @@
 @use './base';
 @use './responsive';
 
-// Global SCSS imports configured in vite.config.ts
-
 /* Project-specific styles (page-level, top-level components) */
 
 /* No body/#app/scrollbar duplication - they're already in base.scss */

@@ -9,10 +9,9 @@
 }
 
 body {
-  margin: 0;
   padding: 0;
   min-height: 100vh;
-  line-height: 1.6;
+  line-height: typography(line-height, loose);
   background-color: var(--color-layer-1);
   color: var(--color-text-primary);
   -webkit-font-smoothing: antialiased;
@@ -31,8 +30,6 @@ body {
   margin: 0 auto;
   flex-direction: column;
   background-color: var(--color-layer-1);
-
-  @include font-family(primary);
 }
 
 /* Utility classes */

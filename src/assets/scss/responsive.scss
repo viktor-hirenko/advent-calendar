@@ -11,15 +11,17 @@ html {
   font-size: to-rem(size(base)); // 16px
 
   @include mq(lg) {
+    // tablet landscape (768px)
     font-size: to-rem(size(sm)); // 14px
   }
 
   @include mq(xl) {
+    // desktop (1024px)
     font-size: to-rem(size(base)); // 16px
   }
 
   @include mq(ultra) {
+    // ultra-wide / 4K (2880px)
     font-size: to-rem(26px);
   }
 }
-

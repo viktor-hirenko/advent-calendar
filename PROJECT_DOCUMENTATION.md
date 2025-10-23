@@ -1,8 +1,8 @@
-# Advent Calendar Hub — технічна документація
+# Advent Calendar — технічна документація
 
 ## 1. Короткий огляд
 
-**Advent Calendar Hub** — це універсальний UI-модуль для святкових промокампаній букмекерських продуктів. Календар показує щоденні задачі/бонуси в обраному діапазоні дат, підтримує декілька мов інтерфейсу та легко брендиться завдяки конфігураційним файлам і дизайн-токенам.
+**Advent Calendar** — це універсальний UI-модуль для святкових промокампаній букмекерських продуктів. Календар показує щоденні задачі/бонуси в обраному діапазоні дат, підтримує декілька мов інтерфейсу та легко брендиться завдяки конфігураційним файлам і дизайн-токенам.
 
 ### Бізнес-цілі
 
@@ -19,8 +19,8 @@
 | UI         | Vue 3 (Composition API), TypeScript, SCSS                                     | Компонентна реалізація календаря та банера                          |
 | Дані       | JSON (`src/data/app-config.json`)                                             | Контент, строки, конфігурація дат                                   |
 | Компоненти | `CalendarBanner`, `CalendarContent`, `CalendarDays`, `TaskCard`, `TermsModal` | Відповідають за банер, сітку днів, карточки задач та модальні вікна |
-| Компосабли | `useAppConfig`, `useLocale`, `useQueryParams`, `useMediaQuery`, `useTokens`   | Оркеструють конфіг, мову, адаптивність, дизайн-токени               |
-| Утиліти    | `utils/dateUtils`, `utils/sanitizeHtml`, `utils/devLog`                       | Часові зони, HTML-санація, dev-логування                            |
+| Композабли | `useAppConfig`, `useLocale`, `useQueryParams`, `useMediaQuery`, `useTokens`   | Оркеструють конфіг, мову, адаптивність, дизайн-токени               |
+| Утиліти    | `utils/dateUtils`, `utils/sanitizeHtml`, `utils/devLog`                       | Робота з датами/часом, HTML-санація, dev-логування                  |
 | Сборка     | Vite, `npm-run-all2`, скрипти в `scripts/`                                    | Підготовка токенів, оптимізація зображень, валідація конфіг         |
 
 Структура директорії:
@@ -92,16 +92,13 @@ src/
 - [`docs/BUILD_SCRIPTS.md`](docs/BUILD_SCRIPTS.md) — npm-скрипти, утиліти з `scripts/`, політика щодо коментарів.
 - [`docs/DEPLOYMENT.md`](docs/DEPLOYMENT.md) — вимоги до оточення, збірка, налаштування iframe, тестові параметри.
 
-### Для дизайнерів:
+### Для дизайнерів та розробників (SCSS):
 
+- [`docs/SCSS_ARCHITECTURE.md`](docs/SCSS_ARCHITECTURE.md) — **архітектура SCSS**, структура файлів, токени, функції, міксіни, CSS vs SCSS змінні.
 - [`docs/DESIGN_TOKENS.md`](docs/DESIGN_TOKENS.md) — тема alpa-dark, кольори, типографіка, брейкпоінти, робота з токенами.
-
-### Для всіх:
-
-- [`CHANGELOG.md`](CHANGELOG.md) — історія змін проекту.
 
 **Рекомендований порядок читання:**
 
 1. **Бізнес-користувачі:** QUICK_SETUP_GUIDE.md → CONFIG_GUIDE.md → TROUBLESHOOTING.md
-2. **Розробники:** DEVELOPER_GUIDE.md → COMPONENTS_API.md → BUILD_SCRIPTS.md
-3. **Дизайнери:** DESIGN_TOKENS.md → CONFIG_GUIDE.md
+2. **Розробники:** DEVELOPER_GUIDE.md → COMPONENTS_API.md → SCSS_ARCHITECTURE.md → BUILD_SCRIPTS.md
+3. **Дизайнери:** DESIGN_TOKENS.md → SCSS_ARCHITECTURE.md → CONFIG_GUIDE.md
