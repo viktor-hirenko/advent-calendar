@@ -120,7 +120,10 @@
       color: var(--color-text-secondary);
       cursor: pointer;
 
-      @include transition(all, sm, ease);
+      transition:
+        transform 200ms ease,
+        opacity 200ms ease,
+        background-color 200ms ease;
       @include text('button-small', $size: size(sm));
 
       &:hover {

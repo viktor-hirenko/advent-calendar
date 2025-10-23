@@ -14,7 +14,7 @@
    * Side effects: scroll listeners, resize handlers, RAF scheduling
    */
   // Vue imports
-  import { computed, onMounted, onUnmounted, ref, nextTick, watch } from 'vue'
+  import { computed, onMounted, onUnmounted, ref, nextTick, watch, defineAsyncComponent } from 'vue'
 
   // Composables
   import { useMediaQuery } from '@/composables/useMediaQuery'
@@ -26,7 +26,9 @@
   // Components
   import CalendarDays from './CalendarDays.vue'
   import TaskCard from './TaskCard.vue'
-  import TermsModal from '@/components/TermsModal.vue'
+
+  // Lazy load heavy modal component
+  const TermsModal = defineAsyncComponent(() => import('@/components/TermsModal.vue'))
 
   // Types
   import type { CalendarDay, TaskCard as TaskCardType, LocalizedText } from '@/types/app-config'

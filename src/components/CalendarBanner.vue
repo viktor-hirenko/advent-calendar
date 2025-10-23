@@ -52,8 +52,8 @@
         :alt="
           calendarData.images?.banner?.alt ? getLocalizedText(calendarData.images.banner.alt) : ''
         "
-        width="720"
-        height="640"
+        width="360"
+        height="320"
         decoding="async"
         fetchpriority="high"
         class="calendar-banner__image"
