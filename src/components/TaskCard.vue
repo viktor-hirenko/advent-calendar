@@ -428,7 +428,7 @@
     &__button {
       display: flex;
       width: 100%;
-      height: to-rem(32px);
+      min-height: to-rem(32px);
       padding: to-rem(8px) to-rem(16px);
       justify-content: center;
       align-items: center;
@@ -443,7 +443,7 @@
       @include text(button);
 
       @include mq(lg) {
-        height: to-rem(40px);
+        min-height: to-rem(40px);
         font-size: to-rem(size(sm));
         line-height: lh(extra-loose);
         letter-spacing: to-rem(0.84px);
