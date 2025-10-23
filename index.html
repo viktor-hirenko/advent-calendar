@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en" data-theme="alpa-dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <!-- Google Fonts preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&family=Roboto+Slab:wght@900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Hero banner preload-->
+    <link
+      rel="preload"
+      as="image"
+      href="./src/assets/images/banners/default/advent-calendar-hero-ultra.webp"
+      media="(min-width: 2880px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./src/assets/images/banners/default/advent-calendar-hero-large.webp"
+      media="(min-width: 1440px) and (max-width: 2879px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./src/assets/images/banners/default/advent-calendar-hero-desktop.webp"
+      media="(min-width: 1024px) and (max-width: 1439px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./src/assets/images/banners/default/advent-calendar-hero-tablet.webp"
+      media="(min-width: 360px) and (max-width: 1023px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./src/assets/images/banners/default/advent-calendar-hero-mobile.webp"
+      media="(max-width: 359px)"
+      fetchpriority="high"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

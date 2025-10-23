@@ -1,0 +1,64 @@
+@use './base';
+@use './utils/mixins' as *;
+
+// Global SCSS imports configured in vite.config.ts
+
+html {
+  // base font size
+  font-size: to-rem(size(base)); // 16px
+
+  // tablet landscape (768px)
+  @include mq(lg) {
+    font-size: to-rem(size(sm)); // 14px
+  }
+
+  // small desktop (1024px)
+  @include mq(xl) {
+    font-size: to-rem(size(base)); // 16px
+  }
+
+  // ultra-wide / 4K (2880px)
+  @include mq(ultra) {
+    font-size: to-rem(26px);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-layer-1);
+  color: var(--color-text-primary);
+
+  @include font-family(primary);
+}
+
+#app {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 100dvh;
+  margin: 0 auto;
+  flex-direction: column;
+  background-color: var(--color-layer-1);
+
+  @include font-family(primary);
+}
+
+/* Utility classes */
+.sr-only {
+  position: absolute;
+  overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip: rect(0, 0, 0, 0);
+}
+
+/* Scroll lock utility for modals */
+.scroll-lock {
+  overflow: hidden;
+  touch-action: none;
+}

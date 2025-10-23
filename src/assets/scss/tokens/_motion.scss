@@ -1,0 +1,33 @@
+// -----------------------------------------------------------------------------
+// Motion tokens
+// Timing, easing, and animation tokens for consistent motion design
+// -----------------------------------------------------------------------------
+
+// Duration tokens (in milliseconds)
+$duration: (
+  xs: 150ms,
+  sm: 200ms,
+  md: 300ms,
+  lg: 500ms,
+  xl: 700ms,
+) !default;
+
+// Delay tokens (in milliseconds)
+$delay: (
+  none: 0ms,
+  sm: 100ms,
+  md: 200ms,
+) !default;
+
+// Easing functions
+$easing: (
+  ease: ease,
+  'ease-in': ease-in,
+  'ease-out': ease-out,
+  'ease-in-out': ease-in-out,
+  linear: linear,
+  // Custom easing functions
+  standard: cubic-bezier(0.2, 0, 0, 1),
+  decelerate: cubic-bezier(0, 0, 0.2, 1),
+  accelerate: cubic-bezier(0.4, 0, 1, 1),
+) !default;

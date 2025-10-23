@@ -1,0 +1,8 @@
+@use '../functions/tokens' as t;
+@use '../../tokens/motion' as m;
+
+// Single mixin for transitions.
+// Example: @include transition(opacity, md, ease-out); or @include transition(transform, lg, standard, sm);
+@mixin transition($prop, $dur: md, $ease: ease, $del: none) {
+  transition: $prop t.pick(m.$duration, $dur) t.pick(m.$easing, $ease) t.pick(m.$delay, $del);
+}

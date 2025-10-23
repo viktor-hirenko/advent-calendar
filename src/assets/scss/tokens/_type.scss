@@ -1,0 +1,107 @@
+// -----------------------------------------------------------------------------
+// Typography tokens
+// Centralized typographic scale and presets used across the design system.
+// Values are structured as a single $type map for consistency and maintainability.
+// Access via typography() helper or dedicated mixins — never directly.
+// -----------------------------------------------------------------------------
+
+@use 'sass:map';
+
+$type: (
+  family: (
+    primary: (
+      'Rubik',
+      sans-serif,
+    ),
+    secondary: (
+      'Roboto Slab',
+      serif,
+    ),
+  ),
+
+  weight: (
+    thin: 100,
+    extralight: 200,
+    light: 300,
+    normal: 400,
+    medium: 500,
+    semibold: 600,
+    bold: 700,
+    extrabold: 800,
+    black: 900,
+  ),
+
+  line-height: (
+    'extra-tight': 1,
+    tight: 1.1,
+    snug: 1.2,
+    normal: 1.3,
+    relaxed: 1.35,
+    comfortable: 1.5,
+    loose: 1.6,
+    'extra-loose': 1.7,
+  ),
+
+  letter-spacing: (
+    tight: -0.025em,
+    normal: 0,
+    wide: 0.025em,
+    wider: 0.05em,
+    widest: 0.72px,
+  ),
+
+  scale: (
+    xs: 12px,
+    sm: 14px,
+    base: 16px,
+    md: 20px,
+    lg: 24px,
+    xl: 32px,
+    '2xl': 48px,
+  ),
+
+  presets: (
+    h1: (
+      size: xl,
+      lh: normal,
+      track: normal,
+      weight: bold,
+      family: primary,
+    ),
+    h3: (
+      size: md,
+      lh: normal,
+      track: normal,
+      weight: semibold,
+      family: primary,
+    ),
+    body: (
+      size: base,
+      lh: comfortable,
+      track: normal,
+      weight: normal,
+      family: primary,
+    ),
+    tag: (
+      size: xs,
+      lh: normal,
+      track: normal,
+      weight: bold,
+      family: primary,
+    ),
+    button: (
+      size: xs,
+      lh: relaxed,
+      track: widest,
+      weight: black,
+      family: secondary,
+    ),
+    button-small: (
+      size: xs,
+      lh: 'extra-loose',
+      track: normal,
+      weight: bold,
+      family: primary,
+    ),
+  ),
+) !default;

@@ -1,0 +1,29 @@
+/* Auto-generated design tokens - DO NOT EDIT */
+/* Generated from src/design/tokens.json */
+
+/* alpa-dark theme */
+[data-theme="alpa-dark"] {
+  --color-layer-1: #000A12;
+  --color-layer-alt-1: #262A34;
+  --color-text-primary: #FFFFFF;
+  --color-text-secondary: #B6BDCC;
+  --color-text-menu-default: #B6BDCC;
+  --color-text-menu-active: #FDD835;
+  --color-button-primary: #000A12;
+  --color-button-secondary: #B6BDCC;
+  --color-button-tertiary: #A153FF;
+  --color-button-text-primary: #000A12;
+  --color-button-text-secondary: #FFA000;
+  --color-button-text-tertiary: #FFFFFF;
+  --color-notif-successfully: #1BE176;
+  --color-notif-error: #FF4444;
+  --color-tertiary-3: #B6BDCC;
+  --color-tertiary-4: #B6BDCC;
+  --color-tertiary-5: #000A12;
+  --gradient-secondary: linear-gradient(90deg, #2E0F6C 0%, #2E0F6C 0.01%, #712DF5 100%);
+  --gradient-card: linear-gradient(90deg, #2E0F6C 0%, #712DF5 50%, #2E0F6C 100%);
+  --gradient-button-primary: linear-gradient(90deg, #FFA000 0%, #FFFF7B 100%);
+}
+
+/* Theme-specific overrides */
+/* Add custom theme overrides here if needed */

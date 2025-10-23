@@ -1,0 +1,8 @@
+// -----------------------------------------------------------------------------
+// SCSS exports
+// Central entry point that re-exports all core utilities and mixins.
+// -----------------------------------------------------------------------------
+@forward 'media';
+@forward 'text';
+@forward 'type-helpers';
+@forward 'motion';

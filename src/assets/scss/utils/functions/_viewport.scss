@@ -1,0 +1,45 @@
+// -----------------------------------------------------------------------------
+// Viewport functions
+// Utility functions for converting pixel values to viewport-based units.
+// Uses design tokens as default reference sizes.
+// -----------------------------------------------------------------------------
+
+@use 'sass:math';
+@use '../../tokens/design' as *;
+
+// --- Helpers -----------------------------------------------------------------
+// Remove units from numbers while preserving CSS variables (e.g. var(...)).
+// -----------------------------------------------------------------------------
+@function _num($value) {
+  @if type-of($value) == 'number' {
+    @return math.div($value, ($value * 0 + 1));
+  }
+
+  @return $value;
+}
+
+// --- Core conversions ---------------------------------------------------------
+// px → vh (relative to design height)
+@function to-vh($px, $h: $design-height) {
+  @return calc(#{_num($px)} / #{_num($h)} * 100vh);
+}
+
+// px → dvh (dynamic viewport height)
+@function to-dvh($px, $h: $design-height) {
+  @return calc(#{_num($px)} / #{_num($h)} * 100dvh);
+}
+
+// px → svh (small viewport height)
+@function to-svh($px, $h: $design-height) {
+  @return calc(#{_num($px)} / #{_num($h)} * 100svh);
+}
+
+// px → vw (relative to design width)
+@function to-vw($px, $w: $design-width) {
+  @return calc(#{_num($px)} / #{_num($w)} * 100vw);
+}
+
+// px → cqw (container width)
+@function to-cqw($px, $w: $design-width) {
+  @return calc(#{_num($px)} / #{_num($w)} * 100cqw);
+}

@@ -1,0 +1,100 @@
+// -----------------------------------------------------------------------------
+// Text mixins
+// Core and semantic mixins for typography tokens.
+// Applies values from the centralized $type map defined in tokens/_type.scss.
+// -----------------------------------------------------------------------------
+
+@use 'sass:map';
+@use '../../tokens/type' as *;
+@use '../functions/typography' as *;
+@use '../functions/units' as *;
+
+// --- Core mixin --------------------------------------------------------------
+// text($name [, $size] [, $lh] [, $weight] [, $track] [, $family])
+// Retrieves preset values from the $type map and allows local overrides.
+// Example: @include text('caption-bold', $size: to-rem(14px), $lh: 1.7);
+// -----------------------------------------------------------------------------
+@mixin text($name, $size: null, $lh: null, $weight: null, $track: null, $family: null, $unit: rem) {
+  $p: typography(presets, $name);
+
+  @if $p {
+    // Base values from preset
+    $base-size: map.get($p, size);
+    $base-lh: map.get($p, lh);
+    $base-track: map.get($p, track);
+    $base-weight: map.get($p, weight);
+    $base-family: map.get($p, family);
+
+    // Final resolved values (with overrides)
+    $size-final: if($size != null, $size, typography(scale, $base-size));
+    $lh-final: if($lh != null, $lh, typography(line-height, $base-lh));
+    $weight-final: if($weight != null, $weight, typography(weight, $base-weight));
+    $track-final: if($track != null, $track, typography(letter-spacing, $base-track));
+    $family-final: if(
+      $family != null,
+      typography(family, $family),
+      typography(family, $base-family)
+    );
+
+    font-family: $family-final;
+    font-size: if($unit == em, to-em($size-final), to-rem($size-final));
+    font-weight: $weight-final;
+    line-height: $lh-final;
+    letter-spacing: $track-final;
+  } @else {
+    @error "Typography preset '#{$name}' not found. Available presets: #{map.keys(typography(presets))}";
+  }
+}
+
+// --- Semantic mixins ---------------------------------------------------------
+// Predefined text styles matching semantic roles in the design system.
+// -----------------------------------------------------------------------------
+@mixin text-h1 {
+  @include text(h1);
+}
+
+@mixin text-h3 {
+  @include text(h3);
+}
+
+@mixin text-body {
+  @include text(body);
+}
+
+@mixin text-button-small {
+  @include text(button-small);
+}
+
+@mixin text-tag {
+  @include text(tag);
+}
+
+@mixin text-button {
+  @include text(button);
+}
+
+// --- Utility mixins ----------------------------------------------------------
+// Lightweight mixins for direct token access (custom combinations).
+// Example: @include font-size(md);
+// -----------------------------------------------------------------------------
+@mixin font-family($name) {
+  font-family: typography(family, $name);
+}
+
+@mixin font-weight($name) {
+  font-weight: typography(weight, $name);
+}
+
+@mixin font-size($name, $unit: rem) {
+  $val: typography(scale, $name);
+
+  font-size: if($unit == em, to-em($val), to-rem($val));
+}
+
+@mixin line-height($name) {
+  line-height: typography(line-height, $name);
+}
+
+@mixin letter-spacing($name) {
+  letter-spacing: typography(letter-spacing, $name);
+}

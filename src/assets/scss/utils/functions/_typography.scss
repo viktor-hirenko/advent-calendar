@@ -1,0 +1,27 @@
+// -----------------------------------------------------------------------------
+// Typography functions
+// Utility helpers for accessing typographic tokens from the $type map.
+// Source: tokens/_type.scss
+// -----------------------------------------------------------------------------
+
+@use 'sass:map';
+@use '../../tokens/type' as *;
+@use 'tokens' as t;
+
+// --- typography() ------------------------------------------------------------
+// Returns a value from the $type map by a given key path.
+// Example: typography(presets, h1, size)
+// -----------------------------------------------------------------------------
+@function typography($path...) {
+  $cur: $type;
+
+  @each $k in $path {
+    @if map.has-key($cur, $k) {
+      $cur: t.pick($cur, $k);
+    } @else {
+      @error "Typography: key '#{$k}' not found in path (#{$path}).";
+    }
+  }
+
+  @return $cur;
+}

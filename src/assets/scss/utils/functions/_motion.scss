@@ -1,0 +1,31 @@
+// -----------------------------------------------------------------------------
+// Motion utility functions
+// Safe access to motion tokens with fallback support
+// -----------------------------------------------------------------------------
+
+@use '../../tokens/motion' as m;
+@use 'tokens' as t;
+
+// Get motion duration by name
+// @param {String} $name - Duration name (xs, sm, md, lg, xl)
+// @param {*} $fallback - Fallback value if key not found
+// @return {*} - Duration value or fallback
+@function motion-duration($name, $fallback: null) {
+  @return t.pick(m.$duration, $name, $fallback);
+}
+
+// Get motion easing by name
+// @param {String} $name - Easing name (ease, ease-in, ease-out, etc.)
+// @param {*} $fallback - Fallback value if key not found
+// @return {*} - Easing value or fallback
+@function motion-easing($name, $fallback: null) {
+  @return t.pick(m.$easing, $name, $fallback);
+}
+
+// Get motion delay by name
+// @param {String} $name - Delay name (none, sm, md)
+// @param {*} $fallback - Fallback value if key not found
+// @return {*} - Delay value or fallback
+@function motion-delay($name, $fallback: null) {
+  @return t.pick(m.$delay, $name, $fallback);
+}

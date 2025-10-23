@@ -1,0 +1,8 @@
+// -----------------------------------------------------------------------------
+// SCSS exports
+// Central entry point that re-exports all core utilities and mixins.
+// -----------------------------------------------------------------------------
+@forward 'breakpoints';
+@forward 'design';
+@forward 'type';
+@forward 'motion';

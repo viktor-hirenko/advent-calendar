@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// Token utility functions
+// Safe map access with fallback support
+// -----------------------------------------------------------------------------
+
+@use 'sass:map';
+
+// Safe map getter with fallback support
+// @param {Map} $map - Map to access
+// @param {String} $key - Key to retrieve
+// @param {*} $fallback - Fallback value if key not found
+// @return {*} - Map value or fallback
+@function pick($map, $key, $fallback: null) {
+  @if map.has-key($map, $key) {
+    @return map.get($map, $key);
+  }
+
+  @if $fallback {
+    @return $fallback;
+  }
+
+  @error "Token '#{$key}' not found in map";
+}

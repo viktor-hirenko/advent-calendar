@@ -1,0 +1,867 @@
+{
+  "calendar": {
+    "title": {
+      "en": "Sports Calendar",
+      "de": "Sport-Kalender",
+      "fr": "Calendrier Sportif",
+      "it": "Calendario Sportivo",
+      "es": "Calendario Deportivo",
+      "pt": "Calendário Esportivo"
+    },
+    "description": {
+      "en": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere condimentum fringilla. In augue sem, consectetur a est id, interdum scelerisque diam.",
+      "de": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere condimentum fringilla. In augue sem, consectetur a est id, interdum scelerisque diam.",
+      "fr": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere condimentum fringilla. In augue sem, consectetur a est id, interdum scelerisque diam.",
+      "it": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere condimentum fringilla. In augue sem, consectetur a est id, interdum scelerisque diam.",
+      "es": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere condimentum fringilla. In augue sem, consectetur a est id, interdum scelerisque diam.",
+      "pt": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum posuere condimentum fringilla. In augue sem, consectetur a est id, interdum scelerisque diam."
+    },
+    "labels": {
+      "promotion": {
+        "en": "Promotion",
+        "de": "Aktion",
+        "fr": "Promotion",
+        "it": "Promozione",
+        "es": "Promoción",
+        "pt": "Promoção"
+      }
+    },
+    "links": {
+      "primary": "https://bet.rocketplay19.com/"
+    },
+    "images": {
+      "banner": {
+        "mobile": "banners/default/advent-calendar-hero-mobile.webp",
+        "tablet": "banners/default/advent-calendar-hero-tablet.webp",
+        "desktop": "banners/default/advent-calendar-hero-desktop.webp",
+        "large": "banners/default/advent-calendar-hero-large.webp",
+        "ultra": "banners/default/advent-calendar-hero-ultra.webp",
+        "alt": {
+          "en": "3D illustration of a sports calendar with football, basketball and tennis balls",
+          "de": "3D-Illustration eines Sportkalenders mit Fußball-, Basketball- und Tennisbällen",
+          "fr": "Illustration 3D d’un calendrier sportif avec ballon de football, de basket et de tennis",
+          "it": "Illustrazione 3D di un calendario sportivo con pallone da calcio, basket e tennis",
+          "es": "Ilustración 3D de un calendario deportivo con balones de fútbol, baloncesto y tenis",
+          "pt": "Ilustração 3D de um calendário esportivo com bolas de futebol, basquete e tênis"
+        }
+      },
+      "decoration": {
+        "ultra": "banners/default/decor-ultra.webp"
+      },
+      "disabledTaskIcon": "tasks/default/golden-gift-icon.webp"
+    },
+    "disabledTask": {
+      "title": {
+        "en": "See you on",
+        "de": "Bis zum",
+        "fr": "À bientôt le",
+        "it": "Ci vediamo il",
+        "es": "Nos vemos el",
+        "pt": "Vejo você em"
+      },
+      "buttonText": {
+        "en": "Return to Today's Task",
+        "de": "Zurück zur heutigen Aufgabe",
+        "fr": "Retour à la tâche d'aujourd'hui",
+        "it": "Torna al compito di oggi",
+        "es": "Volver a la tarea de hoy",
+        "pt": "Voltar à tarefa de hoje"
+      }
+    },
+    "tasks": [
+      {
+        "id": "task-1",
+        "title": {
+          "en": "Task of the day",
+          "de": "Aufgabe des Tages",
+          "fr": "Tâche du jour",
+          "it": "Compito del giorno",
+          "es": "Tarea del día",
+          "pt": "Tarefa do dia"
+        },
+        "description": {
+          "en": "Make two bets from <strong>40 EUR</strong> and get a free bet of <strong>20 EUR</strong>",
+          "de": "Mache zwei Wetten ab <strong>40 EUR</strong> und erhalte einen kostenlosen Einsatz von <strong>20 EUR</strong>",
+          "fr": "Faites deux paris à partir de <strong>40 EUR</strong> et obtenez un pari gratuit de <strong>20 EUR</strong>",
+          "it": "Fai due scommesse da <strong>40 EUR</strong> e ottieni una scommessa gratuita di <strong>20 EUR</strong>",
+          "es": "Haz dos apuestas desde <strong>40 EUR</strong> y obtén una apuesta gratuita de <strong>20 EUR</strong>",
+          "pt": "Faça duas apostas a partir de <strong>40 EUR</strong> e ganhe uma aposta grátis de <strong>20 EUR</strong>"
+        },
+        "buttonText": {
+          "en": "Go to sport",
+          "de": "Zum Sport",
+          "fr": "Aller au sport",
+          "it": "Vai allo sport",
+          "es": "Ir al deporte",
+          "pt": "Ir para o esporte"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-2",
+        "title": {
+          "en": "Daily Bonus",
+          "de": "Täglicher Bonus",
+          "fr": "Bonus quotidien",
+          "it": "Bonus giornaliero",
+          "es": "Bono diario",
+          "pt": "Bônus diário"
+        },
+        "description": {
+          "en": "Claim your daily bonus and boost your balance!",
+          "de": "Holen Sie sich Ihren täglichen Bonus und steigern Sie Ihr Guthaben!",
+          "fr": "Réclamez votre bonus quotidien et boostez votre solde !",
+          "it": "Riscuoti il tuo bonus giornaliero e aumenta il tuo saldo!",
+          "es": "¡Reclama tu bono diario y aumenta tu saldo!",
+          "pt": "Reivindique seu bônus diário e aumente seu saldo!"
+        },
+        "buttonText": {
+          "en": "Claim Bonus",
+          "de": "Bonus beanspruchen",
+          "fr": "Réclamer le bonus",
+          "it": "Riscuoti bonus",
+          "es": "Reclamar bono",
+          "pt": "Reivindicar bônus"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-3",
+        "title": {
+          "en": "Free Spins",
+          "de": "Kostenlose Drehungen",
+          "fr": "Tours gratuits",
+          "it": "Giri gratuiti",
+          "es": "Giros gratis",
+          "pt": "Rodadas grátis"
+        },
+        "description": {
+          "en": "Get 50 free spins on your favorite slot!",
+          "de": "Erhalten Sie 50 kostenlose Drehungen an Ihrem Lieblings-Slot!",
+          "fr": "Obtenez 50 tours gratuits sur votre machine à sous préférée !",
+          "it": "Ottieni 50 giri gratuiti sulla tua slot preferita!",
+          "es": "¡Obtén 50 giros gratis en tu tragamonedas favorita!",
+          "pt": "Obtenha 50 rodadas grátis no seu caça-níqueis favorito!"
+        },
+        "buttonText": {
+          "en": "Get Free Spins",
+          "de": "Kostenlose Drehungen erhalten",
+          "fr": "Obtenir des tours gratuits",
+          "it": "Ottieni giri gratuiti",
+          "es": "Obtener giros gratis",
+          "pt": "Obter rodadas grátis"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-4",
+        "title": {
+          "en": "Cashback Reward",
+          "de": "Cashback-Belohnung",
+          "fr": "Récompense de cashback",
+          "it": "Ricompensa cashback",
+          "es": "Recompensa de cashback",
+          "pt": "Recompensa de cashback"
+        },
+        "description": {
+          "en": "Receive 10% cashback on all your losses today!",
+          "de": "Erhalten Sie 10% Cashback auf alle Ihre Verluste heute!",
+          "fr": "Recevez 10% de cashback sur toutes vos pertes aujourd'hui !",
+          "it": "Ricevi il 10% di cashback su tutte le tue perdite oggi!",
+          "es": "¡Recibe 10% de cashback en todas tus pérdidas de hoy!",
+          "pt": "Receba 10% de cashback em todas as suas perdas hoje!"
+        },
+        "buttonText": {
+          "en": "Claim Cashback",
+          "de": "Cashback beanspruchen",
+          "fr": "Réclamer le cashback",
+          "it": "Riscuoti cashback",
+          "es": "Reclamar cashback",
+          "pt": "Reivindicar cashback"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-5",
+        "title": {
+          "en": "VIP Upgrade",
+          "de": "VIP-Upgrade",
+          "fr": "Mise à niveau VIP",
+          "it": "Aggiornamento VIP",
+          "es": "Actualización VIP",
+          "pt": "Upgrade VIP"
+        },
+        "description": {
+          "en": "Unlock VIP status with exclusive benefits!",
+          "de": "Schalten Sie den VIP-Status mit exklusiven Vorteilen frei!",
+          "fr": "Débloquez le statut VIP avec des avantages exclusifs !",
+          "it": "Sblocca lo status VIP con vantaggi esclusivi!",
+          "es": "¡Desbloquea el estatus VIP con beneficios exclusivos!",
+          "pt": "Desbloqueie o status VIP com benefícios exclusivos!"
+        },
+        "buttonText": {
+          "en": "Become VIP",
+          "de": "VIP werden",
+          "fr": "Devenir VIP",
+          "it": "Diventa VIP",
+          "es": "Convertirse en VIP",
+          "pt": "Tornar-se VIP"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-6",
+        "title": {
+          "en": "Mega Jackpot",
+          "de": "Mega-Jackpot",
+          "fr": "Méga jackpot",
+          "it": "Mega jackpot",
+          "es": "Mega jackpot",
+          "pt": "Mega jackpot"
+        },
+        "description": {
+          "en": "Try your luck with the progressive jackpot!",
+          "de": "Versuchen Sie Ihr Glück mit dem progressiven Jackpot!",
+          "fr": "Tentez votre chance avec le jackpot progressif !",
+          "it": "Prova la fortuna con il jackpot progressivo!",
+          "es": "¡Prueba tu suerte con el jackpot progresivo!",
+          "pt": "Teste sua sorte com o jackpot progressivo!"
+        },
+        "buttonText": {
+          "en": "Play Now",
+          "de": "Jetzt spielen",
+          "fr": "Jouer maintenant",
+          "it": "Gioca ora",
+          "es": "Jugar ahora",
+          "pt": "Jogar agora"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-7",
+        "title": {
+          "en": "Lucky Wheel",
+          "de": "Glücksrad",
+          "fr": "Roue de la fortune",
+          "it": "Ruota della fortuna",
+          "es": "Rueda de la fortuna",
+          "pt": "Roda da sorte"
+        },
+        "description": {
+          "en": "Spin the wheel and win amazing prizes!",
+          "de": "Drehen Sie das Rad und gewinnen Sie tolle Preise!",
+          "fr": "Tournez la roue et gagnez des prix incroyables !",
+          "it": "Gira la ruota e vinci premi fantastici!",
+          "es": "¡Gira la rueda y gana premios increíbles!",
+          "pt": "Gire a roda e ganhe prêmios incríveis!"
+        },
+        "buttonText": {
+          "en": "Spin Wheel",
+          "de": "Rad drehen",
+          "fr": "Tourner la roue",
+          "it": "Gira la ruota",
+          "es": "Girar rueda",
+          "pt": "Girar roda"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-8",
+        "title": {
+          "en": "Tournament Entry",
+          "de": "Turnier-Eintritt",
+          "fr": "Entrée au tournoi",
+          "it": "Ingresso al torneo",
+          "es": "Entrada al torneo",
+          "pt": "Entrada no torneio"
+        },
+        "description": {
+          "en": "Join the weekly tournament and compete for prizes!",
+          "de": "Nehmen Sie am wöchentlichen Turnier teil und kämpfen Sie um Preise!",
+          "fr": "Rejoignez le tournoi hebdomadaire et concourez pour des prix !",
+          "it": "Partecipa al torneo settimanale e gareggia per i premi!",
+          "es": "¡Únete al torneo semanal y compite por premios!",
+          "pt": "Junte-se ao torneio semanal e dispute por prêmios!"
+        },
+        "buttonText": {
+          "en": "Join Tournament",
+          "de": "Turnier beitreten",
+          "fr": "Rejoindre le tournoi",
+          "it": "Unisciti al torneo",
+          "es": "Unirse al torneo",
+          "pt": "Entrar no torneio"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-9",
+        "title": {
+          "en": "Double Rewards",
+          "de": "Doppelte Belohnungen",
+          "fr": "Récompenses doubles",
+          "it": "Ricompense doppie",
+          "es": "Recompensas dobles",
+          "pt": "Recompensas duplas"
+        },
+        "description": {
+          "en": "All your winnings are doubled today!",
+          "de": "Alle Ihre Gewinne werden heute verdoppelt!",
+          "fr": "Tous vos gains sont doublés aujourd'hui !",
+          "it": "Tutte le tue vincite sono raddoppiate oggi!",
+          "es": "¡Todas tus ganancias se duplican hoy!",
+          "pt": "Todos os seus ganhos são duplicados hoje!"
+        },
+        "buttonText": {
+          "en": "Start Playing",
+          "de": "Spielen beginnen",
+          "fr": "Commencer à jouer",
+          "it": "Inizia a giocare",
+          "es": "Comenzar a jugar",
+          "pt": "Começar a jogar"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-10",
+        "title": {
+          "en": "Mystery Box",
+          "de": "Geheimnisvolle Box",
+          "fr": "Boîte mystère",
+          "it": "Scatola misteriosa",
+          "es": "Caja misteriosa",
+          "pt": "Caixa misteriosa"
+        },
+        "description": {
+          "en": "Open the mystery box and discover your surprise!",
+          "de": "Öffnen Sie die geheimnisvolle Box und entdecken Sie Ihre Überraschung!",
+          "fr": "Ouvrez la boîte mystère et découvrez votre surprise !",
+          "it": "Apri la scatola misteriosa e scopri la tua sorpresa!",
+          "es": "¡Abre la caja misteriosa y descubre tu sorpresa!",
+          "pt": "Abra a caixa misteriosa e descubra sua surpresa!"
+        },
+        "buttonText": {
+          "en": "Open Box",
+          "de": "Box öffnen",
+          "fr": "Ouvrir la boîte",
+          "it": "Apri scatola",
+          "es": "Abrir caja",
+          "pt": "Abrir caixa"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-11",
+        "title": {
+          "en": "Loyalty Points",
+          "de": "Treuepunkte",
+          "fr": "Points de fidélité",
+          "it": "Punti fedeltà",
+          "es": "Puntos de lealtad",
+          "pt": "Pontos de fidelidade"
+        },
+        "description": {
+          "en": "Earn extra loyalty points for every bet!",
+          "de": "Verdienen Sie zusätzliche Treuepunkte für jeden Einsatz!",
+          "fr": "Gagnez des points de fidélité supplémentaires pour chaque pari !",
+          "it": "Guadagna punti fedeltà extra per ogni scommessa!",
+          "es": "¡Gana puntos de lealtad extra por cada apuesta!",
+          "pt": "Ganhe pontos de fidelidade extras para cada aposta!"
+        },
+        "buttonText": {
+          "en": "Earn Points",
+          "de": "Punkte verdienen",
+          "fr": "Gagner des points",
+          "it": "Guadagna punti",
+          "es": "Ganar puntos",
+          "pt": "Ganhar pontos"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-12",
+        "title": {
+          "en": "Weekend Special",
+          "de": "Wochenend-Special",
+          "fr": "Spécial week-end",
+          "it": "Speciale weekend",
+          "es": "Especial de fin de semana",
+          "pt": "Especial de fim de semana"
+        },
+        "description": {
+          "en": "Special weekend bonuses and promotions!",
+          "de": "Spezielle Wochenend-Boni und Aktionen!",
+          "fr": "Bonus et promotions spéciaux du week-end !",
+          "it": "Bonus e promozioni speciali del weekend!",
+          "es": "¡Bonos y promociones especiales de fin de semana!",
+          "pt": "Bônus e promoções especiais de fim de semana!"
+        },
+        "buttonText": {
+          "en": "Get Special",
+          "de": "Special erhalten",
+          "fr": "Obtenir le spécial",
+          "it": "Ottieni speciale",
+          "es": "Obtener especial",
+          "pt": "Obter especial"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-13",
+        "title": {
+          "en": "Live Dealer",
+          "de": "Live-Dealer",
+          "fr": "Croupier en direct",
+          "it": "Dealer dal vivo",
+          "es": "Dealer en vivo",
+          "pt": "Dealer ao vivo"
+        },
+        "description": {
+          "en": "Play with real dealers in live casino games!",
+          "de": "Spielen Sie mit echten Dealern in Live-Casino-Spielen!",
+          "fr": "Jouez avec de vrais croupiers dans les jeux de casino en direct !",
+          "it": "Gioca con veri dealer nei giochi di casino dal vivo!",
+          "es": "¡Juega con dealers reales en juegos de casino en vivo!",
+          "pt": "Jogue com dealers reais em jogos de casino ao vivo!"
+        },
+        "buttonText": {
+          "en": "Play Live",
+          "de": "Live spielen",
+          "fr": "Jouer en direct",
+          "it": "Gioca dal vivo",
+          "es": "Jugar en vivo",
+          "pt": "Jogar ao vivo"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-14",
+        "title": {
+          "en": "Mobile Bonus",
+          "de": "Mobile-Bonus",
+          "fr": "Bonus mobile",
+          "it": "Bonus mobile",
+          "es": "Bono móvil",
+          "pt": "Bônus móvel"
+        },
+        "description": {
+          "en": "Extra bonus for playing on mobile devices!",
+          "de": "Extra-Bonus für das Spielen auf mobilen Geräten!",
+          "fr": "Bonus supplémentaire pour jouer sur appareils mobiles !",
+          "it": "Bonus extra per giocare su dispositivi mobili!",
+          "es": "¡Bono extra por jugar en dispositivos móviles!",
+          "pt": "Bônus extra por jogar em dispositivos móveis!"
+        },
+        "buttonText": {
+          "en": "Get Mobile Bonus",
+          "de": "Mobile-Bonus erhalten",
+          "fr": "Obtenir le bonus mobile",
+          "it": "Ottieni bonus mobile",
+          "es": "Obtener bono móvil",
+          "pt": "Obter bônus móvel"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-15",
+        "title": {
+          "en": "Referral Program",
+          "de": "Empfehlungsprogramm",
+          "fr": "Programme de parrainage",
+          "it": "Programma di referral",
+          "es": "Programa de referidos",
+          "pt": "Programa de indicação"
+        },
+        "description": {
+          "en": "Invite friends and earn rewards together!",
+          "de": "Laden Sie Freunde ein und verdienen Sie gemeinsam Belohnungen!",
+          "fr": "Invitez des amis et gagnez des récompenses ensemble !",
+          "it": "Invita gli amici e guadagna ricompense insieme!",
+          "es": "¡Invita amigos y gana recompensas juntos!",
+          "pt": "Convide amigos e ganhe recompensas juntos!"
+        },
+        "buttonText": {
+          "en": "Invite Friends",
+          "de": "Freunde einladen",
+          "fr": "Inviter des amis",
+          "it": "Invita amici",
+          "es": "Invitar amigos",
+          "pt": "Convidar amigos"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-16",
+        "title": {
+          "en": "Halloween Special",
+          "de": "Halloween-Special",
+          "fr": "Spécial Halloween",
+          "it": "Speciale Halloween",
+          "es": "Especial de Halloween",
+          "pt": "Especial de Halloween"
+        },
+        "description": {
+          "en": "Spooky Halloween bonuses and scary prizes!",
+          "de": "Gruselige Halloween-Boni und gruselige Preise!",
+          "fr": "Bonus d'Halloween effrayants et prix terrifiants !",
+          "it": "Bonus di Halloween spaventosi e premi terrificanti!",
+          "es": "¡Bonos espeluznantes de Halloween y premios aterradores!",
+          "pt": "Bônus assustadores de Halloween e prêmios terríveis!"
+        },
+        "buttonText": {
+          "en": "Trick or Treat",
+          "de": "Süßes oder Saures",
+          "fr": "Des bonbons ou un sort",
+          "it": "Dolcetto o scherzetto",
+          "es": "Truco o trato",
+          "pt": "Doce ou travessura"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-17",
+        "title": {
+          "en": "Grand Finale",
+          "de": "Großes Finale",
+          "fr": "Grande finale",
+          "it": "Gran finale",
+          "es": "Gran final",
+          "pt": "Grande final"
+        },
+        "description": {
+          "en": "The ultimate reward awaits you on the final day!",
+          "de": "Die ultimative Belohnung erwartet Sie am letzten Tag!",
+          "fr": "La récompense ultime vous attend le dernier jour !",
+          "it": "La ricompensa finale ti aspetta nell'ultimo giorno!",
+          "es": "¡La recompensa definitiva te espera en el último día!",
+          "pt": "A recompensa definitiva te espera no último dia!"
+        },
+        "buttonText": {
+          "en": "Claim Final Reward",
+          "de": "Finale Belohnung beanspruchen",
+          "fr": "Réclamer la récompense finale",
+          "it": "Riscuoti ricompensa finale",
+          "es": "Reclamar recompensa final",
+          "pt": "Reivindicar recompensa final"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-18",
+        "title": {
+          "en": "Weekend Special",
+          "de": "Wochenend-Special",
+          "fr": "Spécial week-end",
+          "it": "Speciale weekend",
+          "es": "Especial de fin de semana",
+          "pt": "Especial de fim de semana"
+        },
+        "description": {
+          "en": "Special weekend bonuses and promotions!",
+          "de": "Spezielle Wochenend-Boni und Aktionen!",
+          "fr": "Bonus et promotions spéciaux du week-end !",
+          "it": "Bonus e promozioni speciali del weekend!",
+          "es": "¡Bonos y promociones especiales de fin de semana!",
+          "pt": "Bônus e promoções especiais de fim de semana!"
+        },
+        "buttonText": {
+          "en": "Get Special",
+          "de": "Special erhalten",
+          "fr": "Obtenir le spécial",
+          "it": "Ottieni speciale",
+          "es": "Obtener especial",
+          "pt": "Obter especial"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-19",
+        "title": {
+          "en": "Live Dealer",
+          "de": "Live-Dealer",
+          "fr": "Croupier en direct",
+          "it": "Dealer dal vivo",
+          "es": "Dealer en vivo",
+          "pt": "Dealer ao vivo"
+        },
+        "description": {
+          "en": "Play with real dealers in live casino games!",
+          "de": "Spielen Sie mit echten Dealern in Live-Casino-Spielen!",
+          "fr": "Jouez avec de vrais croupiers dans les jeux de casino en direct !",
+          "it": "Gioca con veri dealer nei giochi di casino dal vivo!",
+          "es": "¡Juega con dealers reales en juegos de casino en vivo!",
+          "pt": "Jogue com dealers reais em jogos de casino ao vivo!"
+        },
+        "buttonText": {
+          "en": "Play Live",
+          "de": "Live spielen",
+          "fr": "Jouer en direct",
+          "it": "Gioca dal vivo",
+          "es": "Jugar en vivo",
+          "pt": "Jogar ao vivo"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-20",
+        "title": {
+          "en": "Mobile Bonus",
+          "de": "Mobile-Bonus",
+          "fr": "Bonus mobile",
+          "it": "Bonus mobile",
+          "es": "Bono móvil",
+          "pt": "Bônus móvel"
+        },
+        "description": {
+          "en": "Extra bonus for playing on mobile devices!",
+          "de": "Extra-Bonus für das Spielen auf mobilen Geräten!",
+          "fr": "Bonus supplémentaire pour jouer sur appareils mobiles !",
+          "it": "Bonus extra per giocare su dispositivi mobili!",
+          "es": "¡Bono extra por jugar en dispositivos móviles!",
+          "pt": "Bônus extra por jogar em dispositivos móveis!"
+        },
+        "buttonText": {
+          "en": "Get Mobile Bonus",
+          "de": "Mobile-Bonus erhalten",
+          "fr": "Obtenir le bonus mobile",
+          "it": "Ottieni bonus mobile",
+          "es": "Obtener bono móvil",
+          "pt": "Obter bônus móvel"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-21",
+        "title": {
+          "en": "Referral Program",
+          "de": "Empfehlungsprogramm",
+          "fr": "Programme de parrainage",
+          "it": "Programma di referral",
+          "es": "Programa de referidos",
+          "pt": "Programa de indicação"
+        },
+        "description": {
+          "en": "Invite friends and earn rewards together!",
+          "de": "Laden Sie Freunde ein und verdienen Sie gemeinsam Belohnungen!",
+          "fr": "Invitez des amis et gagnez des récompenses ensemble !",
+          "it": "Invita gli amici e guadagna ricompense insieme!",
+          "es": "¡Invita amigos y gana recompensas juntos!",
+          "pt": "Convide amigos e ganhe recompensas juntos!"
+        },
+        "buttonText": {
+          "en": "Invite Friends",
+          "de": "Freunde einladen",
+          "fr": "Inviter des amis",
+          "it": "Invita amici",
+          "es": "Invitar amigos",
+          "pt": "Convidar amigos"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-22",
+        "title": {
+          "en": "Halloween Special",
+          "de": "Halloween-Special",
+          "fr": "Spécial Halloween",
+          "it": "Speciale Halloween",
+          "es": "Especial de Halloween",
+          "pt": "Especial de Halloween"
+        },
+        "description": {
+          "en": "Spooky Halloween bonuses and scary prizes!",
+          "de": "Gruselige Halloween-Boni und gruselige Preise!",
+          "fr": "Bonus d'Halloween effrayants et prix terrifiants !",
+          "it": "Bonus di Halloween spaventosi e premi terrificanti!",
+          "es": "¡Bonos espeluznantes de Halloween y premios aterradores!",
+          "pt": "Bônus assustadores de Halloween e prêmios terríveis!"
+        },
+        "buttonText": {
+          "en": "Trick or Treat",
+          "de": "Süßes oder Saures",
+          "fr": "Des bonbons ou un sort",
+          "it": "Dolcetto o scherzetto",
+          "es": "Truco o trato",
+          "pt": "Doce ou travessura"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-23",
+        "title": {
+          "en": "Grand Finale",
+          "de": "Großes Finale",
+          "fr": "Grande finale",
+          "it": "Gran finale",
+          "es": "Gran final",
+          "pt": "Grande final"
+        },
+        "description": {
+          "en": "The ultimate reward awaits you on the final day!",
+          "de": "Die ultimative Belohnung erwartet Sie am letzten Tag!",
+          "fr": "La récompense ultime vous attend le dernier jour !",
+          "it": "La ricompensa finale ti aspetta nell'ultimo giorno!",
+          "es": "¡La recompensa definitiva te espera en el último día!",
+          "pt": "A recompensa definitiva te espera no último dia!"
+        },
+        "buttonText": {
+          "en": "Claim Final Reward",
+          "de": "Finale Belohnung beanspruchen",
+          "fr": "Réclamer la récompense finale",
+          "it": "Riscuoti ricompensa finale",
+          "es": "Reclamar recompensa final",
+          "pt": "Reivindicar recompensa final"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-24",
+        "title": {
+          "en": "Mega Bonus",
+          "de": "Mega-Bonus",
+          "fr": "Méga bonus",
+          "it": "Mega bonus",
+          "es": "Mega bono",
+          "pt": "Mega bônus"
+        },
+        "description": {
+          "en": "Get the biggest bonus of the season!",
+          "de": "Erhalten Sie den größten Bonus der Saison!",
+          "fr": "Obtenez le plus gros bonus de la saison !",
+          "it": "Ottieni il bonus più grande della stagione!",
+          "es": "¡Obtén el bono más grande de la temporada!",
+          "pt": "Obtenha o maior bônus da temporada!"
+        },
+        "buttonText": {
+          "en": "Claim Mega Bonus",
+          "de": "Mega-Bonus beanspruchen",
+          "fr": "Réclamer le méga bonus",
+          "it": "Riscuoti mega bonus",
+          "es": "Reclamar mega bono",
+          "pt": "Reivindicar mega bônus"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      },
+      {
+        "id": "task-25",
+        "title": {
+          "en": "Final Celebration",
+          "de": "Finale Feier",
+          "fr": "Célébration finale",
+          "it": "Celebrazione finale",
+          "es": "Celebración final",
+          "pt": "Celebração final"
+        },
+        "description": {
+          "en": "Join the final celebration and win amazing prizes!",
+          "de": "Nehmen Sie an der finalen Feier teil und gewinnen Sie tolle Preise!",
+          "fr": "Rejoignez la célébration finale et gagnez des prix incroyables !",
+          "it": "Partecipa alla celebrazione finale e vinci premi fantastici!",
+          "es": "¡Únete a la celebración final y gana premios increíbles!",
+          "pt": "Junte-se à celebração final e ganhe prêmios incríveis!"
+        },
+        "buttonText": {
+          "en": "Join Celebration",
+          "de": "Feier beitreten",
+          "fr": "Rejoindre la célébration",
+          "it": "Unisciti alla celebrazione",
+          "es": "Unirse a la celebración",
+          "pt": "Entrar na celebração"
+        },
+        "targetUrl": "https://bet.rocketplay19.com/"
+      }
+    ],
+    "taskStatus": {
+      "finishesIn": {
+        "en": "Finishes in",
+        "de": "Endet in",
+        "fr": "Se termine dans",
+        "it": "Finisce tra",
+        "es": "Termina en",
+        "pt": "Termina em"
+      },
+      "finished": {
+        "en": "Finished",
+        "de": "Beendet",
+        "fr": "Terminé",
+        "it": "Finito",
+        "es": "Terminado",
+        "pt": "Finalizado"
+      },
+      "dayUnit": {
+        "en": "d",
+        "de": "Tg",
+        "fr": "j",
+        "it": "g",
+        "es": "d",
+        "pt": "d"
+      }
+    },
+    "termsButton": {
+      "en": "Terms and conditions",
+      "de": "Geschäftsbedingungen",
+      "fr": "Termes et conditions",
+      "it": "Termini e condizioni",
+      "es": "Términos y condiciones",
+      "pt": "Termos e condições"
+    },
+    "termsModal": {
+      "title": {
+        "en": "Terms and conditions",
+        "de": "Terms and conditions",
+        "fr": "Terms and conditions",
+        "it": "Terms and conditions",
+        "es": "Terms and conditions",
+        "pt": "Terms and conditions"
+      },
+      "closeAriaLabel": {
+        "en": "Close",
+        "de": "Schließen",
+        "fr": "Fermer",
+        "it": "Chiudi",
+        "es": "Cerrar",
+        "pt": "Fechar"
+      },
+      "html": {
+        "en": "<ol><li>This promotion is available to all registered players on the website, which are eligible to receive bonuses.</li><li>Sports Advent Calendar Promotion starts at 00:00 (UTC) 03.12.2024 and runs until 23:59 (UTC) 25.12.2024.</li><li>Tasks are updated daily at 00:00 (UTC). Each daily task is valid from 00:00 (UTC) to 23:59 (UTC).</li><li>To receive a daily bonus, each player must meet the specified bet or deposit requirements set for the eligible daily task.</li><li>Each task can only be completed once; the player gets one bonus per completed task.</li><li>Freebets bonuses are credited as OnlyWin Freebets unless otherwise stated and must be used within 3 days.</li><li>Cashout bets and bets made with bonus funds do not count in this promotion.</li><li>We reserve the right to amend, cancel, reclaim or refuse this promotion at our discretion.</li><li>General Terms and Conditions apply to this promotion.</li></ol>",
+        "de": "<ol><li>This promotion is available to all registered players on the website, which are eligible to receive bonuses.</li><li>Sports Advent Calendar Promotion starts at 00:00 (UTC) 03.12.2024 and runs until 23:59 (UTC) 25.12.2024.</li><li>Tasks are updated daily at 00:00 (UTC). Each daily task is valid from 00:00 (UTC) to 23:59 (UTC).</li><li>To receive a daily bonus, each player must meet the specified bet or deposit requirements set for the eligible daily task.</li><li>Each task can only be completed once; the player gets one bonus per completed task.</li><li>Freebets bonuses are credited as OnlyWin Freebets unless otherwise stated and must be used within 3 days.</li><li>Cashout bets and bets made with bonus funds do not count in this promotion.</li><li>We reserve the right to amend, cancel, reclaim or refuse this promotion at our discretion.</li><li>General Terms and Conditions apply to this promotion.</li></ol>",
+        "fr": "<ol><li>This promotion is available to all registered players on the website, which are eligible to receive bonuses.</li><li>Sports Advent Calendar Promotion starts at 00:00 (UTC) 03.12.2024 and runs until 23:59 (UTC) 25.12.2024.</li><li>Tasks are updated daily at 00:00 (UTC). Each daily task is valid from 00:00 (UTC) to 23:59 (UTC).</li><li>To receive a daily bonus, each player must meet the specified bet or deposit requirements set for the eligible daily task.</li><li>Each task can only be completed once; the player gets one bonus per completed task.</li><li>Freebets bonuses are credited as OnlyWin Freebets unless otherwise stated and must be used within 3 days.</li><li>Cashout bets and bets made with bonus funds do not count in this promotion.</li><li>We reserve the right to amend, cancel, reclaim or refuse this promotion at our discretion.</li><li>General Terms and Conditions apply to this promotion.</li></ol>",
+        "it": "<ol><li>This promotion is available to all registered players on the website, which are eligible to receive bonuses.</li><li>Sports Advent Calendar Promotion starts at 00:00 (UTC) 03.12.2024 and runs until 23:59 (UTC) 25.12.2024.</li><li>Tasks are updated daily at 00:00 (UTC). Each daily task is valid from 00:00 (UTC) to 23:59 (UTC).</li><li>To receive a daily bonus, each player must meet the specified bet or deposit requirements set for the eligible daily task.</li><li>Each task can only be completed once; the player gets one bonus per completed task.</li><li>Freebets bonuses are credited as OnlyWin Freebets unless otherwise stated and must be used within 3 days.</li><li>Cashout bets and bets made with bonus funds do not count in this promotion.</li><li>We reserve the right to amend, cancel, reclaim or refuse this promotion at our discretion.</li><li>General Terms and Conditions apply to this promotion.</li></ol>",
+        "es": "<ol><li>This promotion is available to all registered players on the website, which are eligible to receive bonuses.</li><li>Sports Advent Calendar Promotion starts at 00:00 (UTC) 03.12.2024 and runs until 23:59 (UTC) 25.12.2024.</li><li>Tasks are updated daily at 00:00 (UTC). Each daily task is valid from 00:00 (UTC) to 23:59 (UTC).</li><li>To receive a daily bonus, each player must meet the specified bet or deposit requirements set for the eligible daily task.</li><li>Each task can only be completed once; the player gets one bonus per completed task.</li><li>Freebets bonuses are credited as OnlyWin Freebets unless otherwise stated and must be used within 3 days.</li><li>Cashout bets and bets made with bonus funds do not count in this promotion.</li><li>We reserve the right to amend, cancel, reclaim or refuse this promotion at our discretion.</li><li>General Terms and Conditions apply to this promotion.</li></ol>",
+        "pt": "<ol><li>This promotion is available to all registered players on the website, which are eligible to receive bonuses.</li><li>Sports Advent Calendar Promotion starts at 00:00 (UTC) 03.12.2024 and runs until 23:59 (UTC) 25.12.2024.</li><li>Tasks are updated daily at 00:00 (UTC). Each daily task is valid from 00:00 (UTC) to 23:59 (UTC).</li><li>To receive a daily bonus, each player must meet the specified bet or deposit requirements set for the eligible daily task.</li><li>Each task can only be completed once; the player gets one bonus per completed task.</li><li>Freebets bonuses are credited as OnlyWin Freebets unless otherwise stated and must be used within 3 days.</li><li>Cashout bets and bets made with bonus funds do not count in this promotion.</li><li>We reserve the right to amend, cancel, reclaim or refuse this promotion at our discretion.</li><li>General Terms and Conditions apply to this promotion.</li></ol>"
+      }
+    }
+  },
+  "config": {
+    "enabled": true,
+    "ui": {
+      "bannerSection": {
+        "visible": true
+      },
+      "introSection": {
+        "visible": true,
+        "title": true,
+        "tagLabel": true,
+        "description": true
+      },
+      "calendarSection": {
+        "visible": true,
+        "dayPicker": true,
+        "tasksPanel": true
+      },
+      "footerSection": {
+        "visible": true,
+        "termsButton": true,
+        "termsModal": {
+          "visible": true
+        }
+      }
+    },
+    "startDate": "2025-10-11",
+    "endDate": "2025-10-31",
+    "timeMode": "local",
+    "alignByWeekday": true,
+    "firstDayOfWeek": "auto",
+    "defaultLanguage": "en",
+    "supportedLanguages": ["en", "de", "fr", "it", "es", "pt"]
+  }
+}

@@ -1,0 +1,128 @@
+// -----------------------------------------------------------------------------
+// Unit functions
+// Utility functions for converting between CSS units (px, rem, em, %, etc.).
+// Ensures consistent sizing across the design system.
+// -----------------------------------------------------------------------------
+
+@use 'sass:math';
+@use 'sass:map';
+@use 'sass:meta';
+@use '../../tokens/design' as *;
+
+// --- Helpers -----------------------------------------------------------------
+// Strip units from numeric values while preserving CSS vars (e.g. var(...)).
+// -----------------------------------------------------------------------------
+@function _num($value) {
+  @if meta.type-of($value) == 'number' {
+    @return math.div($value, ($value * 0 + 1));
+  }
+
+  @return $value; // e.g. var(--design-width)
+}
+
+// --- Core conversions ---------------------------------------------------------
+// px → rem
+@function to-rem($px, $base: $base-font) {
+  @if meta.type-of($px) == 'string' or meta.type-of($px) != 'number' {
+    @return $px;
+  }
+
+  @if math.unit($px) == 'rem' or math.unit($px) == 'em' {
+    @return $px;
+  }
+
+  @if math.is-unitless($px) {
+    $px: $px * 1px;
+  }
+
+  @if math.unit($px) == 'px' {
+    @if math.is-unitless($base) {
+      $base: $base * 1px;
+    }
+
+    @return math.div($px, $base) * 1rem;
+  }
+
+  @return $px;
+}
+
+// px → em
+@function to-em($px, $base: $base-font) {
+  @if meta.type-of($px) == 'string' or meta.type-of($px) != 'number' {
+    @return $px;
+  }
+
+  @if math.unit($px) == 'em' {
+    @return $px;
+  }
+
+  @if math.is-unitless($px) {
+    $px: $px * 1px;
+  }
+
+  @if math.unit($px) == 'px' {
+    @if math.is-unitless($base) {
+      $base: $base * 1px;
+    }
+
+    @return math.div($px, $base) * 1em;
+  }
+
+  @return $px;
+}
+
+// px → % (relative to design width)
+@function to-percent-x($px, $w: $design-width) {
+  @return calc(#{_num($px)} / #{_num($w)} * 100%);
+}
+
+// px → % (relative to design height)
+@function to-percent-y($px, $h: $design-height) {
+  @return calc(#{_num($px)} / #{_num($h)} * 100%);
+}
+
+// --- Typography units --------------------------------------------------------
+// px → lh (line height)
+@function to-lh($px, $lh: $base-line-height) {
+  @return calc(#{_num($px)} / #{_num($lh)} * 1lh);
+}
+
+// px → rlh (root line height)
+@function to-rlh($px, $lh: $base-line-height) {
+  @return calc(#{_num($px)} / #{_num($lh)} * 1rlh);
+}
+
+// --- Viewport units ----------------------------------------------------------
+// px → vmin
+@function to-vmin($px, $design-size: $design-width) {
+  @return calc(#{_num($px)} / #{_num($design-size)} * 100vmin);
+}
+
+// px → vmax
+@function to-vmax($px, $design-size: $design-height) {
+  @return calc(#{_num($px)} / #{_num($design-size)} * 100vmax);
+}
+
+// --- Responsive scaling ------------------------------------------------------
+// Returns responsive unit values between defined breakpoints.
+// Example: responsive-unit(16, 'rem')
+// -----------------------------------------------------------------------------
+@function responsive-unit(
+  $px,
+  $unit: 'rem',
+  $breakpoints: (mobile: $base-font, tablet: $base-font-tablet, desktop: $base-font-desktop)
+) {
+  $result: ();
+
+  @each $breakpoint, $base-size in $breakpoints {
+    @if $unit == 'rem' {
+      $result: map.merge($result, (#{$breakpoint}: to-rem($px, $base-size)));
+    } @else if $unit == 'em' {
+      $result: map.merge($result, (#{$breakpoint}: to-em($px, $base-size)));
+    } @else if $unit == 'percent' {
+      $result: map.merge($result, (#{$breakpoint}: to-percent-x($px)));
+    }
+  }
+
+  @return $result;
+}

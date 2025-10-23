@@ -1,0 +1,105 @@
+// -----------------------------------------------------------------------------
+// Media & Container query mixins
+// Unified helpers for viewport media queries and modern container queries.
+// Usage:
+//   @use '../mixins' as *;
+//   @include mq(sm) { … }           // min-width
+//   @include mq(null, md) { … }     // max-width
+//   @include mq(sm, md) { … }       // range (min..max)
+//   @include cq(md) { … }           // container min-width
+//   @include cq(md, null, app) { … } // container (named)
+// -----------------------------------------------------------------------------
+
+@use 'sass:map';
+@use 'sass:meta';
+@use '../../tokens/breakpoints' as *;
+
+// --- Internal ----------------------------------------------------------------
+// Resolve breakpoint name to value from $breakpoints map.
+// Accepts both string keys (e.g., 'lg') and raw lengths (e.g., 64em).
+// -----------------------------------------------------------------------------
+@function breakpoint($name) {
+  @return map.get($breakpoints, $name);
+}
+
+// --- Media query --------------------------------------------------------------
+// mq($from: null, $until: null)
+// Builds (min-width) / (max-width) / (min & max) queries.
+// Examples:
+//   @include mq(lg) { … }
+//   @include mq(null, xl) { … }
+//   @include mq(md, xl) { … }
+// -----------------------------------------------------------------------------
+@mixin mq($from: null, $until: null) {
+  $min: null;
+  $max: null;
+
+  @if $from {
+    $min: if(meta.type-of($from) == 'string', breakpoint($from), $from);
+  }
+
+  @if $until {
+    $max: if(meta.type-of($until) == 'string', breakpoint($until), $until);
+  }
+
+  @if $min and $max {
+    @media (min-width: #{$min}) and (max-width: #{$max}) {
+      @content;
+    }
+  } @else if $min {
+    @media (min-width: #{$min}) {
+      @content;
+    }
+  } @else if $max {
+    @media (max-width: #{$max}) {
+      @content;
+    }
+  } @else {
+    @content;
+  }
+}
+
+// --- Container query ----------------------------------------------------------
+// cq($from: null, $until: null, $name: null)
+// Container-size queries. If $name is provided, uses named container.
+// Examples:
+//   @include cq(md) { … }
+//   @include cq(sm, lg) { … }
+//   @include cq(md, null, app) { … }  // @container app (min-width: …)
+// -----------------------------------------------------------------------------
+@mixin cq($from: null, $until: null, $name: null) {
+  $min: null;
+  $max: null;
+
+  @if $from {
+    $min: if(meta.type-of($from) == 'string', breakpoint($from), $from);
+  }
+
+  @if $until {
+    $max: if(meta.type-of($until) == 'string', breakpoint($until), $until);
+  }
+
+  $cond: null;
+
+  @if $min and $max {
+    $cond: '(min-width: #{$min}) and (max-width: #{$max})';
+  } @else if $min {
+    $cond: '(min-width: #{$min})';
+  } @else if $max {
+    $cond: '(max-width: #{$max})';
+  }
+
+  @if $cond {
+    @if $name {
+      @container #{$name} (#{$cond}) {
+        @content;
+      }
+    } @else {
+      @container (#{$cond}) {
+        @content;
+      }
+    }
+  } @else {
+    @content;
+  }
+}

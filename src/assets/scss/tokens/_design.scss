@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// Design tokens
+// Core design metrics defining the base layout grid, viewport references,
+// and typographic rhythm across all components.
+// -----------------------------------------------------------------------------
+
+$design-width: 360px !default; // Base mobile design width
+$design-height: 640px !default; // Base mobile design height
+$design-width-large: 1440px !default; // Standard desktop width
+$design-width-ultra: 2880px !default; // Ultra-wide / 4K reference
+
+$base-font: 16px !default; // Root font size
+$base-line-height: 1.5 !default; // Default line height ratio
+
+$base-font-tablet: 16px !default; // Tablet base font size
+$base-font-desktop: 16px !default; // Desktop base font size

@@ -1,0 +1,46 @@
+// -----------------------------------------------------------------------------
+// Type helpers
+// Short alias functions for accessing typography tokens in the $type map.
+// Used in mixins and component-level overrides for concise readability.
+// -----------------------------------------------------------------------------
+
+@use 'sass:map';
+@use '../../tokens/type' as *;
+
+// --- General getter ----------------------------------------------------------
+// Returns a nested value from the $type map by a dynamic path.
+// Example: t(scale, sm) → 14px
+// -----------------------------------------------------------------------------
+@function t($path...) {
+  $cur: $type;
+
+  @each $k in $path {
+    $cur: map.get($cur, $k);
+  }
+
+  @return $cur;
+}
+
+// --- Specific helpers --------------------------------------------------------
+// Lightweight shorthand accessors for individual token groups.
+// Example: size(sm) → 14px, lh(extra-loose) → 1.7
+// -----------------------------------------------------------------------------
+@function size($k) {
+  @return t(scale, $k);
+}
+
+@function lh($k) {
+  @return t(line-height, $k);
+}
+
+@function weight($k) {
+  @return t(weight, $k);
+}
+
+@function track($k) {
+  @return t(letter-spacing, $k);
+}
+
+@function family($k) {
+  @return t(family, $k);
+}

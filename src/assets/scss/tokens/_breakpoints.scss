@@ -1,0 +1,24 @@
+// -----------------------------------------------------------------------------
+// Breakpoint tokens
+// Defines the responsive breakpoints used across the design system.
+// Based on a mobile-first strategy with pixel units for consistent behavior
+// across different device pixel ratios and zoom levels.
+// -----------------------------------------------------------------------------
+
+$breakpoints: (
+  sm: 375px,
+  // small mobile
+  md: 600px,
+  // tablet portrait
+  lg: 768px,
+  // tablet landscape
+  xl: 1024px,
+  // small desktop
+  xxl: 1280px,
+  // desktop
+  xxxl: 1440px,
+  // large desktop
+  fhd: 1920px,
+  // full HD desktop
+  ultra: 2880px, // ultra-wide / 4K
+) !default;
