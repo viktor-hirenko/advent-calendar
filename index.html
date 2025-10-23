@@ -10,48 +10,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&family=Roboto+Slab:wght@900&display=swap"
-      rel="stylesheet"
-    />
+    <!-- DNS prefetch fallback -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
 
-    <!-- Hero banner preload-->
+    <!-- Google Fonts - non-blocking load -->
     <link
       rel="preload"
-      as="image"
-      href="./src/assets/images/banners/default/advent-calendar-hero-ultra.webp"
-      media="(min-width: 2880px)"
-      fetchpriority="high"
+      as="style"
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&family=Roboto+Slab:wght@900&display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
     />
-    <link
-      rel="preload"
-      as="image"
-      href="./src/assets/images/banners/default/advent-calendar-hero-large.webp"
-      media="(min-width: 1440px) and (max-width: 2879px)"
-      fetchpriority="high"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="./src/assets/images/banners/default/advent-calendar-hero-desktop.webp"
-      media="(min-width: 1024px) and (max-width: 1439px)"
-      fetchpriority="high"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="./src/assets/images/banners/default/advent-calendar-hero-tablet.webp"
-      media="(min-width: 360px) and (max-width: 1023px)"
-      fetchpriority="high"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="./src/assets/images/banners/default/advent-calendar-hero-mobile.webp"
-      media="(max-width: 359px)"
-      fetchpriority="high"
-    />
+    <noscript>
+      <link
+        rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;600;700&family=Roboto+Slab:wght@900&display=swap"
+      />
+    </noscript>
   </head>
   <body>
     <div id="app"></div>

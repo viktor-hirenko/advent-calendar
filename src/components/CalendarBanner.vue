@@ -47,12 +47,17 @@
         :srcset="resolveImg(calendarData.images?.banner?.tablet || '')"
         type="image/webp"
       />
+      <source
+        media="(max-width: 359px)"
+        :srcset="resolveImg(calendarData.images?.banner?.mobile || '')"
+        type="image/webp"
+      />
       <img
         :src="resolveImg(calendarData.images?.banner?.mobile || '')"
         :alt="
           calendarData.images?.banner?.alt ? getLocalizedText(calendarData.images.banner.alt) : ''
         "
-        width="360"
+        width="640"
         height="320"
         decoding="async"
         fetchpriority="high"
