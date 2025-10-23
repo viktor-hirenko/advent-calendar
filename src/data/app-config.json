@@ -856,7 +856,7 @@
         }
       }
     },
-    "startDate": "2025-10-11",
+    "startDate": "2025-10-01",
     "endDate": "2025-10-31",
     "timeMode": "local",
     "alignByWeekday": true,
