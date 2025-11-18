@@ -72,7 +72,7 @@
       {
         "id": "task-1",
         "title": {
-          "en": "Task of the day",
+          "en": "iCombo",
           "de": "Aufgabe des Tages",
           "fr": "Tâche du jour",
           "it": "Compito del giorno",
@@ -80,7 +80,7 @@
           "pt": "Tarefa do dia"
         },
         "description": {
-          "en": "Make two bets from <strong>40 EUR</strong> and get a free bet of <strong>20 EUR</strong>",
+          "en": "Make a combo of 3 events with odds of 1.80+ each and get a 10% boost on your final odds.",
           "de": "Mache zwei Wetten ab <strong>40 EUR</strong> und erhalte einen kostenlosen Einsatz von <strong>20 EUR</strong>",
           "fr": "Faites deux paris à partir de <strong>40 EUR</strong> et obtenez un pari gratuit de <strong>20 EUR</strong>",
           "it": "Fai due scommesse da <strong>40 EUR</strong> e ottieni una scommessa gratuita di <strong>20 EUR</strong>",
@@ -88,7 +88,7 @@
           "pt": "Faça duas apostas a partir de <strong>40 EUR</strong> e ganhe uma aposta grátis de <strong>20 EUR</strong>"
         },
         "buttonText": {
-          "en": "Go to sport",
+          "en": "Make a combo",
           "de": "Zum Sport",
           "fr": "Aller au sport",
           "it": "Vai allo sport",
@@ -100,7 +100,7 @@
       {
         "id": "task-2",
         "title": {
-          "en": "Daily Bonus",
+          "en": "15 EUR Freebet",
           "de": "Täglicher Bonus",
           "fr": "Bonus quotidien",
           "it": "Bonus giornaliero",
@@ -108,7 +108,7 @@
           "pt": "Bônus diário"
         },
         "description": {
-          "en": "Claim your daily bonus and boost your balance!",
+          "en": "Place a bet of 30 EUR or more on events with odds of 1.80+ and get a 10 EUR Freebet",
           "de": "Holen Sie sich Ihren täglichen Bonus und steigern Sie Ihr Guthaben!",
           "fr": "Réclamez votre bonus quotidien et boostez votre solde !",
           "it": "Riscuoti il tuo bonus giornaliero e aumenta il tuo saldo!",
@@ -116,7 +116,7 @@
           "pt": "Reivindique seu bônus diário e aumente seu saldo!"
         },
         "buttonText": {
-          "en": "Claim Bonus",
+          "en": "Bet now",
           "de": "Bonus beanspruchen",
           "fr": "Réclamer le bonus",
           "it": "Riscuoti bonus",
@@ -128,7 +128,7 @@
       {
         "id": "task-3",
         "title": {
-          "en": "Free Spins",
+          "en": "Freebet Wednesday",
           "de": "Kostenlose Drehungen",
           "fr": "Tours gratuits",
           "it": "Giri gratuiti",
@@ -136,7 +136,7 @@
           "pt": "Rodadas grátis"
         },
         "description": {
-          "en": "Get 50 free spins on your favorite slot!",
+          "en": "Deposit on Wednesday and get up to a 15 EUR Freebet.",
           "de": "Erhalten Sie 50 kostenlose Drehungen an Ihrem Lieblings-Slot!",
           "fr": "Obtenez 50 tours gratuits sur votre machine à sous préférée !",
           "it": "Ottieni 50 giri gratuiti sulla tua slot preferita!",
@@ -144,7 +144,7 @@
           "pt": "Obtenha 50 rodadas grátis no seu caça-níqueis favorito!"
         },
         "buttonText": {
-          "en": "Get Free Spins",
+          "en": "Deposit",
           "de": "Kostenlose Drehungen erhalten",
           "fr": "Obtenir des tours gratuits",
           "it": "Ottieni giri gratuiti",
@@ -156,7 +156,7 @@
       {
         "id": "task-4",
         "title": {
-          "en": "Cashback Reward",
+          "en": "Triple Shot NBA",
           "de": "Cashback-Belohnung",
           "fr": "Récompense de cashback",
           "it": "Ricompensa cashback",
@@ -164,7 +164,7 @@
           "pt": "Recompensa de cashback"
         },
         "description": {
-          "en": "Receive 10% cashback on all your losses today!",
+          "en": "Place 3+ NBA games in one combo at 1.70+ odds and score a 10% boost on your total odds.",
           "de": "Erhalten Sie 10% Cashback auf alle Ihre Verluste heute!",
           "fr": "Recevez 10% de cashback sur toutes vos pertes aujourd'hui !",
           "it": "Ricevi il 10% di cashback su tutte le tue perdite oggi!",
@@ -172,7 +172,7 @@
           "pt": "Receba 10% de cashback em todas as suas perdas hoje!"
         },
         "buttonText": {
-          "en": "Claim Cashback",
+          "en": "Make a combo",
           "de": "Cashback beanspruchen",
           "fr": "Réclamer le cashback",
           "it": "Riscuoti cashback",
@@ -184,7 +184,7 @@
       {
         "id": "task-5",
         "title": {
-          "en": "VIP Upgrade",
+          "en": "Freebet Streak",
           "de": "VIP-Upgrade",
           "fr": "Mise à niveau VIP",
           "it": "Aggiornamento VIP",
@@ -192,7 +192,7 @@
           "pt": "Upgrade VIP"
         },
         "description": {
-          "en": "Unlock VIP status with exclusive benefits!",
+          "en": "Bet on any sport and get a 10 EUR Freebet after every 5th 30 EUR bet at odds of 1.50+. Up to 5 Freebets per player.",
           "de": "Schalten Sie den VIP-Status mit exklusiven Vorteilen frei!",
           "fr": "Débloquez le statut VIP avec des avantages exclusifs !",
           "it": "Sblocca lo status VIP con vantaggi esclusivi!",
@@ -200,7 +200,7 @@
           "pt": "Desbloqueie o status VIP com benefícios exclusivos!"
         },
         "buttonText": {
-          "en": "Become VIP",
+          "en": "Choose an event",
           "de": "VIP werden",
           "fr": "Devenir VIP",
           "it": "Diventa VIP",
@@ -212,7 +212,7 @@
       {
         "id": "task-6",
         "title": {
-          "en": "Mega Jackpot",
+          "en": "EPL Bonus",
           "de": "Mega-Jackpot",
           "fr": "Méga jackpot",
           "it": "Mega jackpot",
@@ -220,7 +220,7 @@
           "pt": "Mega jackpot"
         },
         "description": {
-          "en": "Try your luck with the progressive jackpot!",
+          "en": "Build a combo with 3+ EPL games at 1.70+ odds and enjoy a 10% boost on your total odds.",
           "de": "Versuchen Sie Ihr Glück mit dem progressiven Jackpot!",
           "fr": "Tentez votre chance avec le jackpot progressif !",
           "it": "Prova la fortuna con il jackpot progressivo!",
@@ -228,7 +228,7 @@
           "pt": "Teste sua sorte com o jackpot progressivo!"
         },
         "buttonText": {
-          "en": "Play Now",
+          "en": "Make a combo",
           "de": "Jetzt spielen",
           "fr": "Jouer maintenant",
           "it": "Gioca ora",
@@ -240,7 +240,7 @@
       {
         "id": "task-7",
         "title": {
-          "en": "Lucky Wheel",
+          "en": "Big Odds Shot",
           "de": "Glücksrad",
           "fr": "Roue de la fortune",
           "it": "Ruota della fortuna",
@@ -248,7 +248,7 @@
           "pt": "Roda da sorte"
         },
         "description": {
-          "en": "Spin the wheel and win amazing prizes!",
+          "en": "Place a 30 EUR+ bet on events with odds of 5.0+ and get a 15 EUR Freebet.",
           "de": "Drehen Sie das Rad und gewinnen Sie tolle Preise!",
           "fr": "Tournez la roue et gagnez des prix incroyables !",
           "it": "Gira la ruota e vinci premi fantastici!",
@@ -256,7 +256,7 @@
           "pt": "Gire a roda e ganhe prêmios incríveis!"
         },
         "buttonText": {
-          "en": "Spin Wheel",
+          "en": "Take a challenge",
           "de": "Rad drehen",
           "fr": "Tourner la roue",
           "it": "Gira la ruota",
@@ -268,7 +268,7 @@
       {
         "id": "task-8",
         "title": {
-          "en": "Tournament Entry",
+          "en": "iCombo",
           "de": "Turnier-Eintritt",
           "fr": "Entrée au tournoi",
           "it": "Ingresso al torneo",
@@ -276,7 +276,7 @@
           "pt": "Entrada no torneio"
         },
         "description": {
-          "en": "Join the weekly tournament and compete for prizes!",
+          "en": "Make a combo of 3 events with odds of 1.80+ each and get a 10% boost on your final odds.",
           "de": "Nehmen Sie am wöchentlichen Turnier teil und kämpfen Sie um Preise!",
           "fr": "Rejoignez le tournoi hebdomadaire et concourez pour des prix !",
           "it": "Partecipa al torneo settimanale e gareggia per i premi!",
@@ -284,7 +284,7 @@
           "pt": "Junte-se ao torneio semanal e dispute por prêmios!"
         },
         "buttonText": {
-          "en": "Join Tournament",
+          "en": "Make a combo",
           "de": "Turnier beitreten",
           "fr": "Rejoindre le tournoi",
           "it": "Unisciti al torneo",
@@ -296,7 +296,7 @@
       {
         "id": "task-9",
         "title": {
-          "en": "Double Rewards",
+          "en": "Eurocups Rush",
           "de": "Doppelte Belohnungen",
           "fr": "Récompenses doubles",
           "it": "Ricompense doppie",
@@ -304,7 +304,7 @@
           "pt": "Recompensas duplas"
         },
         "description": {
-          "en": "All your winnings are doubled today!",
+          "en": "Place 3 bets on Eurocups worth 25 EUR or more and get a 10 EUR Freebet for any sport. You can claim up to 3 Freebets.",
           "de": "Alle Ihre Gewinne werden heute verdoppelt!",
           "fr": "Tous vos gains sont doublés aujourd'hui !",
           "it": "Tutte le tue vincite sono raddoppiate oggi!",
@@ -312,7 +312,7 @@
           "pt": "Todos os seus ganhos são duplicados hoje!"
         },
         "buttonText": {
-          "en": "Start Playing",
+          "en": "Bet now",
           "de": "Spielen beginnen",
           "fr": "Commencer à jouer",
           "it": "Inizia a giocare",
@@ -324,7 +324,7 @@
       {
         "id": "task-10",
         "title": {
-          "en": "Mystery Box",
+          "en": "Freebet Wednesday",
           "de": "Geheimnisvolle Box",
           "fr": "Boîte mystère",
           "it": "Scatola misteriosa",
@@ -332,7 +332,7 @@
           "pt": "Caixa misteriosa"
         },
         "description": {
-          "en": "Open the mystery box and discover your surprise!",
+          "en": "Deposit on Wednesday and get up to a 15 EUR Freebet.",
           "de": "Öffnen Sie die geheimnisvolle Box und entdecken Sie Ihre Überraschung!",
           "fr": "Ouvrez la boîte mystère et découvrez votre surprise !",
           "it": "Apri la scatola misteriosa e scopri la tua sorpresa!",
@@ -340,7 +340,7 @@
           "pt": "Abra a caixa misteriosa e descubra sua surpresa!"
         },
         "buttonText": {
-          "en": "Open Box",
+          "en": "Deposit",
           "de": "Box öffnen",
           "fr": "Ouvrir la boîte",
           "it": "Apri scatola",
@@ -352,7 +352,7 @@
       {
         "id": "task-11",
         "title": {
-          "en": "Loyalty Points",
+          "en": "No-Risk Shot",
           "de": "Treuepunkte",
           "fr": "Points de fidélité",
           "it": "Punti fedeltà",
@@ -360,7 +360,7 @@
           "pt": "Pontos de fidelidade"
         },
         "description": {
-          "en": "Earn extra loyalty points for every bet!",
+          "en": "Place a 30 EUR+ bet on any event with odds of 1.80+ and get a 15 EUR no-risk Freebet.",
           "de": "Verdienen Sie zusätzliche Treuepunkte für jeden Einsatz!",
           "fr": "Gagnez des points de fidélité supplémentaires pour chaque pari !",
           "it": "Guadagna punti fedeltà extra per ogni scommessa!",
@@ -368,7 +368,7 @@
           "pt": "Ganhe pontos de fidelidade extras para cada aposta!"
         },
         "buttonText": {
-          "en": "Earn Points",
+          "en": "Bet now",
           "de": "Punkte verdienen",
           "fr": "Gagner des points",
           "it": "Guadagna punti",
@@ -380,7 +380,7 @@
       {
         "id": "task-12",
         "title": {
-          "en": "Weekend Special",
+          "en": "Ice Boost",
           "de": "Wochenend-Special",
           "fr": "Spécial week-end",
           "it": "Speciale weekend",
@@ -388,7 +388,7 @@
           "pt": "Especial de fim de semana"
         },
         "description": {
-          "en": "Special weekend bonuses and promotions!",
+          "en": "Place three 20 EUR bets on Hockey events with odds of 1.60+ and get a 10 EUR Freebet.",
           "de": "Spezielle Wochenend-Boni und Aktionen!",
           "fr": "Bonus et promotions spéciaux du week-end !",
           "it": "Bonus e promozioni speciali del weekend!",
@@ -396,7 +396,7 @@
           "pt": "Bônus e promoções especiais de fim de semana!"
         },
         "buttonText": {
-          "en": "Get Special",
+          "en": "Bet now",
           "de": "Special erhalten",
           "fr": "Obtenir le spécial",
           "it": "Ottieni speciale",
@@ -408,7 +408,7 @@
       {
         "id": "task-13",
         "title": {
-          "en": "Live Dealer",
+          "en": "Bet & Repeat",
           "de": "Live-Dealer",
           "fr": "Croupier en direct",
           "it": "Dealer dal vivo",
@@ -416,7 +416,7 @@
           "pt": "Dealer ao vivo"
         },
         "description": {
-          "en": "Play with real dealers in live casino games!",
+          "en": "Get a 5 EUR Freebet after your 3rd, 5th, 7th, 9th, and 11th bet of the day worth 20 EUR or more. Minimum odds: 1.70.",
           "de": "Spielen Sie mit echten Dealern in Live-Casino-Spielen!",
           "fr": "Jouez avec de vrais croupiers dans les jeux de casino en direct !",
           "it": "Gioca con veri dealer nei giochi di casino dal vivo!",
@@ -424,7 +424,7 @@
           "pt": "Jogue com dealers reais em jogos de casino ao vivo!"
         },
         "buttonText": {
-          "en": "Play Live",
+          "en": "Choose an event",
           "de": "Live spielen",
           "fr": "Jouer en direct",
           "it": "Gioca dal vivo",
@@ -436,7 +436,7 @@
       {
         "id": "task-14",
         "title": {
-          "en": "Mobile Bonus",
+          "en": "Live Boost",
           "de": "Mobile-Bonus",
           "fr": "Bonus mobile",
           "it": "Bonus mobile",
@@ -444,7 +444,7 @@
           "pt": "Bônus móvel"
         },
         "description": {
-          "en": "Extra bonus for playing on mobile devices!",
+          "en": "Place 3 live bets worth 25 EUR or more at odds of 1.60+ and get a 10 EUR Freebet.",
           "de": "Extra-Bonus für das Spielen auf mobilen Geräten!",
           "fr": "Bonus supplémentaire pour jouer sur appareils mobiles !",
           "it": "Bonus extra per giocare su dispositivi mobili!",
@@ -452,7 +452,7 @@
           "pt": "Bônus extra por jogar em dispositivos móveis!"
         },
         "buttonText": {
-          "en": "Get Mobile Bonus",
+          "en": "Bet now",
           "de": "Mobile-Bonus erhalten",
           "fr": "Obtenir le bonus mobile",
           "it": "Ottieni bonus mobile",
@@ -464,7 +464,7 @@
       {
         "id": "task-15",
         "title": {
-          "en": "Referral Program",
+          "en": "BB: brutal bet",
           "de": "Empfehlungsprogramm",
           "fr": "Programme de parrainage",
           "it": "Programma di referral",
@@ -472,7 +472,7 @@
           "pt": "Programa de indicação"
         },
         "description": {
-          "en": "Invite friends and earn rewards together!",
+          "en": "Place a 100 EUR+ bet at odds of 1.80+ and snatch a 15 EUR Freebet.",
           "de": "Laden Sie Freunde ein und verdienen Sie gemeinsam Belohnungen!",
           "fr": "Invitez des amis et gagnez des récompenses ensemble !",
           "it": "Invita gli amici e guadagna ricompense insieme!",
@@ -480,7 +480,7 @@
           "pt": "Convide amigos e ganhe recompensas juntos!"
         },
         "buttonText": {
-          "en": "Invite Friends",
+          "en": "Bet brutally",
           "de": "Freunde einladen",
           "fr": "Inviter des amis",
           "it": "Invita amici",
@@ -492,7 +492,7 @@
       {
         "id": "task-16",
         "title": {
-          "en": "Halloween Special",
+          "en": "15 EUR Freebet",
           "de": "Halloween-Special",
           "fr": "Spécial Halloween",
           "it": "Speciale Halloween",
@@ -500,7 +500,7 @@
           "pt": "Especial de Halloween"
         },
         "description": {
-          "en": "Spooky Halloween bonuses and scary prizes!",
+          "en": "Place a bet of 30 EUR or more on events with odds of 1.80+ and get a 10 EUR Freebet",
           "de": "Gruselige Halloween-Boni und gruselige Preise!",
           "fr": "Bonus d'Halloween effrayants et prix terrifiants !",
           "it": "Bonus di Halloween spaventosi e premi terrificanti!",
@@ -508,7 +508,7 @@
           "pt": "Bônus assustadores de Halloween e prêmios terríveis!"
         },
         "buttonText": {
-          "en": "Trick or Treat",
+          "en": "Bet now",
           "de": "Süßes oder Saures",
           "fr": "Des bonbons ou un sort",
           "it": "Dolcetto o scherzetto",
@@ -520,7 +520,7 @@
       {
         "id": "task-17",
         "title": {
-          "en": "Grand Finale",
+          "en": "Freebet Wednesday",
           "de": "Großes Finale",
           "fr": "Grande finale",
           "it": "Gran finale",
@@ -528,7 +528,7 @@
           "pt": "Grande final"
         },
         "description": {
-          "en": "The ultimate reward awaits you on the final day!",
+          "en": "Deposit on Wednesday and get up to a 15 EUR Freebet.",
           "de": "Die ultimative Belohnung erwartet Sie am letzten Tag!",
           "fr": "La récompense ultime vous attend le dernier jour !",
           "it": "La ricompensa finale ti aspetta nell'ultimo giorno!",
@@ -536,7 +536,7 @@
           "pt": "A recompensa definitiva te espera no último dia!"
         },
         "buttonText": {
-          "en": "Claim Final Reward",
+          "en": "Deposit",
           "de": "Finale Belohnung beanspruchen",
           "fr": "Réclamer la récompense finale",
           "it": "Riscuoti ricompensa finale",
@@ -548,7 +548,7 @@
       {
         "id": "task-18",
         "title": {
-          "en": "Weekend Special",
+          "en": "iCombo",
           "de": "Wochenend-Special",
           "fr": "Spécial week-end",
           "it": "Speciale weekend",
@@ -556,7 +556,7 @@
           "pt": "Especial de fim de semana"
         },
         "description": {
-          "en": "Special weekend bonuses and promotions!",
+          "en": "Make a combo of 3 events with odds of 1.80+ each and get a 10% boost on your final odds.",
           "de": "Spezielle Wochenend-Boni und Aktionen!",
           "fr": "Bonus et promotions spéciaux du week-end !",
           "it": "Bonus e promozioni speciali del weekend!",
@@ -564,7 +564,7 @@
           "pt": "Bônus e promoções especiais de fim de semana!"
         },
         "buttonText": {
-          "en": "Get Special",
+          "en": "Make a combo",
           "de": "Special erhalten",
           "fr": "Obtenir le spécial",
           "it": "Ottieni speciale",
@@ -576,7 +576,7 @@
       {
         "id": "task-19",
         "title": {
-          "en": "Live Dealer",
+          "en": "Big Odds Shot",
           "de": "Live-Dealer",
           "fr": "Croupier en direct",
           "it": "Dealer dal vivo",
@@ -584,7 +584,7 @@
           "pt": "Dealer ao vivo"
         },
         "description": {
-          "en": "Play with real dealers in live casino games!",
+          "en": "Place a 30 EUR+ bet on events with odds of 5.0+ and get a 15 EUR Freebet.",
           "de": "Spielen Sie mit echten Dealern in Live-Casino-Spielen!",
           "fr": "Jouez avec de vrais croupiers dans les jeux de casino en direct !",
           "it": "Gioca con veri dealer nei giochi di casino dal vivo!",
@@ -592,7 +592,7 @@
           "pt": "Jogue com dealers reais em jogos de casino ao vivo!"
         },
         "buttonText": {
-          "en": "Play Live",
+          "en": "Take a challenge",
           "de": "Live spielen",
           "fr": "Jouer en direct",
           "it": "Gioca dal vivo",
@@ -604,7 +604,7 @@
       {
         "id": "task-20",
         "title": {
-          "en": "Mobile Bonus",
+          "en": "EPL Bonus",
           "de": "Mobile-Bonus",
           "fr": "Bonus mobile",
           "it": "Bonus mobile",
@@ -612,7 +612,7 @@
           "pt": "Bônus móvel"
         },
         "description": {
-          "en": "Extra bonus for playing on mobile devices!",
+          "en": "Build a combo with 3+ EPL games at 1.70+ odds and enjoy a 10% boost on your total odds.",
           "de": "Extra-Bonus für das Spielen auf mobilen Geräten!",
           "fr": "Bonus supplémentaire pour jouer sur appareils mobiles !",
           "it": "Bonus extra per giocare su dispositivi mobili!",
@@ -620,7 +620,7 @@
           "pt": "Bônus extra por jogar em dispositivos móveis!"
         },
         "buttonText": {
-          "en": "Get Mobile Bonus",
+          "en": "Make a combo",
           "de": "Mobile-Bonus erhalten",
           "fr": "Obtenir le bonus mobile",
           "it": "Ottieni bonus mobile",
@@ -632,7 +632,7 @@
       {
         "id": "task-21",
         "title": {
-          "en": "Referral Program",
+          "en": "Triple Shot NBA",
           "de": "Empfehlungsprogramm",
           "fr": "Programme de parrainage",
           "it": "Programma di referral",
@@ -640,7 +640,7 @@
           "pt": "Programa de indicação"
         },
         "description": {
-          "en": "Invite friends and earn rewards together!",
+          "en": "Place 3+ NBA games in one combo at 1.70+ odds and score a 10% boost on your total odds.",
           "de": "Laden Sie Freunde ein und verdienen Sie gemeinsam Belohnungen!",
           "fr": "Invitez des amis et gagnez des récompenses ensemble !",
           "it": "Invita gli amici e guadagna ricompense insieme!",
@@ -648,7 +648,7 @@
           "pt": "Convide amigos e ganhe recompensas juntos!"
         },
         "buttonText": {
-          "en": "Invite Friends",
+          "en": "Make a combo",
           "de": "Freunde einladen",
           "fr": "Inviter des amis",
           "it": "Invita amici",
@@ -660,7 +660,7 @@
       {
         "id": "task-22",
         "title": {
-          "en": "Halloween Special",
+          "en": "Ice Boost",
           "de": "Halloween-Special",
           "fr": "Spécial Halloween",
           "it": "Speciale Halloween",
@@ -668,7 +668,7 @@
           "pt": "Especial de Halloween"
         },
         "description": {
-          "en": "Spooky Halloween bonuses and scary prizes!",
+          "en": "Place three 20 EUR bets on Hockey events with odds of 1.60+ and get a 10 EUR Freebet.",
           "de": "Gruselige Halloween-Boni und gruselige Preise!",
           "fr": "Bonus d'Halloween effrayants et prix terrifiants !",
           "it": "Bonus di Halloween spaventosi e premi terrificanti!",
@@ -676,7 +676,7 @@
           "pt": "Bônus assustadores de Halloween e prêmios terríveis!"
         },
         "buttonText": {
-          "en": "Trick or Treat",
+          "en": "Bet now",
           "de": "Süßes oder Saures",
           "fr": "Des bonbons ou un sort",
           "it": "Dolcetto o scherzetto",
@@ -688,7 +688,7 @@
       {
         "id": "task-23",
         "title": {
-          "en": "Grand Finale",
+          "en": "Live Boost",
           "de": "Großes Finale",
           "fr": "Grande finale",
           "it": "Gran finale",
@@ -696,7 +696,7 @@
           "pt": "Grande final"
         },
         "description": {
-          "en": "The ultimate reward awaits you on the final day!",
+          "en": "Place 3 live bets worth 25 EUR or more at odds of 1.60+ and get a 10 EUR Freebet.",
           "de": "Die ultimative Belohnung erwartet Sie am letzten Tag!",
           "fr": "La récompense ultime vous attend le dernier jour !",
           "it": "La ricompensa finale ti aspetta nell'ultimo giorno!",
@@ -704,7 +704,7 @@
           "pt": "A recompensa definitiva te espera no último dia!"
         },
         "buttonText": {
-          "en": "Claim Final Reward",
+          "en": "Bet now",
           "de": "Finale Belohnung beanspruchen",
           "fr": "Réclamer la récompense finale",
           "it": "Riscuoti ricompensa finale",
@@ -716,7 +716,7 @@
       {
         "id": "task-24",
         "title": {
-          "en": "Mega Bonus",
+          "en": "Mystery bonus",
           "de": "Mega-Bonus",
           "fr": "Méga bonus",
           "it": "Mega bonus",
@@ -724,7 +724,7 @@
           "pt": "Mega bônus"
         },
         "description": {
-          "en": "Get the biggest bonus of the season!",
+          "en": "Enter promo code bonus2026 in the Promotions section and get a secret no-deposit bonus.",
           "de": "Erhalten Sie den größten Bonus der Saison!",
           "fr": "Obtenez le plus gros bonus de la saison !",
           "it": "Ottieni il bonus più grande della stagione!",
@@ -732,7 +732,7 @@
           "pt": "Obtenha o maior bônus da temporada!"
         },
         "buttonText": {
-          "en": "Claim Mega Bonus",
+          "en": "To the Promotion",
           "de": "Mega-Bonus beanspruchen",
           "fr": "Réclamer le méga bonus",
           "it": "Riscuoti mega bonus",
@@ -856,8 +856,8 @@
         }
       }
     },
-    "startDate": "2025-10-01",
-    "endDate": "2025-10-31",
+    "startDate": "2025-12-01",
+    "endDate": "2025-12-24",
     "timeMode": "local",
     "alignByWeekday": true,
     "firstDayOfWeek": "auto",
