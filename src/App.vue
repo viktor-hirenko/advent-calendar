@@ -3,7 +3,7 @@
    * Main application component.
    * Renders calendar banner and content.
    */
-  import CalendarBanner from './components/CalendarBanner.vue'
+  import CalendarBannerClassic from './components/CalendarBannerClassic.vue'
   import CalendarContent from './components/CalendarContent.vue'
   import { useAppConfig } from '@/composables/useAppConfig'
 
@@ -12,7 +12,7 @@
 </script>
 
 <template>
-  <CalendarBanner v-if="config.ui.bannerSection.visible" />
+  <CalendarBannerClassic v-if="config.ui.bannerSection.visible" />
   <main v-if="config.enabled" class="main">
     <CalendarContent />
   </main>
