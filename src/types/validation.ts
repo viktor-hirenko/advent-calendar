@@ -8,14 +8,16 @@ import { z, ZodError } from 'zod'
 /**
  * Schema for supported languages.
  */
-export const SupportedLanguageSchema = z.enum(['en', 'de', 'fr', 'it', 'es', 'pt'])
+export const SupportedLanguageSchema = z.enum(['en', 'de', 'fr', 'it'])
 
 /**
  * Schema for localized text.
  */
-export const LocalizedTextSchema = z.object({
-  en: z.string().min(1, 'English text is required'),
-}).passthrough() // Allow other language properties
+export const LocalizedTextSchema = z
+  .object({
+    en: z.string().min(1, 'English text is required'),
+  })
+  .passthrough() // Allow other language properties
 
 /**
  * Schema for calendar task.
@@ -43,26 +45,34 @@ export const DisabledTaskSchema = z.object({
 /**
  * Schema for calendar links.
  */
-export const CalendarLinksSchema = z.object({
-  primary: z.union([z.string().url(), LocalizedTextSchema]).optional(),
-}).optional()
+export const CalendarLinksSchema = z
+  .object({
+    primary: z.union([z.string().url(), LocalizedTextSchema]).optional(),
+  })
+  .optional()
 
 /**
  * Schema for calendar images.
  */
-export const CalendarImagesSchema = z.object({
-  banner: z.object({
-    mobile: z.string().url().optional(),
-    tablet: z.string().url().optional(),
-    desktop: z.string().url().optional(),
-    large: z.string().url().optional(),
-    ultra: z.string().url().optional(),
-  }).optional(),
-  decoration: z.object({
-    ultra: z.string().url().optional(),
-  }).optional(),
-  disabledTaskIcon: z.string().optional(),
-}).optional()
+export const CalendarImagesSchema = z
+  .object({
+    banner: z
+      .object({
+        mobile: z.string().url().optional(),
+        tablet: z.string().url().optional(),
+        desktop: z.string().url().optional(),
+        large: z.string().url().optional(),
+        ultra: z.string().url().optional(),
+      })
+      .optional(),
+    decoration: z
+      .object({
+        ultra: z.string().url().optional(),
+      })
+      .optional(),
+    disabledTaskIcon: z.string().optional(),
+  })
+  .optional()
 
 /**
  * Schema for task status.
@@ -92,20 +102,21 @@ export const CalendarDataSchema = z.object({
 /**
  * Schema for calendar configuration.
  */
-export const CalendarConfigSchema = z.object({
-  startDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Invalid date format. Use YYYY-MM-DD'),
-  endDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Invalid date format. Use YYYY-MM-DD'),
-  timeMode: z.enum(['local', 'utc']).optional(),
-  alignByWeekday: z.boolean().optional(),
-  defaultLanguage: SupportedLanguageSchema,
-  supportedLanguages: z.array(SupportedLanguageSchema).min(1, 'At least one supported language is required'),
-}).refine(
-  (config) => new Date(config.startDate) <= new Date(config.endDate),
-  {
+export const CalendarConfigSchema = z
+  .object({
+    startDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Invalid date format. Use YYYY-MM-DD'),
+    endDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Invalid date format. Use YYYY-MM-DD'),
+    timeMode: z.enum(['local', 'utc']).optional(),
+    alignByWeekday: z.boolean().optional(),
+    defaultLanguage: SupportedLanguageSchema,
+    supportedLanguages: z
+      .array(SupportedLanguageSchema)
+      .min(1, 'At least one supported language is required'),
+  })
+  .refine((config) => new Date(config.startDate) <= new Date(config.endDate), {
     message: 'Start date must be before or equal to end date',
     path: ['startDate'],
-  }
-)
+  })
 
 /**
  * Schema for the complete calendar configuration structure.
@@ -118,11 +129,16 @@ export const CalendarDataStructureSchema = z.object({
 /**
  * Schema for query parameters.
  */
-export const QueryParamsSchema = z.object({
-  language: SupportedLanguageSchema.optional(),
-  testDate: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'Invalid date format. Use YYYY-MM-DD').optional(),
-  debug: z.boolean().optional(),
-}).partial()
+export const QueryParamsSchema = z
+  .object({
+    language: SupportedLanguageSchema.optional(),
+    testDate: z
+      .string()
+      .regex(/^\d{4}-\d{2}-\d{2}$/, 'Invalid date format. Use YYYY-MM-DD')
+      .optional(),
+    debug: z.boolean().optional(),
+  })
+  .partial()
 
 /**
  * Runtime validation function with proper error handling.
@@ -132,9 +148,9 @@ export function validateCalendarData(data: unknown): z.infer<typeof CalendarData
     return CalendarDataStructureSchema.parse(data)
   } catch (error) {
     if (error instanceof ZodError) {
-      const formattedErrors = error.issues.map(
-        (err) => `${err.path.join('.')}: ${err.message}`
-      ).join(', ')
+      const formattedErrors = error.issues
+        .map((err) => `${err.path.join('.')}: ${err.message}`)
+        .join(', ')
       throw new Error(`Calendar data validation failed: ${formattedErrors}`)
     }
     throw error
@@ -149,9 +165,9 @@ export function validateQueryParams(params: unknown): z.infer<typeof QueryParams
     return QueryParamsSchema.parse(params)
   } catch (error) {
     if (error instanceof ZodError) {
-      const formattedErrors = error.issues.map(
-        (err) => `${err.path.join('.')}: ${err.message}`
-      ).join(', ')
+      const formattedErrors = error.issues
+        .map((err) => `${err.path.join('.')}: ${err.message}`)
+        .join(', ')
       throw new Error(`Query parameters validation failed: ${formattedErrors}`)
     }
     throw error

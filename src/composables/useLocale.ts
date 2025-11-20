@@ -55,7 +55,8 @@ export function useLocale(userLanguageRef?: Ref<string | undefined>): UseLocaleR
    * @returns True if language is supported, false otherwise
    */
   function isValidLanguage(lang: string): lang is SupportedLanguage {
-    return ['en', 'de', 'fr', 'it', 'es', 'pt'].includes(lang)
+    // return ['en', 'de', 'fr', 'it', 'es', 'pt'].includes(lang)
+    return ['en', 'de', 'fr', 'it'].includes(lang)
   }
 
   // Initialize language
