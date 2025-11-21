@@ -4,26 +4,20 @@
       "en": "Sports Calendar",
       "de": "Sport-Kalender",
       "fr": "Calendrier Sportif",
-      "it": "Calendario Sportivo",
-      "es": "Calendario Deportivo",
-      "pt": "Calendário Esportivo"
+      "it": "Calendario Sportivo"
     },
     "description": {
       "en": "Tasks will be updated every day at 00:00 (UTC)",
       "de": "Die Aufgaben werden jeden Tag um 00:00 (UTC) aktualisiert.",
       "fr": "Les tâches seront mises à jour chaque jour à 00:00 (UTC).",
-      "it": "Le attività verranno aggiornate ogni giorno alle 00:00 (UTC).",
-      "es": "Las tareas se actualizarán todos los días a las 00:00 (UTC).",
-      "pt": "As tarefas serão atualizadas todos os dias às 00h00 (UTC)."
+      "it": "Le attività verranno aggiornate ogni giorno alle 00:00 (UTC)."
     },
     "labels": {
       "promotion": {
         "en": "Promotion",
         "de": "Aktion",
         "fr": "Promotion",
-        "it": "Promozione",
-        "es": "Promoción",
-        "pt": "Promoção"
+        "it": "Promozione"
       }
     },
     "links": {
@@ -40,9 +34,7 @@
           "en": "3D illustration of a sports calendar with football, basketball and tennis balls",
           "de": "3D-Illustration eines Sportkalenders mit Fußball-, Basketball- und Tennisbällen",
           "fr": "Illustration 3D d’un calendrier sportif avec ballon de football, de basket et de tennis",
-          "it": "Illustrazione 3D di un calendario sportivo con pallone da calcio, basket e tennis",
-          "es": "Ilustración 3D de un calendario deportivo con balones de fútbol, baloncesto y tenis",
-          "pt": "Ilustração 3D de um calendário esportivo com bolas de futebol, basquete e tênis"
+          "it": "Illustrazione 3D di un calendario sportivo con pallone da calcio, basket e tennis"
         }
       },
       "decoration": {
@@ -55,17 +47,13 @@
         "en": "See you on",
         "de": "Bis zum",
         "fr": "À bientôt le",
-        "it": "Ci vediamo il",
-        "es": "Nos vemos el",
-        "pt": "Vejo você em"
+        "it": "Ci vediamo il"
       },
       "buttonText": {
         "en": "Return to Today's Task",
         "de": "Zurück zur heutigen Aufgabe",
         "fr": "Retour à la tâche d'aujourd'hui",
-        "it": "Torna al compito di oggi",
-        "es": "Volver a la tarea de hoy",
-        "pt": "Voltar à tarefa de hoje"
+        "it": "Torna al compito di oggi"
       }
     },
     "tasks": [
@@ -75,25 +63,19 @@
           "en": "iCombo",
           "de": "iCombo",
           "fr": "iCombo",
-          "it": "iCombo",
-          "es": "Tarea del día",
-          "pt": "Tarefa do dia"
+          "it": "iCombo"
         },
         "description": {
           "en": "Make a combo of 3 events with odds of 1.80+ each and get a 10% boost on your final odds.",
           "de": "Kombiniere 3 Ereignisse mit Quoten ab 1.80 und erhalte einen 10 % Boost auf deine Gesamtquote.",
           "fr": "Fais une combo de 3 événements avec des cotes de 1.80+ chacune et obtiens un boost de 10 % sur tes cotes finales.",
-          "it": "Crea una combo di 3 eventi con quote di 1.80+ ciascuno e ottieni un boost del 10% sulle tue quote finali.",
-          "es": "Haz dos apuestas desde <strong>40 EUR</strong> y obtén una apuesta gratuita de <strong>20 EUR</strong>",
-          "pt": "Faça duas apostas a partir de <strong>40 EUR</strong> e ganhe uma aposta grátis de <strong>20 EUR</strong>"
+          "it": "Crea una combo di 3 eventi con quote di 1.80+ ciascuno e ottieni un boost del 10% sulle tue quote finali."
         },
         "buttonText": {
           "en": "Make a combo",
           "de": "Mache eine Kombi",
           "fr": "Fais une combo",
-          "it": "Crea una combo",
-          "es": "Ir al deporte",
-          "pt": "Ir para o esporte"
+          "it": "Crea una combo"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -103,25 +85,19 @@
           "en": "15 EUR Freebet",
           "de": "15 EUR Freebet",
           "fr": "Freebet de 15 EUR",
-          "it": "15 EUR Freebet",
-          "es": "Bono diario",
-          "pt": "Bônus diário"
+          "it": "15 EUR Freebet"
         },
         "description": {
           "en": "Place a bet of 30 EUR or more on events with odds of 1.80+ and get a 10 EUR Freebet",
           "de": "Platziere eine Wette von 30 EUR oder mehr auf Ereignisse mit Quoten ab 1.80 und erhalte eine 10 EUR Freebet.",
           "fr": "Place un pari de 30 EUR ou plus sur des événements avec des cotes de 1.80+ et reçois une Freebet de 10 EUR.",
-          "it": "Piazza una Scommessa da 30 EUR o più su eventi con quote di 1.80+ e ricevi una Freebet da 10 EUR.",
-          "es": "¡Reclama tu bono diario y aumenta tu saldo!",
-          "pt": "Reivindique seu bônus diário e aumente seu saldo!"
+          "it": "Piazza una Scommessa da 30 EUR o più su eventi con quote di 1.80+ e ricevi una Freebet da 10 EUR."
         },
         "buttonText": {
           "en": "Bet now",
           "de": "Jetzt wetten",
           "fr": "Parie maintenant",
-          "it": "Scommetti ora",
-          "es": "Reclamar bono",
-          "pt": "Reivindicar bônus"
+          "it": "Scommetti ora"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -131,25 +107,19 @@
           "en": "Freebet Wednesday",
           "de": "Freebet Mittwoch",
           "fr": "Mercredi Freebet",
-          "it": "Mercoledì Freebet",
-          "es": "Giros gratis",
-          "pt": "Rodadas grátis"
+          "it": "Mercoledì Freebet"
         },
         "description": {
           "en": "Deposit on Wednesday and get up to a 15 EUR Freebet.",
           "de": "Tätige eine Einzahlung am Mittwoch und erhalte bis zu 15 EUR Freebet.",
           "fr": "Fais un dépôt le mercredi et obtiens jusqu’à une Freebet de 15 EUR.",
-          "it": "Effettua un Deposito di mercoledì e ottieni fino a 15 EUR in Freebet.",
-          "es": "¡Obtén 50 giros gratis en tu tragamonedas favorita!",
-          "pt": "Obtenha 50 rodadas grátis no seu caça-níqueis favorito!"
+          "it": "Effettua un Deposito di mercoledì e ottieni fino a 15 EUR in Freebet."
         },
         "buttonText": {
           "en": "Deposit",
           "de": "Einzahlung",
           "fr": "Dépose",
-          "it": "Deposita",
-          "es": "Obtener giros gratis",
-          "pt": "Obter rodadas grátis"
+          "it": "Deposita"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -159,25 +129,19 @@
           "en": "Triple Shot NBA",
           "de": "Dreifach-Schuss NBA",
           "fr": "Triple Tir NBA",
-          "it": "Triplo Tiro NBA",
-          "es": "Recompensa de cashback",
-          "pt": "Recompensa de cashback"
+          "it": "Triplo Tiro NBA"
         },
         "description": {
           "en": "Place 3+ NBA games in one combo at 1.70+ odds and score a 10% boost on your total odds.",
           "de": "Kombiniere 3+ NBA-Spiele in einer Kombiwette mit Quoten ab 1.70 und sichere dir einen 10 % Boost auf deine Gesamtquote.",
           "fr": "Place 3+ matchs NBA dans une combo à 1.70+ de cote et profite d’un boost de 10 % sur tes cotes totales.",
-          "it": "Inserisci 3+ partite NBA in una combo con quote di 1.70+ e ottieni un boost del 10% sulle tue quote totali.",
-          "es": "¡Recibe 10% de cashback en todas tus pérdidas de hoy!",
-          "pt": "Receba 10% de cashback em todas as suas perdas hoje!"
+          "it": "Inserisci 3+ partite NBA in una combo con quote di 1.70+ e ottieni un boost del 10% sulle tue quote totali."
         },
         "buttonText": {
           "en": "Make a combo",
           "de": "Mache eine Kombi",
           "fr": "Fais une combo",
-          "it": "Crea una combo",
-          "es": "Reclamar cashback",
-          "pt": "Reivindicar cashback"
+          "it": "Crea una combo"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -187,25 +151,19 @@
           "en": "Freebet Streak",
           "de": "Freebet Serie",
           "fr": "Série de Freebets",
-          "it": "Serie Freebet",
-          "es": "Actualización VIP",
-          "pt": "Upgrade VIP"
+          "it": "Serie Freebet"
         },
         "description": {
           "en": "Bet on any sport and get a 10 EUR Freebet after every 5th 30 EUR bet at odds of 1.50+. Up to 5 Freebets per player.",
           "de": "Setze auf eine beliebige Sportart und erhalte eine 10 EUR Freebet nach jeder 5. Wette à 30 EUR mit Quoten ab 1.50. Bis zu 5 Freebets pro Spieler.",
           "fr": "Parie sur n’importe quel sport et reçois une Freebet de 10 EUR après chaque 5ᵉ pari de 30 EUR à des cotes de 1.50+. Jusqu’à 5 Freebets par joueur.",
-          "it": "Scommetti su qualsiasi sport e ricevi una Freebet da 10 EUR dopo ogni quinta Scommessa da 30 EUR con quote di 1.50+. Fino a 5 Freebet per giocatore.",
-          "es": "¡Desbloquea el estatus VIP con beneficios exclusivos!",
-          "pt": "Desbloqueie o status VIP com benefícios exclusivos!"
+          "it": "Scommetti su qualsiasi sport e ricevi una Freebet da 10 EUR dopo ogni quinta Scommessa da 30 EUR con quote di 1.50+. Fino a 5 Freebet per giocatore."
         },
         "buttonText": {
           "en": "Choose an event",
           "de": "Event auswählen",
           "fr": "Choisis un événement",
-          "it": "Scegli un evento",
-          "es": "Convertirse en VIP",
-          "pt": "Tornar-se VIP"
+          "it": "Scegli un evento"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -215,25 +173,19 @@
           "en": "EPL Bonus",
           "de": "EPL Bonus",
           "fr": "Bonus EPL",
-          "it": "Bonus EPL",
-          "es": "Mega jackpot",
-          "pt": "Mega jackpot"
+          "it": "Bonus EPL"
         },
         "description": {
           "en": "Build a combo with 3+ EPL games at 1.70+ odds and enjoy a 10% boost on your total odds.",
           "de": "Erstelle eine Kombi mit 3+ EPL-Spielen bei Quoten ab 1.70 und genieße einen 10 % Boost auf deine Gesamtquote.",
           "fr": "Construis une combo avec 3+ matchs EPL à 1.70+ de cote et profite d’un boost de 10 % sur tes cotes totales.",
-          "it": "Crea una combo con 3+ partite EPL a quote di 1.70+ e goditi un boost del 10% sulle tue quote totali.",
-          "es": "¡Prueba tu suerte con el jackpot progresivo!",
-          "pt": "Teste sua sorte com o jackpot progressivo!"
+          "it": "Crea una combo con 3+ partite EPL a quote di 1.70+ e goditi un boost del 10% sulle tue quote totali."
         },
         "buttonText": {
           "en": "Make a combo",
           "de": "Mache eine Kombi",
           "fr": "Fais une combo",
-          "it": "Crea una combo",
-          "es": "Jugar ahora",
-          "pt": "Jogar agora"
+          "it": "Crea una combo"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -243,25 +195,19 @@
           "en": "Big Odds Shot",
           "de": "Schuss mit hohen Quoten",
           "fr": "Coup à Grosse Cote",
-          "it": "Colpo a quota alta",
-          "es": "Rueda de la fortuna",
-          "pt": "Roda da sorte"
+          "it": "Colpo a quota alta"
         },
         "description": {
           "en": "Place a 30 EUR+ bet on events with odds of 5.0+ and get a 15 EUR Freebet.",
           "de": "Platziere eine Wette von 30 EUR oder mehr auf Ereignisse mit Quoten ab 5.0 und erhalte eine 15 EUR Freebet.",
           "fr": "Place un pari de 30 EUR+ sur des événements avec des cotes de 5.0+ et obtiens une Freebet de 15 EUR.",
-          "it": "Piazza una Scommessa da 30 EUR+ su eventi con quote di 5.0+ e ricevi una Freebet da 15 EUR.",
-          "es": "¡Gira la rueda y gana premios increíbles!",
-          "pt": "Gire a roda e ganhe prêmios incríveis!"
+          "it": "Piazza una Scommessa da 30 EUR+ su eventi con quote di 5.0+ e ricevi una Freebet da 15 EUR."
         },
         "buttonText": {
           "en": "Take a challenge",
           "de": "Nimm die Herausforderung an",
           "fr": "Relève le défi",
-          "it": "Accetta la sfida",
-          "es": "Girar rueda",
-          "pt": "Girar roda"
+          "it": "Accetta la sfida"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -271,25 +217,19 @@
           "en": "iCombo",
           "de": "iCombo",
           "fr": "iCombo",
-          "it": "iCombo",
-          "es": "Entrada al torneo",
-          "pt": "Entrada no torneio"
+          "it": "iCombo"
         },
         "description": {
           "en": "Make a combo of 3 events with odds of 1.80+ each and get a 10% boost on your final odds.",
           "de": "Kombiniere 3 Ereignisse mit Quoten ab 1.80 und erhalte einen 10 % Boost auf deine Gesamtquote.",
           "fr": "Fais une combo de 3 événements avec des cotes de 1.80+ chacune et obtiens un boost de 10 % sur tes cotes finales.",
-          "it": "Crea una combo di 3 eventi con quote di 1.80+ ciascuno e ottieni un boost del 10% sulle tue quote finali.",
-          "es": "¡Únete al torneo semanal y compite por premios!",
-          "pt": "Junte-se ao torneio semanal e dispute por prêmios!"
+          "it": "Crea una combo di 3 eventi con quote di 1.80+ ciascuno e ottieni un boost del 10% sulle tue quote finali."
         },
         "buttonText": {
           "en": "Make a combo",
           "de": "Mache eine Kombi",
           "fr": "Fais une combo",
-          "it": "Crea una combo",
-          "es": "Unirse al torneo",
-          "pt": "Entrar no torneio"
+          "it": "Crea una combo"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -299,25 +239,19 @@
           "en": "Eurocups Rush",
           "de": "Eurocups Rush",
           "fr": "Rush Eurocups",
-          "it": "Corsa Eurocups",
-          "es": "Recompensas dobles",
-          "pt": "Recompensas duplas"
+          "it": "Corsa Eurocups"
         },
         "description": {
           "en": "Place 3 bets on Eurocups worth 25 EUR or more and get a 10 EUR Freebet for any sport. You can claim up to 3 Freebets.",
           "de": "Platziere 3 Wetten auf Eurocups im Wert von 25 EUR oder mehr und erhalte eine 10 EUR Freebet für jede Sportart. Du kannst bis zu 3 Freebets beanspruchen.",
           "fr": "Place 3 paris sur les Eurocups d’une valeur de 25 EUR ou plus et reçois une Freebet de 10 EUR pour n’importe quel sport. Tu peux réclamer jusqu’à 3 Freebets.",
-          "it": "Piazza 3 Scommesse sugli Eurocups da 25 EUR o più e ricevi una Freebet da 10 EUR valida per qualsiasi sport. Puoi ottenere fino a 3 Freebet.",
-          "es": "¡Todas tus ganancias se duplican hoy!",
-          "pt": "Todos os seus ganhos são duplicados hoje!"
+          "it": "Piazza 3 Scommesse sugli Eurocups da 25 EUR o più e ricevi una Freebet da 10 EUR valida per qualsiasi sport. Puoi ottenere fino a 3 Freebet."
         },
         "buttonText": {
           "en": "Bet now",
           "de": "Jetzt wetten",
           "fr": "Parie maintenant",
-          "it": "Scommetti ora",
-          "es": "Comenzar a jugar",
-          "pt": "Começar a jogar"
+          "it": "Scommetti ora"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -327,25 +261,19 @@
           "en": "Freebet Wednesday",
           "de": "Freebet Mittwoch",
           "fr": "Mercredi Freebet",
-          "it": "Mercoledì Freebet",
-          "es": "Caja misteriosa",
-          "pt": "Caixa misteriosa"
+          "it": "Mercoledì Freebet"
         },
         "description": {
           "en": "Deposit on Wednesday and get up to a 15 EUR Freebet.",
           "de": "Tätige eine Einzahlung am Mittwoch und erhalte bis zu 15 EUR Freebet.",
           "fr": "Fais un dépôt le mercredi et obtiens jusqu’à une Freebet de 15 EUR.",
-          "it": "Effettua un Deposito di mercoledì e ottieni fino a 15 EUR in Freebet.",
-          "es": "¡Abre la caja misteriosa y descubre tu sorpresa!",
-          "pt": "Abra a caixa misteriosa e descubra sua surpresa!"
+          "it": "Effettua un Deposito di mercoledì e ottieni fino a 15 EUR in Freebet."
         },
         "buttonText": {
           "en": "Deposit",
           "de": "Einzahlung",
           "fr": "Dépose",
-          "it": "Deposita",
-          "es": "Abrir caja",
-          "pt": "Abrir caixa"
+          "it": "Deposita"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -355,25 +283,19 @@
           "en": "No-Risk Shot",
           "de": "Risikofreier Schuss",
           "fr": "Tir Sans Risque",
-          "it": "Colpo senza rischio",
-          "es": "Puntos de lealtad",
-          "pt": "Pontos de fidelidade"
+          "it": "Colpo senza rischio"
         },
         "description": {
           "en": "Place a 30 EUR+ bet on any event with odds of 1.80+ and get a 15 EUR no-risk Freebet.",
           "de": "Platziere eine Wette von 30 EUR oder mehr auf ein Ereignis mit Quoten ab 1.80 und erhalte eine 15 EUR risikofreie Freebet.",
           "fr": "Place un pari de 30 EUR+ sur n’importe quel événement avec des cotes de 1.80+ et reçois une Freebet sans risque de 15 EUR.",
-          "it": "Piazza una Scommessa da 30 EUR+ su qualsiasi evento con quote di 1.80+ e ottieni una Freebet senza rischio da 15 EUR.",
-          "es": "¡Gana puntos de lealtad extra por cada apuesta!",
-          "pt": "Ganhe pontos de fidelidade extras para cada aposta!"
+          "it": "Piazza una Scommessa da 30 EUR+ su qualsiasi evento con quote di 1.80+ e ottieni una Freebet senza rischio da 15 EUR."
         },
         "buttonText": {
           "en": "Bet now",
           "de": "Jetzt wetten",
           "fr": "Parie maintenant",
-          "it": "Scommetti ora",
-          "es": "Ganar puntos",
-          "pt": "Ganhar pontos"
+          "it": "Scommetti ora"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -383,25 +305,19 @@
           "en": "Ice Boost",
           "de": "Eis-Boost",
           "fr": "Boost Glacé",
-          "it": "Potenza ghiacciata",
-          "es": "Especial de fin de semana",
-          "pt": "Especial de fim de semana"
+          "it": "Potenza ghiacciata"
         },
         "description": {
           "en": "Place three 20 EUR bets on Hockey events with odds of 1.60+ and get a 10 EUR Freebet.",
           "de": "Platziere drei Wetten à 20 EUR auf Hockey-Ereignisse mit Quoten ab 1.60 und erhalte eine 10 EUR Freebet.",
           "fr": "Place trois paris de 20 EUR sur des événements de Hockey avec des cotes de 1.60+ et obtiens une Freebet de 10 EUR.",
-          "it": "Piazza tre Scommesse da 20 EUR su eventi di Hockey con quote di 1.60+ e ricevi una Freebet da 10 EUR.",
-          "es": "¡Bonos y promociones especiales de fin de semana!",
-          "pt": "Bônus e promoções especiais de fim de semana!"
+          "it": "Piazza tre Scommesse da 20 EUR su eventi di Hockey con quote di 1.60+ e ricevi una Freebet da 10 EUR."
         },
         "buttonText": {
           "en": "Bet now",
           "de": "Jetzt wetten",
           "fr": "Parie maintenant",
-          "it": "Scommetti ora",
-          "es": "Obtener especial",
-          "pt": "Obter especial"
+          "it": "Scommetti ora"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -411,25 +327,19 @@
           "en": "Bet & Repeat",
           "de": "Wetten & Wiederholen",
           "fr": "Parie et Recommence",
-          "it": "Scommetti e Ripeti",
-          "es": "Dealer en vivo",
-          "pt": "Dealer ao vivo"
+          "it": "Scommetti e Ripeti"
         },
         "description": {
           "en": "Get a 5 EUR Freebet after your 3rd, 5th, 7th, 9th, and 11th bet of the day worth 20 EUR or more. Minimum odds: 1.70.",
           "de": "Erhalte eine 5 EUR Freebet nach deiner 3., 5., 7., 9. und 11. Wette des Tages im Wert von 20 EUR oder mehr. Mindestquote: 1.70.",
           "fr": "Reçois une Freebet de 5 EUR après ton 3ᵉ, 5ᵉ, 7ᵉ, 9ᵉ et 11ᵉ pari de la journée d’une valeur de 20 EUR ou plus. Cote minimale : 1.70.",
-          "it": "Ottieni una Freebet da 5 EUR dopo la tua 3ª, 5ª, 7ª, 9ª e 11ª Scommessa del giorno del valore di 20 EUR o più. Quota minima: 1.70.",
-          "es": "¡Juega con dealers reales en juegos de casino en vivo!",
-          "pt": "Jogue com dealers reais em jogos de casino ao vivo!"
+          "it": "Ottieni una Freebet da 5 EUR dopo la tua 3ª, 5ª, 7ª, 9ª e 11ª Scommessa del giorno del valore di 20 EUR o più. Quota minima: 1.70."
         },
         "buttonText": {
           "en": "Choose an event",
           "de": "Event auswählen",
           "fr": "Choisis un événement",
-          "it": "Scegli un evento",
-          "es": "Jugar en vivo",
-          "pt": "Jogar ao vivo"
+          "it": "Scegli un evento"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -439,25 +349,19 @@
           "en": "Live Boost",
           "de": "Live Boost",
           "fr": "Boost en Live",
-          "it": "Potenza Live",
-          "es": "Bono móvil",
-          "pt": "Bônus móvel"
+          "it": "Potenza Live"
         },
         "description": {
           "en": "Place 3 live bets worth 25 EUR or more at odds of 1.60+ and get a 10 EUR Freebet.",
           "de": "Platziere 3 Live-Wetten im Wert von 25 EUR oder mehr mit Quoten ab 1.60 und erhalte eine 10 EUR Freebet.",
           "fr": "Place 3 paris Live d’une valeur de 25 EUR ou plus à des cotes de 1.60+ et reçois une Freebet de 10 EUR.",
-          "it": "Piazza 3 Scommesse Live da 25 EUR o più con quote di 1.60+ e ricevi una Freebet da 10 EUR.",
-          "es": "¡Bono extra por jugar en dispositivos móviles!",
-          "pt": "Bônus extra por jogar em dispositivos móveis!"
+          "it": "Piazza 3 Scommesse Live da 25 EUR o più con quote di 1.60+ e ricevi una Freebet da 10 EUR."
         },
         "buttonText": {
           "en": "Bet now",
           "de": "Jetzt wetten",
           "fr": "Parie maintenant",
-          "it": "Scommetti ora",
-          "es": "Obtener bono móvil",
-          "pt": "Obter bônus móvel"
+          "it": "Scommetti ora"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -467,25 +371,19 @@
           "en": "BB: brutal bet",
           "de": "BB: Brutale Wette",
           "fr": "BB : Pari Brutal",
-          "it": "BB: Scommessa brutale",
-          "es": "Programa de referidos",
-          "pt": "Programa de indicação"
+          "it": "BB: Scommessa brutale"
         },
         "description": {
           "en": "Place a 100 EUR+ bet at odds of 1.80+ and snatch a 15 EUR Freebet.",
           "de": "Platziere eine Wette von 100 EUR oder mehr bei Quoten ab 1.80 und sichere dir eine 15 EUR Freebet.",
           "fr": "Place un pari de 100 EUR+ à des cotes de 1.80+ et décroche une Freebet de 15 EUR.",
-          "it": "Piazza una Scommessa da 100 EUR+ con quote di 1.80+ e ottieni una Freebet da 15 EUR.",
-          "es": "¡Invita amigos y gana recompensas juntos!",
-          "pt": "Convide amigos e ganhe recompensas juntos!"
+          "it": "Piazza una Scommessa da 100 EUR+ con quote di 1.80+ e ottieni una Freebet da 15 EUR."
         },
         "buttonText": {
           "en": "Bet brutally",
           "de": "Brutal wetten",
           "fr": "Parie brutalement",
-          "it": "Scommetti alla grande",
-          "es": "Invitar amigos",
-          "pt": "Convidar amigos"
+          "it": "Scommetti alla grande"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -495,25 +393,19 @@
           "en": "15 EUR Freebet",
           "de": "15 EUR Freebet",
           "fr": "Freebet de 15 EUR",
-          "it": "15 EUR Freebet",
-          "es": "Especial de Halloween",
-          "pt": "Especial de Halloween"
+          "it": "15 EUR Freebet"
         },
         "description": {
           "en": "Place a bet of 30 EUR or more on events with odds of 1.80+ and get a 10 EUR Freebet",
           "de": "Platziere eine Wette von 30 EUR oder mehr auf Ereignisse mit Quoten ab 1.80 und erhalte eine 10 EUR Freebet.",
           "fr": "Place un pari de 30 EUR ou plus sur des événements avec des cotes de 1.80+ et reçois une Freebet de 10 EUR.",
-          "it": "Piazza una Scommessa da 30 EUR o più su eventi con quote di 1.80+ e ricevi una Freebet da 10 EUR.",
-          "es": "¡Bonos espeluznantes de Halloween y premios aterradores!",
-          "pt": "Bônus assustadores de Halloween e prêmios terríveis!"
+          "it": "Piazza una Scommessa da 30 EUR o più su eventi con quote di 1.80+ e ricevi una Freebet da 10 EUR."
         },
         "buttonText": {
           "en": "Bet now",
           "de": "Jetzt wetten",
           "fr": "Parie maintenant",
-          "it": "Scommetti ora",
-          "es": "Truco o trato",
-          "pt": "Doce ou travessura"
+          "it": "Scommetti ora"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -523,25 +415,19 @@
           "en": "Freebet Wednesday",
           "de": "Freebet Mittwoch",
           "fr": "Mercredi Freebet",
-          "it": "Mercoledì Freebet",
-          "es": "Gran final",
-          "pt": "Grande final"
+          "it": "Mercoledì Freebet"
         },
         "description": {
           "en": "Deposit on Wednesday and get up to a 15 EUR Freebet.",
           "de": "Tätige eine Einzahlung am Mittwoch und erhalte bis zu 15 EUR Freebet.",
           "fr": "Fais un dépôt le mercredi et obtiens jusqu’à une Freebet de 15 EUR.",
-          "it": "Effettua un Deposito di mercoledì e ottieni fino a 15 EUR in Freebet.",
-          "es": "¡La recompensa definitiva te espera en el último día!",
-          "pt": "A recompensa definitiva te espera no último dia!"
+          "it": "Effettua un Deposito di mercoledì e ottieni fino a 15 EUR in Freebet."
         },
         "buttonText": {
           "en": "Deposit",
           "de": "Einzahlung",
           "fr": "Dépose",
-          "it": "Deposita",
-          "es": "Reclamar recompensa final",
-          "pt": "Reivindicar recompensa final"
+          "it": "Deposita"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -551,25 +437,19 @@
           "en": "iCombo",
           "de": "iCombo",
           "fr": "Combo+",
-          "it": "iCombo",
-          "es": "Especial de fin de semana",
-          "pt": "Especial de fim de semana"
+          "it": "iCombo"
         },
         "description": {
           "en": "Make a combo of 3 events with odds of 1.80+ each and get a 10% boost on your final odds.",
           "de": "Kombiniere 3 Ereignisse mit Quoten ab 1.80 und erhalte einen 10 % Boost auf deine Gesamtquote.",
           "fr": "Fais une combo de 3 événements avec des cotes de 1.80+ chacune et obtiens un boost de 10 % sur tes cotes finales.",
-          "it": "Crea una combo di 3 eventi con quote di 1.80+ ciascuno e ottieni un boost del 10% sulle tue quote finali.",
-          "es": "¡Bonos y promociones especiales de fin de semana!",
-          "pt": "Bônus e promoções especiais de fim de semana!"
+          "it": "Crea una combo di 3 eventi con quote di 1.80+ ciascuno e ottieni un boost del 10% sulle tue quote finali."
         },
         "buttonText": {
           "en": "Make a combo",
           "de": "Mache eine Kombi",
           "fr": "Fais une combo",
-          "it": "Crea una combo",
-          "es": "Obtener especial",
-          "pt": "Obter especial"
+          "it": "Crea una combo"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -579,25 +459,19 @@
           "en": "Big Odds Shot",
           "de": "Schuss mit hohen Quoten",
           "fr": "Coup à Grosse Cote",
-          "it": "Colpo a quota alta",
-          "es": "Dealer en vivo",
-          "pt": "Dealer ao vivo"
+          "it": "Colpo a quota alta"
         },
         "description": {
           "en": "Place a 30 EUR+ bet on events with odds of 5.0+ and get a 15 EUR Freebet.",
           "de": "Platziere eine Wette von 30 EUR oder mehr auf Ereignisse mit Quoten ab 5.0 und erhalte eine 15 EUR Freebet.",
           "fr": "Place un pari de 30 EUR+ sur des événements avec des cotes de 5.0+ et obtiens une Freebet de 15 EUR.",
-          "it": "Piazza una Scommessa da 30 EUR+ su eventi con quote di 5.0+ e ricevi una Freebet da 15 EUR.",
-          "es": "¡Juega con dealers reales en juegos de casino en vivo!",
-          "pt": "Jogue com dealers reais em jogos de casino ao vivo!"
+          "it": "Piazza una Scommessa da 30 EUR+ su eventi con quote di 5.0+ e ricevi una Freebet da 15 EUR."
         },
         "buttonText": {
           "en": "Take a challenge",
           "de": "Nimm die Herausforderung an",
           "fr": "Relève le défi",
-          "it": "Accetta la sfida",
-          "es": "Jugar en vivo",
-          "pt": "Jogar ao vivo"
+          "it": "Accetta la sfida"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -607,25 +481,19 @@
           "en": "EPL Bonus",
           "de": "EPL Bonus",
           "fr": "Bonus EPL",
-          "it": "Bonus EPL",
-          "es": "Bono móvil",
-          "pt": "Bônus móvel"
+          "it": "Bonus EPL"
         },
         "description": {
           "en": "Build a combo with 3+ EPL games at 1.70+ odds and enjoy a 10% boost on your total odds.",
           "de": "Erstelle eine Kombi mit 3+ EPL-Spielen bei Quoten ab 1.70 und genieße einen 10 % Boost auf deine Gesamtquote.",
           "fr": "Construis une combo avec 3+ matchs EPL à 1.70+ de cote et profite d’un boost de 10 % sur tes cotes totales.",
-          "it": "Crea una combo con 3+ partite EPL a quote di 1.70+ e goditi un boost del 10% sulle tue quote totali.",
-          "es": "¡Bono extra por jugar en dispositivos móviles!",
-          "pt": "Bônus extra por jogar em dispositivos móveis!"
+          "it": "Crea una combo con 3+ partite EPL a quote di 1.70+ e goditi un boost del 10% sulle tue quote totali."
         },
         "buttonText": {
           "en": "Make a combo",
           "de": "Mache eine Kombi",
           "fr": "Fais une combo",
-          "it": "Crea una combo",
-          "es": "Obtener bono móvil",
-          "pt": "Obter bônus móvel"
+          "it": "Crea una combo"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -635,25 +503,19 @@
           "en": "Triple Shot NBA",
           "de": "Dreifach-Schuss NBA",
           "fr": "Triple Tir NBA",
-          "it": "Triplo Tiro NBA",
-          "es": "Programa de referidos",
-          "pt": "Programa de indicação"
+          "it": "Triplo Tiro NBA"
         },
         "description": {
           "en": "Place 3+ NBA games in one combo at 1.70+ odds and score a 10% boost on your total odds.",
           "de": "Kombiniere 3+ NBA-Spiele in einer Kombiwette mit Quoten ab 1.70 und sichere dir einen 10 % Boost auf deine Gesamtquote.",
           "fr": "Place 3+ matchs NBA dans une combo à 1.70+ de cote et obtiens un boost de 10 % sur tes cotes totales.",
-          "it": "Inserisci 3+ partite NBA in una combo con quote di 1.70+ e ottieni un boost del 10% sulle tue quote totali.",
-          "es": "¡Invita amigos y gana recompensas juntos!",
-          "pt": "Convide amigos e ganhe recompensas juntos!"
+          "it": "Inserisci 3+ partite NBA in una combo con quote di 1.70+ e ottieni un boost del 10% sulle tue quote totali."
         },
         "buttonText": {
           "en": "Make a combo",
           "de": "Mache eine Kombi",
           "fr": "Fais une combo",
-          "it": "Crea una combo",
-          "es": "Invitar amigos",
-          "pt": "Convidar amigos"
+          "it": "Crea una combo"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -663,25 +525,19 @@
           "en": "Ice Boost",
           "de": "Eis-Boost",
           "fr": "Boost Glacé",
-          "it": "Potenza ghiacciata",
-          "es": "Especial de Halloween",
-          "pt": "Especial de Halloween"
+          "it": "Potenza ghiacciata"
         },
         "description": {
           "en": "Place three 20 EUR bets on Hockey events with odds of 1.60+ and get a 10 EUR Freebet.",
           "de": "Platziere drei Wetten à 20 EUR auf Hockey-Ereignisse mit Quoten ab 1.60 und sichere dir eine 10 EUR Freebet.",
           "fr": "Fais trois paris de 20 EUR sur des événements de Hockey avec des cotes de 1.60+ et reçois une Freebet de 10 EUR.",
-          "it": "Piazza tre Scommesse da 20 EUR su eventi di Hockey con quote da 1.60+ e ricevi una Freebet da 10 EUR.",
-          "es": "¡Bonos espeluznantes de Halloween y premios aterradores!",
-          "pt": "Bônus assustadores de Halloween e prêmios terríveis!"
+          "it": "Piazza tre Scommesse da 20 EUR su eventi di Hockey con quote da 1.60+ e ricevi una Freebet da 10 EUR."
         },
         "buttonText": {
           "en": "Bet now",
           "de": "Jetzt wetten",
           "fr": "Parie maintenant",
-          "it": "Scommetti ora",
-          "es": "Truco o trato",
-          "pt": "Doce ou travessura"
+          "it": "Scommetti ora"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -691,25 +547,19 @@
           "en": "Live Boost",
           "de": "Live Boost",
           "fr": "Boost en Live",
-          "it": "Potenza Live",
-          "es": "Gran final",
-          "pt": "Grande final"
+          "it": "Potenza Live"
         },
         "description": {
           "en": "Place 3 live bets worth 25 EUR or more at odds of 1.60+ and get a 10 EUR Freebet.",
           "de": "Platziere 3 Live-Wetten im Wert von 25 EUR oder mehr bei Quoten ab 1.60 und erhalte eine 10 EUR Freebet.",
           "fr": "Place 3 paris Live d’une valeur de 25 EUR ou plus à des cotes de 1.60+ et obtiens une Freebet de 10 EUR.",
-          "it": "Piazza 3 Scommesse Live da 25 EUR o più con quote di 1.60+ e ricevi una Freebet da 10 EUR.",
-          "es": "¡La recompensa definitiva te espera en el último día!",
-          "pt": "A recompensa definitiva te espera no último dia!"
+          "it": "Piazza 3 Scommesse Live da 25 EUR o più con quote di 1.60+ e ricevi una Freebet da 10 EUR."
         },
         "buttonText": {
           "en": "Bet now",
           "de": "Jetzt wetten",
           "fr": "Parie maintenant",
-          "it": "Scommetti ora",
-          "es": "Reclamar recompensa final",
-          "pt": "Reivindicar recompensa final"
+          "it": "Scommetti ora"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -719,25 +569,19 @@
           "en": "Mystery bonus",
           "de": "Mystery-Bonus",
           "fr": "Bonus Mystère",
-          "it": "Bonus misterioso",
-          "es": "Mega bono",
-          "pt": "Mega bônus"
+          "it": "Bonus misterioso"
         },
         "description": {
           "en": "Enter promo code bonus2026 in the Promotions section and get a secret no-deposit bonus.",
           "de": "Gib den Aktionscode bonus2026 im Bereich Promotionen ein und erhalte einen geheimen Bonus ohne Einzahlung.",
           "fr": "Entre le code promo bonus2026 dans la section Promotions et reçois un bonus mystère sans dépôt.",
-          "it": "Inserisci il Codice promozionale bonus2026 nella sezione Promozioni e ottieni un Bonus senza deposito segreto.",
-          "es": "¡Obtén el bono más grande de la temporada!",
-          "pt": "Obtenha o maior bônus da temporada!"
+          "it": "Inserisci il Codice promozionale bonus2026 nella sezione Promozioni e ottieni un Bonus senza deposito segreto."
         },
         "buttonText": {
           "en": "To the Promotion",
           "de": "Zur Aktion",
           "fr": "Vers la promotion",
-          "it": "Vai alla Promozione",
-          "es": "Reclamar mega bono",
-          "pt": "Reivindicar mega bônus"
+          "it": "Vai alla Promozione"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       },
@@ -747,25 +591,19 @@
           "en": "Final Celebration",
           "de": "Finale Feier",
           "fr": "Célébration finale",
-          "it": "Celebrazione finale",
-          "es": "Celebración final",
-          "pt": "Celebração final"
+          "it": "Celebrazione finale"
         },
         "description": {
           "en": "Join the final celebration and win amazing prizes!",
           "de": "Nehmen Sie an der finalen Feier teil und gewinnen Sie tolle Preise!",
           "fr": "Rejoignez la célébration finale et gagnez des prix incroyables !",
-          "it": "Partecipa alla celebrazione finale e vinci premi fantastici!",
-          "es": "¡Únete a la celebración final y gana premios increíbles!",
-          "pt": "Junte-se à celebração final e ganhe prêmios incríveis!"
+          "it": "Partecipa alla celebrazione finale e vinci premi fantastici!"
         },
         "buttonText": {
           "en": "Join Celebration",
           "de": "Feier beitreten",
           "fr": "Rejoindre la célébration",
-          "it": "Unisciti alla celebrazione",
-          "es": "Unirse a la celebración",
-          "pt": "Entrar na celebração"
+          "it": "Unisciti alla celebrazione"
         },
         "targetUrl": "https://bet.rocketplay19.com/"
       }
@@ -775,59 +613,45 @@
         "en": "Finishes in",
         "de": "Endet in",
         "fr": "Se termine dans",
-        "it": "Finisce tra",
-        "es": "Termina en",
-        "pt": "Termina em"
+        "it": "Finisce tra"
       },
       "finished": {
         "en": "Finished",
         "de": "Beendet",
         "fr": "Terminé",
-        "it": "Finito",
-        "es": "Terminado",
-        "pt": "Finalizado"
+        "it": "Finito"
       },
       "dayUnit": {
         "en": "d",
         "de": "Tg",
         "fr": "j",
-        "it": "g",
-        "es": "d",
-        "pt": "d"
+        "it": "g"
       }
     },
     "termsButton": {
       "en": "Terms and conditions",
       "de": "Geschäftsbedingungen",
       "fr": "Termes et conditions",
-      "it": "Termini e condizioni",
-      "es": "Términos y condiciones",
-      "pt": "Termos e condições"
+      "it": "Termini e condizioni"
     },
     "termsModal": {
       "title": {
         "en": "Terms and conditions",
         "de": "Terms and conditions",
         "fr": "Terms and conditions",
-        "it": "Terms and conditions",
-        "es": "Terms and conditions",
-        "pt": "Terms and conditions"
+        "it": "Terms and conditions"
       },
       "closeAriaLabel": {
         "en": "Close",
         "de": "Schließen",
         "fr": "Fermer",
-        "it": "Chiudi",
-        "es": "Cerrar",
-        "pt": "Fechar"
+        "it": "Chiudi"
       },
       "html": {
         "en": "<ol><li>This promotion is available to all registered players on the website, which are eligible to receive bonuses.</li><li>Sports Advent Calendar Promotion starts at 00:00 (UTC) 03.12.2024 and runs until 23:59 (UTC) 25.12.2024.</li><li>Tasks are updated daily at 00:00 (UTC). Each daily task is valid from 00:00 (UTC) to 23:59 (UTC).</li><li>To receive a daily bonus, each player must meet the specified bet or deposit requirements set for the eligible daily task.</li><li>Each task can only be completed once; the player gets one bonus per completed task.</li><li>Freebets bonuses are credited as OnlyWin Freebets unless otherwise stated and must be used within 3 days.</li><li>Cashout bets and bets made with bonus funds do not count in this promotion.</li><li>We reserve the right to amend, cancel, reclaim or refuse this promotion at our discretion.</li><li>General Terms and Conditions apply to this promotion.</li></ol>",
         "de": "<ol><li>This promotion is available to all registered players on the website, which are eligible to receive bonuses.</li><li>Sports Advent Calendar Promotion starts at 00:00 (UTC) 03.12.2024 and runs until 23:59 (UTC) 25.12.2024.</li><li>Tasks are updated daily at 00:00 (UTC). Each daily task is valid from 00:00 (UTC) to 23:59 (UTC).</li><li>To receive a daily bonus, each player must meet the specified bet or deposit requirements set for the eligible daily task.</li><li>Each task can only be completed once; the player gets one bonus per completed task.</li><li>Freebets bonuses are credited as OnlyWin Freebets unless otherwise stated and must be used within 3 days.</li><li>Cashout bets and bets made with bonus funds do not count in this promotion.</li><li>We reserve the right to amend, cancel, reclaim or refuse this promotion at our discretion.</li><li>General Terms and Conditions apply to this promotion.</li></ol>",
         "fr": "<ol><li>This promotion is available to all registered players on the website, which are eligible to receive bonuses.</li><li>Sports Advent Calendar Promotion starts at 00:00 (UTC) 03.12.2024 and runs until 23:59 (UTC) 25.12.2024.</li><li>Tasks are updated daily at 00:00 (UTC). Each daily task is valid from 00:00 (UTC) to 23:59 (UTC).</li><li>To receive a daily bonus, each player must meet the specified bet or deposit requirements set for the eligible daily task.</li><li>Each task can only be completed once; the player gets one bonus per completed task.</li><li>Freebets bonuses are credited as OnlyWin Freebets unless otherwise stated and must be used within 3 days.</li><li>Cashout bets and bets made with bonus funds do not count in this promotion.</li><li>We reserve the right to amend, cancel, reclaim or refuse this promotion at our discretion.</li><li>General Terms and Conditions apply to this promotion.</li></ol>",
-        "it": "<ol><li>This promotion is available to all registered players on the website, which are eligible to receive bonuses.</li><li>Sports Advent Calendar Promotion starts at 00:00 (UTC) 03.12.2024 and runs until 23:59 (UTC) 25.12.2024.</li><li>Tasks are updated daily at 00:00 (UTC). Each daily task is valid from 00:00 (UTC) to 23:59 (UTC).</li><li>To receive a daily bonus, each player must meet the specified bet or deposit requirements set for the eligible daily task.</li><li>Each task can only be completed once; the player gets one bonus per completed task.</li><li>Freebets bonuses are credited as OnlyWin Freebets unless otherwise stated and must be used within 3 days.</li><li>Cashout bets and bets made with bonus funds do not count in this promotion.</li><li>We reserve the right to amend, cancel, reclaim or refuse this promotion at our discretion.</li><li>General Terms and Conditions apply to this promotion.</li></ol>",
-        "es": "<ol><li>This promotion is available to all registered players on the website, which are eligible to receive bonuses.</li><li>Sports Advent Calendar Promotion starts at 00:00 (UTC) 03.12.2024 and runs until 23:59 (UTC) 25.12.2024.</li><li>Tasks are updated daily at 00:00 (UTC). Each daily task is valid from 00:00 (UTC) to 23:59 (UTC).</li><li>To receive a daily bonus, each player must meet the specified bet or deposit requirements set for the eligible daily task.</li><li>Each task can only be completed once; the player gets one bonus per completed task.</li><li>Freebets bonuses are credited as OnlyWin Freebets unless otherwise stated and must be used within 3 days.</li><li>Cashout bets and bets made with bonus funds do not count in this promotion.</li><li>We reserve the right to amend, cancel, reclaim or refuse this promotion at our discretion.</li><li>General Terms and Conditions apply to this promotion.</li></ol>",
-        "pt": "<ol><li>This promotion is available to all registered players on the website, which are eligible to receive bonuses.</li><li>Sports Advent Calendar Promotion starts at 00:00 (UTC) 03.12.2024 and runs until 23:59 (UTC) 25.12.2024.</li><li>Tasks are updated daily at 00:00 (UTC). Each daily task is valid from 00:00 (UTC) to 23:59 (UTC).</li><li>To receive a daily bonus, each player must meet the specified bet or deposit requirements set for the eligible daily task.</li><li>Each task can only be completed once; the player gets one bonus per completed task.</li><li>Freebets bonuses are credited as OnlyWin Freebets unless otherwise stated and must be used within 3 days.</li><li>Cashout bets and bets made with bonus funds do not count in this promotion.</li><li>We reserve the right to amend, cancel, reclaim or refuse this promotion at our discretion.</li><li>General Terms and Conditions apply to this promotion.</li></ol>"
+        "it": "<ol><li>This promotion is available to all registered players on the website, which are eligible to receive bonuses.</li><li>Sports Advent Calendar Promotion starts at 00:00 (UTC) 03.12.2024 and runs until 23:59 (UTC) 25.12.2024.</li><li>Tasks are updated daily at 00:00 (UTC). Each daily task is valid from 00:00 (UTC) to 23:59 (UTC).</li><li>To receive a daily bonus, each player must meet the specified bet or deposit requirements set for the eligible daily task.</li><li>Each task can only be completed once; the player gets one bonus per completed task.</li><li>Freebets bonuses are credited as OnlyWin Freebets unless otherwise stated and must be used within 3 days.</li><li>Cashout bets and bets made with bonus funds do not count in this promotion.</li><li>We reserve the right to amend, cancel, reclaim or refuse this promotion at our discretion.</li><li>General Terms and Conditions apply to this promotion.</li></ol>"
       }
     }
   },
