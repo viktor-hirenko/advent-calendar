@@ -180,7 +180,7 @@ endDate: 2025-12-24
 {
   "config": {
     "defaultLanguage": "en",
-    "supportedLanguages": ["en", "de", "fr", "it", "es", "pt"]
+    "supportedLanguages": ["en", "de", "fr", "it"]
   }
 }
 ```
@@ -201,8 +201,7 @@ endDate: 2025-12-24
       "de": "Sportkalender",
       "fr": "Calendrier Sportif",
       "it": "Calendario Sportivo",
-      "es": "Calendario Deportivo",
-      "pt": "Calendário Esportivo"
+      "it": "Calendario Sportivo"
     }
   }
 }
@@ -505,7 +504,7 @@ Configuration is valid but has warnings.
     "alignByWeekday": true,
     "firstDayOfWeek": "auto",
     "defaultLanguage": "en",
-    "supportedLanguages": ["en", "de", "fr", "it", "es", "pt"],
+    "supportedLanguages": ["en", "de", "fr", "it"],
     "ui": {
       "introSection": { "visible": true },
       "calendarSection": { "visible": true, "tasksPanel": true },
@@ -644,4 +643,3 @@ npm run tokens:build
 4. **Для дизайнерів:** [`DESIGN_TOKENS.md`](DESIGN_TOKENS.md)
 
 **Потрібна допомога?** Перевірте консоль браузера на помилки або зверніться до команди розробки.
-

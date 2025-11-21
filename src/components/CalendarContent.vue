@@ -314,8 +314,6 @@
       de: formattedDate,
       fr: formattedDate,
       it: formattedDate,
-      es: formattedDate,
-      pt: formattedDate,
     }
   }
 

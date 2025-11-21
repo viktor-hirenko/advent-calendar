@@ -202,16 +202,14 @@
    ```json
    {
      "config": {
-       "supportedLanguages": ["en", "de", "fr", "it", "es", "pt"]
+       "supportedLanguages": ["en", "de", "fr", "it"]
      },
      "calendar": {
        "title": {
          "en": "Sports Calendar",
          "de": "Sportkalender",
          "fr": "Calendrier Sportif",
-         "it": "Calendario Sportivo",
-         "es": "Calendario Deportivo",
-         "pt": "Calendário Esportivo"
+         "it": "Calendario Sportivo"
        }
      }
    }

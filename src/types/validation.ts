@@ -8,7 +8,6 @@ import { z, ZodError } from 'zod'
 /**
  * Schema for supported languages.
  */
-// export const SupportedLanguageSchema = z.enum(['en', 'de', 'fr', 'it', 'es', 'pt'])
 export const SupportedLanguageSchema = z.enum(['en', 'de', 'fr', 'it'])
 
 /**

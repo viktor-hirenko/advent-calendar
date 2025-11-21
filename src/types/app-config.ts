@@ -2,7 +2,6 @@
 
 import type { Ref, ComputedRef } from 'vue'
 
-// export type SupportedLanguage = 'en' | 'de' | 'fr' | 'it' | 'es' | 'pt'
 export type SupportedLanguage = 'en' | 'de' | 'fr' | 'it'
 
 /**
