@@ -724,6 +724,7 @@
       width: 100%;
       margin: 0;
       color: var(--color-text-secondary);
+      text-align: center;
 
       @include text(body);
     }

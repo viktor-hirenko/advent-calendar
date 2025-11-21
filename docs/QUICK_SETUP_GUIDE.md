@@ -180,7 +180,7 @@ endDate: 2025-12-24
 {
   "config": {
     "defaultLanguage": "en",
-    "supportedLanguages": ["en", "de", "fr", "it"]
+    "supportedLanguages": ["en", "de", "fr", "it", "es", "pt"]
   }
 }
 ```
@@ -201,7 +201,8 @@ endDate: 2025-12-24
       "de": "Sportkalender",
       "fr": "Calendrier Sportif",
       "it": "Calendario Sportivo",
-      "it": "Calendario Sportivo"
+      "es": "Calendario Deportivo",
+      "pt": "Calendário Esportivo"
     }
   }
 }
@@ -504,7 +505,7 @@ Configuration is valid but has warnings.
     "alignByWeekday": true,
     "firstDayOfWeek": "auto",
     "defaultLanguage": "en",
-    "supportedLanguages": ["en", "de", "fr", "it"],
+    "supportedLanguages": ["en", "de", "fr", "it", "es", "pt"],
     "ui": {
       "introSection": { "visible": true },
       "calendarSection": { "visible": true, "tasksPanel": true },
