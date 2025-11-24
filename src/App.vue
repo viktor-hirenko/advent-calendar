@@ -7,7 +7,7 @@
   import CalendarContent from './components/CalendarContent.vue'
   import { useAppConfig } from '@/composables/useAppConfig'
 
-  // Composables
+  // Composables.
   const { config } = useAppConfig()
 </script>
 
