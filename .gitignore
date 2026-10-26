@@ -77,3 +77,6 @@ hive-mind-prompt-*.txt
 # AI documentation files
 CLAUDE.md
 CURSOR_KILO_INTEGRATION_GUIDE.md
+
+# Local-only docs: task plans, progress logs, decisions (never push)
+/docs/local/
