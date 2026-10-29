@@ -142,7 +142,7 @@ export interface DisabledTask {
   image?: string
 }
 
-/** Root JSON structure loaded from app-config.json. */
+/** Root JSON structure loaded from campaigns/<id>/config.json. */
 export interface CalendarDataStructure {
   calendar: CalendarData
   config: CalendarConfig

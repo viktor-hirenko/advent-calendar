@@ -13,11 +13,13 @@ npm run dev
 
 Основні команди:
 
-- `npm run build` — продакшен-збірка (`prebuild` оптимізує зображення та токени);
+- `npm run build` — продакшен-збірка в `dist/<кампанія>/` (`prebuild` оптимізує зображення та токени);
 - `npm run check` — ESLint + перевірка коментарів;
 - `npm run lint:styles` — Stylelint для SCSS/Vue;
 - `npm run tokens:build` — генерація дизайн-токенів;
-- `npm run validate-config` — валідація `app-config.json`.
+- `npm run validate-config` — валідація `config.json` кампанії.
+
+Кампанія обирається змінною `CAMPAIGN` (наприклад, `CAMPAIGN=alpa-2025 npm run build`), див. [`docs/CAMPAIGNS.md`](docs/CAMPAIGNS.md).
 
 ## Документація
 

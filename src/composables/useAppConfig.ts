@@ -8,7 +8,7 @@
  */
 
 import { ref, computed, watch, inject } from 'vue'
-import appConfigData from '@/data/app-config.json'
+import appConfigData from '@campaign/config.json'
 import { useQueryParams } from './useQueryParams'
 import { useLocale } from './useLocale'
 import { devLog, devWarn } from '@/utils/devLog'
@@ -18,17 +18,17 @@ let singletonInstance: UseCalendarReturn | null = null
 
 /**
  * Assets registry (dev & build):
- * Vite scans all files under src/assets/images and builds a map of logical
- * paths to final URLs (hashed in production).
+ * Vite scans all files under the active campaign's images/ folder and builds
+ * a map of logical paths to final URLs (hashed in production).
  *
  * Why eager + query:'?url' + import:'default':
  * - eager: so the map exists immediately (no dynamic import promise)
  * - query:'?url': to get ready-to-use public URLs (/src/... in dev, /assets/xxx in build)
  * - import:'default': specifies what to import from the module
  *
- * Keys will be normalized to be relative to "assets/images/" (e.g. "banners/default/foo.webp").
+ * Keys will be normalized to be relative to the campaign "images/" folder (e.g. "banners/default/foo.webp").
  */
-const imageFiles = import.meta.glob('@/assets/images/**/*', {
+const imageFiles = import.meta.glob('@campaign/images/**/*', {
   eager: true,
   query: '?url',
   import: 'default',
@@ -37,8 +37,8 @@ const imageFiles = import.meta.glob('@/assets/images/**/*', {
 const IMG: Readonly<Record<string, string>> = Object.freeze(
   Object.fromEntries(
     Object.entries(imageFiles).map(([abs, url]) => [
-      // normalize absolute file path to a short key under "assets/images/"
-      abs.replace(/^.*\/assets\/images\//, ''),
+      // normalize file path to a short key under the campaign "images/" folder
+      abs.replace(/^.*?\/images\//, ''),
       url,
     ]),
   ),
@@ -200,7 +200,7 @@ function instantiateAppConfig(): UseCalendarReturn {
    * Resolves an image "logical path" from JSON into a real URL usable in <img> or CSS.
    * Accepts:
    * - Absolute/CDN: "https://..." → returned as-is
-   * - Leading slashes or full dev paths: "/src/assets/images/foo", "assets/images/foo" → normalized
+   * - Leading slashes or full paths: "/campaigns/<id>/images/foo", "images/foo" → normalized
    * - Our JSON values: "banners/default/..." → looked up in IMG map
    *
    * Why here?
@@ -212,8 +212,7 @@ function instantiateAppConfig(): UseCalendarReturn {
 
     const clean = name
       .replace(/^\/+/, '') // strip leading slashes
-      .replace(/^src\/assets\/images\//, '')
-      .replace(/^assets\/images\//, '')
+      .replace(/^(.*?\/)?images\//, '') // strip path up to the campaign images/ folder
 
     const url = IMG[clean]
     if (!url) {

@@ -2,10 +2,11 @@
 
 /**
  * Calendar config validation script.
- * Validates src/data/app-config.json for invalid dates and configuration issues.
+ * Validates campaigns/<id>/config.json for invalid dates and configuration issues.
  * 
  * Usage:
  *   node scripts/validate-config.mjs
+ *   CAMPAIGN=<id> node scripts/validate-config.mjs
  * 
  * Exit codes:
  *   0 - Config is valid
@@ -13,9 +14,7 @@
  */
 
 import fs from 'node:fs/promises'
-import path from 'node:path'
-
-const CONFIG_PATH = 'src/data/app-config.json'
+import { resolveCampaign } from './campaign.mjs'
 
 /**
  * Strict YYYY-MM-DD parser that validates date existence.
@@ -102,11 +101,11 @@ function validateConfig(config) {
 
 async function main() {
   try {
-    console.log('🔍 Validating calendar configuration...')
+    const campaign = resolveCampaign()
+    console.log(`🔍 Validating calendar configuration (campaign: ${campaign.id})...`)
     
     // Read config file
-    const configPath = path.resolve(CONFIG_PATH)
-    const configText = await fs.readFile(configPath, 'utf8')
+    const configText = await fs.readFile(campaign.configPath, 'utf8')
     const config = JSON.parse(configText)
     
     // Validate configuration

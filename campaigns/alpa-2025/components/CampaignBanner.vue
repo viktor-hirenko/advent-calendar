@@ -13,9 +13,9 @@
   import { computed } from 'vue'
   import { useAppConfig } from '@/composables/useAppConfig'
 
-  import mobileBanner from '@/assets/images/banners/classic/calendar_mobile.webp'
-  import desktopBanner from '@/assets/images/banners/classic/calendar.webp'
-  import gradientLayer from '@/assets/images/banners/classic/gradient.svg'
+  import mobileBanner from '../images/banners/classic/calendar_mobile.webp'
+  import desktopBanner from '../images/banners/classic/calendar.webp'
+  import gradientLayer from '../images/banners/classic/gradient.svg'
 
   const { calendarData, getLocalizedText } = useAppConfig()
 

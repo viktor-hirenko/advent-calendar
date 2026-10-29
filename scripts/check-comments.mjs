@@ -14,7 +14,7 @@ import { glob } from 'glob'
 import { readFile } from 'node:fs/promises'
 
 // Only check source files
-const GLOBS = ['src/**/*.{ts,tsx,vue,js}']
+const GLOBS = ['src/**/*.{ts,tsx,vue,js}', 'campaigns/**/*.vue']
 
 // Comment patterns
 const reJSDoc = /\/\*\*[\s\S]*?\*\//g

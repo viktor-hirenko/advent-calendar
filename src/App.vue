@@ -2,8 +2,9 @@
   /**
    * Main application component.
    * Renders calendar banner and content.
+   * The banner comes from the active campaign (shared CalendarBanner.vue as fallback).
    */
-  import CalendarBannerClassic from './components/CalendarBannerClassic.vue'
+  import CampaignBanner from '@campaign-banner'
   import CalendarContent from './components/CalendarContent.vue'
   import { useAppConfig } from '@/composables/useAppConfig'
 
@@ -12,7 +13,7 @@
 </script>
 
 <template>
-  <CalendarBannerClassic v-if="config.ui.bannerSection.visible" />
+  <CampaignBanner v-if="config.ui.bannerSection.visible" />
   <main v-if="config.enabled" class="main">
     <CalendarContent />
   </main>

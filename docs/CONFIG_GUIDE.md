@@ -1,13 +1,13 @@
-# Посібник з конфігурації (`app-config.json`)
+# Посібник з конфігурації (`campaigns/<id>/config.json`)
 
 ## 1. Призначення
-Файл `src/data/app-config.json` є єдиним джерелом контенту для календаря. Він описує:
+Файл `campaigns/<id>/config.json` є єдиним джерелом контенту календаря для кампанії `<id>` (як влаштовані кампанії — `docs/CAMPAIGNS.md`). Він описує:
 - тексти й локалізації;
 - набір задач на кожен день;
 - зовнішні посилання та зображення;
 - технічні параметри періоду, часових поясів та розкладки.
 
-Зміна JSON не потребує збірки, але рекомендується запускати `npm run validate-config` після редагування.
+Конфіг імпортується у збірку статично, тому після будь-якої зміни JSON потрібна нова збірка (`npm run build`), інакше сторінка покаже старі дані. Після редагування запускайте `CAMPAIGN=<id> npm run validate-config`.
 
 ## 2. Загальна структура
 ```jsonc
@@ -31,7 +31,7 @@
 | `title`, `description` | `LocalizedText` | Головний заголовок та опис блоку. Використовуються у банері та `<head>`. |
 | `labels.promotion` | `LocalizedText` | Текст бейджа над календарем (наприклад, “Promotion”). |
 | `links.primary` | `string \| LocalizedText` | Глобальний URL для CTA-кнопок. Значення задачі (`task.targetUrl`) перекриває його, якщо задане. |
-| `images.banner` | текстові ключі файлів | Шляхи до вебp-зображень для банера: `mobile`, `tablet`, `desktop`, `large`, `ultra`, `extraSmall`; та обовʼязковий `alt` з локалізаціями. Файли повинні існувати у `src/assets/images`. |
+| `images.banner` | текстові ключі файлів | Шляхи до вебp-зображень для банера: `mobile`, `tablet`, `desktop`, `large`, `ultra`, `extraSmall`; та обовʼязковий `alt` з локалізаціями. Файли повинні існувати у `campaigns/<id>/images`. |
 | `images.decoration.ultra` | `string` | Декоративний елемент для надвеликих екранів (опціонально). |
 | `images.disabledTaskIcon` | `string` | Іконка для заблокованих задач. |
 | `disabledTask.title`, `disabledTask.buttonText` | `LocalizedText` | Шаблони для картки, якщо день ще не відкрито. Дата підставляється автоматично (`formatDisabledTaskDate`). |
@@ -173,9 +173,9 @@
 3. `defaultLanguage` з конфігу.
 
 ## 5. Зображення та шляхи
-- Усі локальні файли мають бути розміщені у `src/assets/images`. Під час збірки Vite експортує їх до `/assets/...`.
+- Усі локальні файли мають бути розміщені у `campaigns/<id>/images`. Під час збірки Vite експортує їх до `assets/...`.
 - `resolveImg` працює і з абсолютними (`https://...`) шляхами, і з логічними ключами типу `banners/default/xxx.webp`.
-- Для нових ресурсів варто запускати `npm run images:webp`, щоб створити WebP-версії.
+- Для нових ресурсів варто запускати `CAMPAIGN=<id> npm run images:webp`, щоб створити WebP-версії.
 
 ## 6. Робочий процес оновлення контенту
 1. Додайте/оновіть тексти у `calendar.*` та переконайтеся, що вони присутні в усіх мовах.
@@ -183,9 +183,10 @@
 3. Переконайтеся, що `startDate` та `endDate` відповідають кількості елементів у `tasks`.
 4. Запустіть:
    ```bash
-   npm run validate-config
-   npm run tokens:build          # якщо змінювали тему
-   npm run images:webp           # якщо додали нові PNG/JPG
+   CAMPAIGN=<id> npm run validate-config
+   npm run tokens:build                   # якщо змінювали тему
+   CAMPAIGN=<id> npm run images:webp      # якщо додали нові PNG/JPG
+   CAMPAIGN=<id> npm run build            # обовʼязково: зміни конфігу потрапляють на сторінку лише через збірку
    ```
 5. Перевірте у браузері з параметром `?testDate` для критичних сценаріїв (відкриття майбутніх та минулих днів).
 

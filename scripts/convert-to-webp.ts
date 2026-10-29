@@ -3,17 +3,18 @@
 import { readdir, stat } from 'fs/promises'
 import { join, extname, basename, dirname } from 'path'
 import sharp from 'sharp'
+import { resolveCampaign } from './campaign.mjs'
 
-// const IMAGES_DIR = 'public/images'
-const IMAGES_DIR = 'src/assets/images'
+const campaign = resolveCampaign()
+const IMAGES_DIR = campaign.imagesDir
 const SUPPORTED_EXTENSIONS = ['.png', '.jpg', '.jpeg']
 
 /**
- * Converts all PNG, JPG, and JPEG images in the assets directory to WebP format.
+ * Converts all PNG, JPG, and JPEG images in the active campaign's images directory to WebP format.
  * Recursively processes subdirectories and maintains the original file structure.
  */
 async function convertToWebP() {
-  console.log('🖼️  Converting images to WebP...')
+  console.log(`🖼️  Converting images to WebP (campaign: ${campaign.id})...`)
 
   try {
     let convertedCount = 0
