@@ -21,8 +21,8 @@ export interface TimeFns {
   ymd: (d: Date) => string
   parseYMD: (s: string) => Date
   isToday: (s: string) => boolean
-  formatTaskDateByMode: (s: string) => string
-  formatDisabledTaskDateByMode: (s: string) => string
+  formatTaskDateByMode: (s: string, lang?: string) => string
+  formatDisabledTaskDateByMode: (s: string, lang?: string) => string
   getTaskDateByMode: (i: number, start: string) => string
   getDaysBetweenByMode: (a: string, b: string) => number
 }
@@ -39,6 +39,8 @@ export interface CalendarTask {
   timer?: LocalizedText
   image?: string
   targetUrl?: string
+  /** Task mechanic (e.g. "bet", "deposit", "combo"); free-form, defined by the campaign. */
+  type?: string
 }
 
 /** Alias kept for compatibility with existing components. */
@@ -97,6 +99,18 @@ export interface CalendarData {
     /** Global icon for disabled task state (resolved via resolveImg). */
     disabledTaskIcon?: string
   }
+  /**
+   * Illustrations per task type (tasks[].type), resolved via resolveImg.
+   * - image: shown on the active card
+   * - finishedImage: shown on finished cards (falls back to image)
+   */
+  taskTypes?: Record<string, TaskTypeImages>
+}
+
+/** Illustrations of one task type. */
+export interface TaskTypeImages {
+  image: string
+  finishedImage?: string
 }
 
 /**
@@ -118,6 +132,11 @@ export interface CalendarConfig {
       visible: boolean
       dayPicker: boolean
       tasksPanel: boolean
+      /**
+       * Button label on finished cards: the task's own label ("task", default)
+       * or the disabled-card label that leads back to today's task ("returnToToday").
+       */
+      finishedCardButton?: 'task' | 'returnToToday'
     }
     footerSection: {
       visible: boolean
@@ -132,6 +151,8 @@ export interface CalendarConfig {
   timeMode?: 'local' | 'utc'
   alignByWeekday?: boolean
   firstDayOfWeek?: 'auto' | 'monday' | 'sunday'
+  /** Format card dates in the page language; when off, dates are always English ("Dec. 4"). */
+  localizeDates?: boolean
   defaultLanguage: SupportedLanguage
   supportedLanguages: SupportedLanguage[]
 }
@@ -179,6 +200,8 @@ export interface UseCalendarReturn {
   config: Ref<CalendarConfig>
   calendarDays: Ref<CalendarDay[]>
   currentDate: Ref<Date>
+  /** Current time; shifted to the ?testDate day when the parameter is set. */
+  now: () => Date
 
   getLocalizedText: (text: LocalizedText, language?: SupportedLanguage) => string
   getTaskForDate: (date: string) => CalendarTask | undefined

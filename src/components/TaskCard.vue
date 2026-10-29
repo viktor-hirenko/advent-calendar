@@ -50,10 +50,11 @@
     resolveTargetUrl,
     resolveImg,
     currentDate,
+    now,
   } = useAppConfig()
 
   // State and Refs
-  const currentTime = ref(new Date())
+  const currentTime = ref(now())
 
   // Computed properties
   const taskUrl = computed(() => resolveTargetUrl(props.task))
@@ -153,6 +154,21 @@
 
   const disabledImage = computed(() => resolveImg(calendarData.value.images?.disabledTaskIcon))
 
+  // Task type illustration for active and finished cards; empty when the campaign defines none
+  const illustration = computed(() => {
+    if (isTaskDisabled.value || !props.task.type) return ''
+    const images = calendarData.value.taskTypes?.[props.task.type]
+    if (!images) return ''
+    return resolveImg(isTaskFinished.value ? (images.finishedImage ?? images.image) : images.image)
+  })
+
+  // Finished cards can use the "return to today's task" label instead of the task's own one
+  const buttonLabel = computed(() => {
+    const returnsToToday =
+      isTaskFinished.value && config.value.ui.calendarSection.finishedCardButton === 'returnToToday'
+    return isTaskDisabled.value || returnsToToday ? disabledButtonText.value : buttonText.value
+  })
+
   const contentTitle = computed(() => {
     return isTaskDisabled.value ? disabledTitle.value : title.value
   })
@@ -205,7 +221,7 @@
   watchEffect((onCleanup) => {
     if (isTaskActive.value) {
       timerInterval = window.setInterval(() => {
-        currentTime.value = new Date()
+        currentTime.value = now()
       }, 1000)
 
       onCleanup(() => {
@@ -240,6 +256,7 @@
       },
     ]"
     :data-date="taskDate"
+    :data-type="task.type"
   >
     <div v-if="isTaskActive || isTaskFinished" class="task-card__header">
       <div class="task-card__date">{{ formattedDate }}</div>
@@ -260,6 +277,10 @@
       </div>
     </div>
 
+    <div v-if="illustration" class="task-card__illustration" aria-hidden="true">
+      <img class="task-card__illustration-img" :src="illustration" alt="" decoding="async" />
+    </div>
+
     <div class="task-card__content">
       <!-- Unified content for all card states -->
       <h4 class="task-card__title">{{ contentTitle }}</h4>
@@ -275,7 +296,7 @@
       :type="isTaskActive && taskUrl ? undefined : 'button'"
       @click="handleButtonClick"
     >
-      {{ isTaskDisabled ? disabledButtonText : buttonText }}
+      {{ buttonLabel }}
     </component>
 
     <!-- Image shown only for disabled status -->
@@ -473,6 +494,21 @@
         transform: none;
         transition: none;
       }
+    }
+
+    // Rendered only when the campaign defines calendar.taskTypes
+    &__illustration {
+      position: relative;
+      height: to-rem(72px);
+      flex-shrink: 0;
+    }
+
+    &__illustration-img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 100%;
+      transform: translate(-50%, -50%);
     }
 
     &__image {

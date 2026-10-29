@@ -2,10 +2,11 @@
  * Campaign resolution shared by vite.config.ts and the build scripts.
  *
  * A campaign is a folder under campaigns/<id>/ with:
- * - campaign.json: build-time data (theme, fonts stylesheet URL)
+ * - campaign.json: build-time data (theme, fonts stylesheet URL, optional strictValidation)
  * - config.json: calendar settings and texts
  * - images/: images referenced from config.json
  * - components/CampaignBanner.vue (optional): replaces the shared CalendarBanner.vue
+ * - styles.scss (optional): campaign look, loaded after the shared styles
  *
  * The campaign is selected with the CAMPAIGN environment variable;
  * without it DEFAULT_CAMPAIGN is used.
@@ -17,7 +18,7 @@ import { fileURLToPath } from 'node:url'
 
 export const ROOT_DIR = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 export const CAMPAIGNS_DIR = join(ROOT_DIR, 'campaigns')
-export const DEFAULT_CAMPAIGN = 'alpa-2025'
+export const DEFAULT_CAMPAIGN = 'alpa-2026'
 
 /**
  * Lists campaign ids (folders that contain campaign.json).
@@ -54,6 +55,7 @@ export function resolveCampaign(id = process.env.CAMPAIGN || DEFAULT_CAMPAIGN) {
   }
 
   const bannerPath = join(dir, 'components', 'CampaignBanner.vue')
+  const stylesPath = join(dir, 'styles.scss')
 
   return {
     id,
@@ -61,7 +63,10 @@ export function resolveCampaign(id = process.env.CAMPAIGN || DEFAULT_CAMPAIGN) {
     configPath: join(dir, 'config.json'),
     imagesDir: join(dir, 'images'),
     bannerPath: existsSync(bannerPath) ? bannerPath : null,
+    stylesPath: existsSync(stylesPath) ? stylesPath : null,
     theme: meta.theme,
     fontsUrl: meta.fontsUrl,
+    // Strict config checks in validate-config (task count, English texts, image files)
+    strictValidation: meta.strictValidation === true,
   }
 }

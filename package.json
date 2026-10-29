@@ -20,6 +20,7 @@
     "format:check": "prettier --check .",
     "check": "npm run lint && npm run lint:comments",
     "validate-config": "node scripts/validate-config.mjs",
+    "import-tasks": "node scripts/import-tasks.mjs",
     "tokens:build": "tsx scripts/build-tokens.ts",
     "tokens:watch": "tsx scripts/build-tokens.ts && chokidar 'src/design/tokens.json' -c 'tsx scripts/build-tokens.ts'",
     "tokens:docs": "tsx scripts/export-docs.ts",

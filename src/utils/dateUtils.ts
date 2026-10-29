@@ -54,6 +54,17 @@ export function parseYMDLocal(s: string): Date {
 }
 
 /**
+ * Formats a YYYY-MM-DD string as DD.MM.YYYY without timezone conversion.
+ * @param s - Date string in YYYY-MM-DD format
+ * @returns Date string in DD.MM.YYYY format
+ * @example formatYMDAsDMY("2026-12-01") === "01.12.2026"
+ */
+export function formatYMDAsDMY(s: string): string {
+  const [y, m, d] = s.split('-')
+  return `${d}.${m}.${y}`
+}
+
+/**
  * Calculates task date based on index and start date.
  * @param taskIndex - task index in array (starting from 0)
  * @param startDate - start date in YYYY-MM-DD format
@@ -214,13 +225,20 @@ export function makeTime(mode: TimeMode) {
 
   /**
    * Formats date to "Dec. 27" (mode-aware).
+   * Other languages use their own short format, e.g. "27. Dez." for "de".
    */
-  function formatTaskDateByMode(dateString: string): string {
+  function formatTaskDateByMode(dateString: string, lang = 'en'): string {
     const date = parseYMD(dateString)
+    const timeZone = isUTC ? { timeZone: 'UTC' } : {}
+    if (lang !== 'en') {
+      return new Intl.DateTimeFormat(lang, { day: 'numeric', month: 'short', ...timeZone }).format(
+        date,
+      )
+    }
     // Short month name with fixed TZ
     const month = new Intl.DateTimeFormat('en', {
       month: 'short',
-      ...(isUTC ? { timeZone: 'UTC' } : {}),
+      ...timeZone,
     }).format(date)
     const day = isUTC ? date.getUTCDate() : date.getDate()
     return `${month}. ${day}`
@@ -228,12 +246,19 @@ export function makeTime(mode: TimeMode) {
 
   /**
    * Formats date to "December, 21" (mode-aware).
+   * Other languages use their own long format, e.g. "21. Dezember" for "de".
    */
-  function formatDisabledTaskDateByMode(dateString: string): string {
+  function formatDisabledTaskDateByMode(dateString: string, lang = 'en'): string {
     const date = parseYMD(dateString)
+    const timeZone = isUTC ? { timeZone: 'UTC' } : {}
+    if (lang !== 'en') {
+      return new Intl.DateTimeFormat(lang, { day: 'numeric', month: 'long', ...timeZone }).format(
+        date,
+      )
+    }
     const month = new Intl.DateTimeFormat('en', {
       month: 'long',
-      ...(isUTC ? { timeZone: 'UTC' } : {}),
+      ...timeZone,
     }).format(date)
     const day = isUTC ? date.getUTCDate() : date.getDate()
     return `${month}, ${day}`

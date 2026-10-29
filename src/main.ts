@@ -7,6 +7,7 @@
 
 import '@/design/tokens.css'
 import '@/assets/scss/main.scss'
+import '@campaign-styles'
 
 import { createApp, watch } from 'vue'
 import App from './App.vue'

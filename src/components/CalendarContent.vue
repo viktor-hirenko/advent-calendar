@@ -21,7 +21,7 @@
   import { useAppConfig } from '@/composables/useAppConfig'
 
   // Utilities
-  import { getFirstDayOfWeekFromLang } from '@/utils/dateUtils'
+  import { formatYMDAsDMY, getFirstDayOfWeekFromLang } from '@/utils/dateUtils'
 
   // Components
   import CalendarDays from './CalendarDays.vue'
@@ -227,8 +227,21 @@
     getLocalizedText(calendarData.value.termsModal.title, currentLanguage.value),
   )
   const termsHtml = computed(() =>
-    getLocalizedText(calendarData.value.termsModal.html, currentLanguage.value),
+    fillPeriodPlaceholders(
+      getLocalizedText(calendarData.value.termsModal.html, currentLanguage.value),
+    ),
   )
+
+  /**
+   * Replaces \{startDate\} and \{endDate\} with the configured period (DD.MM.YYYY).
+   * @param text - Text that may contain the placeholders
+   * @returns Text with the placeholders filled in
+   */
+  function fillPeriodPlaceholders(text: string): string {
+    return text
+      .replace(/\{startDate\}/g, formatYMDAsDMY(config.value.startDate))
+      .replace(/\{endDate\}/g, formatYMDAsDMY(config.value.endDate))
+  }
   const closeAria = computed(() =>
     getLocalizedText(calendarData.value.termsModal.closeAriaLabel, currentLanguage.value),
   )
@@ -363,7 +376,7 @@
    */
   function handleTaskClick(task: TaskCardType) {
     if (!task.isActive) {
-      const todayStr = ymd(new Date())
+      const todayStr = ymd(currentDate.value)
       const today = calendarDays.value.find((d) => d.date === todayStr) ?? calendarDays.value[0]
       if (today) {
         calendarDays.value.forEach((d) => (d.isSelected = false))
@@ -539,7 +552,7 @@
 
     initializeElementCaches()
 
-    const todayString = ymd(new Date())
+    const todayString = ymd(currentDate.value)
     const todayDay = calendarDays.value.find((d) => d.date === todayString) ?? calendarDays.value[0]
     if (todayDay) {
       calendarDays.value.forEach((d) => (d.isSelected = false))

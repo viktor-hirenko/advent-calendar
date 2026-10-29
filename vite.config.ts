@@ -10,6 +10,9 @@ import { resolveCampaign, type ResolvedCampaign } from './scripts/campaign.mjs'
 const campaign = resolveCampaign()
 
 const sharedBanner = fileURLToPath(new URL('./src/components/CalendarBanner.vue', import.meta.url))
+const noCampaignStyles = fileURLToPath(
+  new URL('./src/assets/scss/campaign-styles-none.scss', import.meta.url),
+)
 
 /**
  * Fails early when the campaign theme is missing from the design tokens.
@@ -29,10 +32,18 @@ function assertThemeExists(theme: string) {
 
 /**
  * Injects campaign theme and fonts stylesheet into index.html placeholders.
+ * The dev server restarts when campaign.json changes, so a new theme or fonts URL is picked up.
  */
 function campaignHtml(current: ResolvedCampaign): Plugin {
+  const campaignJson = `${current.dir}/campaign.json`
   return {
     name: 'campaign-html',
+    configureServer(server) {
+      server.watcher.add(campaignJson)
+      server.watcher.on('change', (file) => {
+        if (file === campaignJson) server.restart()
+      })
+    },
     transformIndexHtml: {
       order: 'pre',
       handler: (html) =>
@@ -56,6 +67,8 @@ export default defineConfig({
       '@campaign': campaign.dir,
       // Campaign banner if present, otherwise the shared one
       '@campaign-banner': campaign.bannerPath ?? sharedBanner,
+      // Campaign styles if present, otherwise an empty stylesheet
+      '@campaign-styles': campaign.stylesPath ?? noCampaignStyles,
     },
   },
   build: {

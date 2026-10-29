@@ -1,0 +1,305 @@
+// Santa Vegas 2026 look. Values come from the Figma page "Advent Calendar"
+// (file iH5VG68nnxrevoIHCU5fqj, node 24180:42211).
+// Every rule starts with the theme selector: it outranks the shared component styles
+// (scoped selectors) without changing them, so other campaigns keep their look.
+
+@use 'sass:list';
+
+$theme: "html[data-theme='alpa-santa-vegas']";
+
+// Illustration of a card: left, top, width and height inside the 256x72 slot under the card header.
+// Each picture is the Figma export of the layer, the offsets are its export bounds in the card design.
+$illustrations: (
+  bet: 71px -5px 118.5px 83px,
+  deposit: 78px -4px 105.5px 91px,
+  combo: 76px -2.77px 109.5px 91px,
+  live: 82px -3.25px 117px 90px,
+  combo-football: 82px -5px 101px 96.5px,
+  promo: 82px -2.77px 97px 88.5px,
+);
+$illustrations-finished: (
+  bet: 97px -2px 71px 71px,
+  deposit: 87px 1px 82px 61px,
+  combo: 94px -2px 68px 68px,
+  live: 89px -3px 70px 70px,
+  combo-football: 94px -5px 71px 71px,
+  promo: 94px -4px 72px 72px,
+);
+
+@mixin illustration-box($box) {
+  top: to-rem(list.nth($box, 2));
+  left: to-rem(list.nth($box, 1));
+  width: to-rem(list.nth($box, 3));
+  height: to-rem(list.nth($box, 4));
+}
+
+#{$theme} {
+  // ---------- Page ----------
+
+  // The calendar starts right under the banner instead of being centered in the free height
+  .main {
+    align-items: flex-start;
+  }
+
+  .calendar {
+    border-radius: 0;
+    background: transparent;
+    margin-top: 0;
+    padding-top: to-rem(24px);
+
+    @include mq(lg) {
+      padding-top: to-rem(32px);
+    }
+  }
+
+  .calendar__inner {
+    @include mq(lg) {
+      row-gap: to-rem(52px);
+    }
+  }
+
+  .calendar__header {
+    @include mq(lg) {
+      gap: to-rem(24px);
+      margin-bottom: to-rem(2px);
+    }
+  }
+
+  .calendar__title {
+    font-size: to-rem(24px);
+    font-weight: weight(black);
+    line-height: 1.35;
+
+    @include mq(lg) {
+      font-size: to-rem(32px);
+      line-height: 1.25;
+    }
+  }
+
+  .calendar__description {
+    text-align: left;
+  }
+
+  // ---------- Day picker ----------
+
+  // Phone: 34px from the text above, 19px to the cards below
+  .calendar-picker {
+    margin-bottom: to-rem(-5px);
+    margin-top: to-rem(10px);
+
+    @include mq(lg) {
+      justify-content: center;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+  }
+
+  .calendar-picker__month-title {
+    line-height: 1.2;
+  }
+
+  .calendar-picker__month-group {
+    @include mq(lg) {
+      &::before {
+        line-height: 1.2;
+      }
+    }
+  }
+
+  .calendar-days__container {
+    @include mq(lg) {
+      row-gap: to-rem(16px);
+    }
+  }
+
+  // Garland over today's day
+  .calendar-days__day--active {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      top: to-rem(2px);
+      left: to-rem(3px);
+      width: to-rem(44px);
+      height: to-rem(13px);
+      background: url('./images/days/garland.webp') center / 100% 100% no-repeat;
+      pointer-events: none;
+      content: '';
+    }
+  }
+
+  // ---------- Card stack (desktop): two cards behind the active one, 40px visible on each side ----------
+
+  .calendar__tasks-panel {
+    @include mq(lg) {
+      &::before,
+      &::after {
+        width: to-rem(288px);
+        height: to-rem(240px);
+        border-radius: to-rem(16px);
+
+        // The button of a back card: 256x32 at 16,192, as in the design
+        background-color: rgb(182 189 204 / 10%);
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='32'%3E%3Crect width='256' height='32' rx='16' fill='%23b6bdcc' fill-opacity='.2'/%3E%3C/svg%3E");
+        background-size: to-rem(256px) to-rem(32px);
+        background-position: to-rem(16px) to-rem(192px);
+        background-repeat: no-repeat;
+      }
+
+      &::before {
+        left: 0;
+      }
+
+      &::after {
+        right: 0;
+      }
+    }
+  }
+
+  // Desktop: room around the card so the glow of the active card is not cut by the scroll area.
+  // The end padding of a scroll area does not count in Chrome, so a 1px item after the last
+  // card keeps the last card reachable. On phones the row is cut at the page padding, as in the design.
+  .calendar__tasks-list {
+    @include mq(lg) {
+      max-width: to-rem(336px);
+      margin: to-rem(-24px);
+      padding: to-rem(24px);
+      gap: to-rem(48px);
+      border-radius: 0;
+
+      // While the row scrolls, cards fade out over the glow room instead of being cut over the back cards
+      mask-image: linear-gradient(
+        90deg,
+        transparent 0,
+        #000 to-rem(24px),
+        #000 calc(100% - #{to-rem(24px)}),
+        transparent 100%
+      );
+      scroll-padding-inline: to-rem(24px);
+
+      &::after {
+        flex: 0 0 1px;
+        content: '';
+      }
+    }
+  }
+
+  // Every card in the row gets the height of the tallest one
+  .calendar__tasks-list > li {
+    display: flex;
+  }
+
+  // ---------- Cards ----------
+
+  .task-card {
+    width: to-rem(288px);
+    height: auto;
+    min-height: to-rem(272px);
+    padding: to-rem(16px) to-rem(16px) to-rem(18px);
+    gap: to-rem(8px);
+  }
+
+  // The 1px frame is drawn inside the card in the design, so the padding is 1px smaller
+  .task-card--active {
+    padding: to-rem(15px) to-rem(15px) to-rem(17px);
+    border: 1px solid transparent;
+    box-shadow: 0 0 to-rem(20px) #c7539d;
+    background:
+      linear-gradient(90deg, #2e0f6c 0%, #712df5 100%) padding-box,
+      linear-gradient(90deg, #ffa000 0%, #ffff7b 100%) border-box;
+  }
+
+  .task-card--disabled {
+    background:
+      url('./images/cards/lock-bg.webp') center / cover no-repeat,
+      #7001bf;
+    padding-bottom: to-rem(16px);
+  }
+
+  // Header row is 24px high in the design (the label box), the illustration slot starts 8px under it
+  .task-card__header {
+    min-height: to-rem(24px);
+  }
+
+  .task-card__title {
+    line-height: 1.2;
+  }
+
+  .task-card--disabled .task-card__title {
+    color: var(--color-text-primary);
+  }
+
+  .task-card--disabled .task-card__description {
+    text-transform: none;
+  }
+
+  // Title and text start 10px under the illustration on the active card and 5px on the finished one
+  .task-card__content {
+    position: relative;
+    z-index: 1;
+    justify-content: flex-start;
+    gap: to-rem(8px);
+    margin-top: to-rem(2px);
+  }
+
+  .task-card--finished .task-card__content {
+    margin-top: to-rem(-3px);
+  }
+
+  .task-card--disabled .task-card__content {
+    margin-top: 0;
+  }
+
+  // Padlock with its glow is one exported layer: the 256x156 content block of the locked card
+  .task-card--disabled .task-card__image {
+    top: to-rem(60px);
+    left: to-rem(16px);
+    width: to-rem(256px);
+    height: to-rem(156px);
+    transform: none;
+  }
+
+  .task-card__illustration-img {
+    transform: none;
+  }
+
+  @each $type, $box in $illustrations {
+    .task-card--active[data-type='#{$type}'] .task-card__illustration-img {
+      @include illustration-box($box);
+    }
+  }
+
+  @each $type, $box in $illustrations-finished {
+    .task-card--finished[data-type='#{$type}'] .task-card__illustration-img {
+      @include illustration-box($box);
+    }
+  }
+
+  .task-card__button {
+    min-height: to-rem(32px);
+    font-size: to-rem(12px);
+    font-weight: weight(black);
+    line-height: to-rem(16px);
+    letter-spacing: to-rem(0.72px);
+    margin-top: auto;
+
+    @include font-family(primary);
+  }
+
+  .task-card--active .task-card__button {
+    border-radius: to-rem(100px);
+  }
+
+  .task-card--disabled .task-card__button {
+    background-color: rgb(38 42 52 / 30%);
+    color: var(--color-text-primary);
+  }
+
+  // ---------- Terms ----------
+
+  .calendar__footer-button {
+    font-weight: weight(black);
+
+    @include font-family(primary);
+  }
+}

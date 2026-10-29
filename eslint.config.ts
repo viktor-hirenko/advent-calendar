@@ -15,7 +15,8 @@ export default defineConfigWithVueTs(
     files: ['**/*.{ts,mts,tsx,vue}'],
   },
 
-  globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**']),
+  // docs/local holds local task notes and helper scripts that are not part of the app
+  globalIgnores(['**/dist/**', '**/dist-ssr/**', '**/coverage/**', 'docs/local/**']),
 
   pluginVue.configs['flat/essential'],
   vueTsConfigs.recommended,

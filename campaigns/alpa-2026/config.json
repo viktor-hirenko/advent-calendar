@@ -1,0 +1,467 @@
+{
+  "calendar": {
+    "title": {
+      "en": "Sports Advent Calendar"
+    },
+    "description": {
+      "en": "Tasks will be updated every day at 00:00 (UTC)",
+      "de": "Die Aufgaben werden jeden Tag um 00:00 (UTC) aktualisiert.",
+      "fr": "Les tâches seront mises à jour chaque jour à 00:00 (UTC).",
+      "it": "Le attività verranno aggiornate ogni giorno alle 00:00 (UTC)."
+    },
+    "labels": {
+      "promotion": {
+        "en": "Promotion",
+        "de": "Aktion",
+        "fr": "Promotion",
+        "it": "Promozione"
+      }
+    },
+    "links": {
+      "primary": "https://bet.rocketplay19.com/"
+    },
+    "images": {
+      "banner": {
+        "alt": {
+          "en": "Neon football stadium with Christmas trees in front of a night city"
+        }
+      },
+      "disabledTaskIcon": "cards/lock.webp"
+    },
+    "disabledTask": {
+      "title": {
+        "en": "See you on",
+        "de": "Bis zum",
+        "fr": "À bientôt le",
+        "it": "Ci vediamo il"
+      },
+      "buttonText": {
+        "en": "Return to Today's Task",
+        "de": "Zurück zur heutigen Aufgabe",
+        "fr": "Retour à la tâche d'aujourd'hui",
+        "it": "Torna al compito di oggi"
+      }
+    },
+    "tasks": [
+      {
+        "id": "day-01",
+        "type": "bet",
+        "title": {
+          "en": "Snow Kick-Off"
+        },
+        "description": {
+          "en": "Place 3 any bets of <strong>€20</strong> or more at odds of 1.70 or higher and get a <strong>€5</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-02",
+        "type": "deposit",
+        "title": {
+          "en": "Hot Chocolate Deposit"
+        },
+        "description": {
+          "en": "Make a deposit of <strong>€30</strong> or more and get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make deposit"
+        }
+      },
+      {
+        "id": "day-03",
+        "type": "combo-football",
+        "title": {
+          "en": "Snowball Combo"
+        },
+        "description": {
+          "en": "Place a combo bet with at least 3 selections (football) at combined odds of 3.50 or higher and a stake of <strong>€15</strong> or more to get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-04",
+        "type": "live",
+        "title": {
+          "en": "Live Sleigh Ride"
+        },
+        "description": {
+          "en": "Place 3 live single bets of <strong>€15</strong> or more each at odds of 1.60 or higher and get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-05",
+        "type": "combo",
+        "title": {
+          "en": "Gingerbread Combo"
+        },
+        "description": {
+          "en": "Place a combo bet with 4 selections, combined odds of 3.50 or higher, with a stake of <strong>€15</strong> or more, and get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-06",
+        "type": "bet",
+        "title": {
+          "en": "Second Candle, Second Chance"
+        },
+        "description": {
+          "en": "Place any bet of <strong>€25</strong> or more at odds of 2.50 or higher. If the bet loses, get a <strong>€10</strong> Only Win Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-07",
+        "type": "bet",
+        "title": {
+          "en": "Active Monday (soccer)"
+        },
+        "description": {
+          "en": "Place 3 bets on football of <strong>€25</strong> or more each at odds of 1.60 or higher on any sport and get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-08",
+        "type": "combo-football",
+        "title": {
+          "en": "Champions Night Combo"
+        },
+        "description": {
+          "en": "Place a combo bet on 4 Champions League matches, with odds of 1.50 or higher for each selection and a stake of <strong>€10</strong> or more, and get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-09",
+        "type": "deposit",
+        "title": {
+          "en": "Fireplace Deposit"
+        },
+        "description": {
+          "en": "Make a deposit of <strong>€50</strong> or more and get a <strong>€15</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make deposit"
+        }
+      },
+      {
+        "id": "day-10",
+        "type": "combo-football",
+        "title": {
+          "en": "Europe After Dark"
+        },
+        "description": {
+          "en": "Place a combo bet with at least 4 selections at odds of 1.50 or higher per selection and a stake of <strong>€20</strong> or more to get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-11",
+        "type": "live",
+        "title": {
+          "en": "Live"
+        },
+        "description": {
+          "en": "Place 2 live single bets of <strong>€20</strong> or more each at odds of 1.80 or higher and get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-12",
+        "type": "combo",
+        "title": {
+          "en": "Mistletoe Combo"
+        },
+        "description": {
+          "en": "Place a combo bet with 5 selections, each at odds of 1.50 or higher, with a stake of <strong>€10</strong> or more, and get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-13",
+        "type": "bet",
+        "title": {
+          "en": "Third Candle, Second Chance"
+        },
+        "description": {
+          "en": "Place a combo bet of <strong>€20</strong> or more with at least 3 selections at combined odds of 4.00 or higher. If the bet loses, get a <strong>€10</strong> Only Win Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-14",
+        "type": "bet",
+        "title": {
+          "en": "Active Monday (soccer)"
+        },
+        "description": {
+          "en": "Place 3 bets on football of <strong>€25</strong> or more each at odds of 1.60 or higher on any sport and get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-15",
+        "type": "combo",
+        "title": {
+          "en": "Spotlight Match"
+        },
+        "description": {
+          "en": "Place a combo bet on 3 selections any sport, with odds of 1.50 or higher for each selection and a stake of <strong>€10</strong> or more, and get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-16",
+        "type": "deposit",
+        "title": {
+          "en": "Gift Wrap Deposit"
+        },
+        "description": {
+          "en": "Make a deposit of <strong>€30</strong> or more and get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make deposit"
+        }
+      },
+      {
+        "id": "day-17",
+        "type": "combo-football",
+        "title": {
+          "en": "Conference Finale Combo"
+        },
+        "description": {
+          "en": "Place a combo bet with at least 4 selections at odds of 1.50 or higher per selection and a stake of <strong>€20</strong> or more to get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-18",
+        "type": "live",
+        "title": {
+          "en": "Live Lights Friday"
+        },
+        "description": {
+          "en": "Place 3 live single bets of <strong>€15</strong> or more each at odds of 1.60 or higher and get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-19",
+        "type": "combo",
+        "title": {
+          "en": "Candy Cane Combo"
+        },
+        "description": {
+          "en": "Place a combo bet with 4 selections, each at odds of 1.50 or higher, with a stake of <strong>€10</strong> or more, and get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-20",
+        "type": "bet",
+        "title": {
+          "en": "Fourth Candle, Second Chance"
+        },
+        "description": {
+          "en": "Place 2 any bet of <strong>€20</strong> or more at odds of 2.50 or higher. If the bet loses, get a <strong>€10</strong> Only Win Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-21",
+        "type": "bet",
+        "title": {
+          "en": "Active Monday (soccer)"
+        },
+        "description": {
+          "en": "Place 3 bets on football of <strong>€25</strong> or more each at odds of 1.60 or higher on any sport and get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-22",
+        "type": "combo",
+        "title": {
+          "en": "Three Days to Go Combo"
+        },
+        "description": {
+          "en": "Place a combo bet on 3 selectios any sport, with odds of 1.50 or higher for each selection and a stake of <strong>€10</strong> or more, and get a <strong>€10</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make bet"
+        }
+      },
+      {
+        "id": "day-23",
+        "type": "deposit",
+        "title": {
+          "en": "Last-Minute Gift Deposit"
+        },
+        "description": {
+          "en": "Make a deposit of <strong>€50</strong> or more and get a <strong>€15</strong> Freebet."
+        },
+        "buttonText": {
+          "en": "Make deposit"
+        }
+      },
+      {
+        "id": "day-24",
+        "type": "promo",
+        "title": {
+          "en": "Christmas Eve Gift"
+        },
+        "description": {
+          "en": "Enter the promo code BONUS2027 in the Promotions section to receive a Secret Bonus  \"Hunting\" <strong>€30</strong>."
+        },
+        "buttonText": {
+          "en": "Get bonus"
+        }
+      }
+    ],
+    "taskTypes": {
+      "bet": {
+        "image": "types/bet.webp",
+        "finishedImage": "types/bet-finished.webp"
+      },
+      "deposit": {
+        "image": "types/deposit.webp",
+        "finishedImage": "types/deposit-finished.webp"
+      },
+      "combo": {
+        "image": "types/combo.webp",
+        "finishedImage": "types/combo-finished.webp"
+      },
+      "combo-football": {
+        "image": "types/combo-football.webp",
+        "finishedImage": "types/combo-football-finished.webp"
+      },
+      "live": {
+        "image": "types/live.webp",
+        "finishedImage": "types/live-finished.webp"
+      },
+      "promo": {
+        "image": "types/promo.webp",
+        "finishedImage": "types/promo-finished.webp"
+      }
+    },
+    "taskStatus": {
+      "finishesIn": {
+        "en": "Finishes in",
+        "de": "Endet in",
+        "fr": "Se termine dans",
+        "it": "Finisce tra"
+      },
+      "finished": {
+        "en": "Finished",
+        "de": "Beendet",
+        "fr": "Terminé",
+        "it": "Finito"
+      },
+      "dayUnit": {
+        "en": "d",
+        "de": "Tg",
+        "fr": "j",
+        "it": "g"
+      }
+    },
+    "termsButton": {
+      "en": "Terms and conditions",
+      "de": "Geschäftsbedingungen",
+      "fr": "Termes et conditions",
+      "it": "Termini e condizioni"
+    },
+    "termsModal": {
+      "title": {
+        "en": "Terms and conditions",
+        "de": "Allgemeine Geschäftsbedingungen",
+        "fr": "Termes et conditions",
+        "it": "Termini e Condizioni"
+      },
+      "closeAriaLabel": {
+        "en": "Close",
+        "de": "Schließen",
+        "fr": "Fermer",
+        "it": "Chiudi"
+      },
+      "html": {
+        "en": "<ol><li>This promotion is available to all registered players on the website, which are eligible to receive bonuses.</li><li>Sports Advent Calendar Promotion starts at 00:00 (UTC) {startDate} and runs until 23:59 (UTC) {endDate}.</li><li>Tasks are updated daily at 00:00 (UTC). Each daily task is valid from 00:00 (UTC) to 23:59 (UTC).</li><li>To receive a daily bonus, each player must meet the specified bet or deposit requirements set for the eligible daily task.</li><li>Each task can only be completed once; the player gets one bonus per completed task.</li><li>Freebets bonuses are credited as OnlyWin Freebets unless otherwise stated and must be used within 3 days.</li><li>Cashout bets and bets made with bonus funds do not count in this promotion.</li><li>We reserve the right to amend, cancel, reclaim or refuse this promotion at our discretion.</li><li>General Terms and Conditions apply to this promotion.</li></ol>",
+        "de": "<ol><li>Diese Promotion steht allen registrierten Nutzern der Website zur Verfügung, die berechtigt sind, Boni zu erhalten</li><li>Die Sport-Adventskalender-Promotion beginnt um 00:00 (UTC) am {startDate} und läuft bis 23:59 (UTC) am {endDate}</li><li>Die Aufgaben werden täglich um 00:00 (UTC) aktualisiert. Jede tägliche Aufgabe ist von 00:00 (UTC) bis 23:59 (UTC) gültig</li><li>Um einen täglichen Bonus zu erhalten, muss jeder Spieler die festgelegten Wett- oder Einzahlungsvoraussetzungen der jeweiligen täglichen Aufgabe erfüllen. Um die Aufgabe abzuschließen, müssen alle festgelegten Wetten platziert werden</li><li>Jede Aufgabe kann nur einmal abgeschlossen werden. Dementsprechend erhält der Spieler nur einen Bonus für jede abgeschlossene Aufgabe</li><li>Die Freebet-Boni werden den Spielern als OnlyWin-Freebets gutgeschrieben, sofern nicht anders angegeben. Alle Bonus-Freebets müssen innerhalb von 3 Tagen nach Erhalt eingesetzt werden.</li><li>Cashout-Wetten und Wetten, die mit Bonusgeldern platziert wurden, zählen nicht für diese Promotion</li><li>Wir behalten uns das Recht vor, den Zugang zu dieser Promotion zu beschränken, sie zu ändern, zu stornieren, zurückzufordern oder nach eigenem Ermessen abzulehnen</li><li>Die allgemeinen Geschäftsbedingungen gelten für diese Promotion</li></ol>",
+        "fr": "<ol><li>Cette promotion est disponible pour tous les joueurs enregistrés sur le site, qui sont éligibles pour recevoir des bonus.</li><li>La Promotion du Calendrier de l'Avent Sportif commence à 00:00 (UTC) le {startDate} et se termine à 23:59 (UTC) le {endDate}.</li><li>Les tâches sont mises à jour quotidiennement à 00:00 (UTC). Chaque tâche quotidienne est valable de 00:00 (UTC) à 23:59 (UTC).</li><li>Pour recevoir un bonus quotidien, chaque joueur doit remplir les conditions de pari ou de dépôt spécifiées pour la tâche quotidienne éligible. Pour compléter la tâche, les participants doivent placer tous les paris spécifiés.</li><li>Chaque tâche ne peut être complétée qu'une seule fois. Par conséquent, le joueur reçoit un seul bonus par tâche complétée.</li><li>Les bonus Freebet sont crédités en tant que Freebets OnlyWin sauf indication contraire. Tous les Freebets bonus doivent être utilisés dans les 3 jours suivant leur réception.</li><li>Les paris Cashout et les paris effectués avec des fonds bonus ne comptent pas pour cette promotion.</li><li>Nous nous réservons le droit de limiter l'accès, de modifier, d'annuler, de récupérer ou de refuser cette promotion à notre discrétion.</li><li>Les Conditions Générales s'appliquent à cette promotion.</li></ol>",
+        "it": "<ol><li>Questa promozione è disponibile per tutti gli utenti registrati sul sito, che sono idonei a ricevere bonus.</li><li>La Promozione del Calendario dell'Avvento Sportivo inizia alle 00:00 (UTC) del {startDate} e termina alle 23:59 (UTC) del {endDate}.</li><li>Le attività saranno aggiornate ogni giorno alle 00:00 (UTC). Ogni attività giornaliera è valida dalle 00:00 (UTC) fino alle 23:59 (UTC).</li><li>Per ricevere un bonus giornaliero, ogni giocatore deve soddisfare i requisiti di scommessa o di deposito specificati per l'attività giornaliera idonea. Per completare l'attività, i partecipanti devono piazzare tutte le scommesse specificate.</li><li>Ogni attività può essere completata solo una volta. Di conseguenza, il giocatore riceve solo un bonus per ogni attività completata.</li><li>I bonus Freebet saranno accreditati ai giocatori come Freebet OnlyWin, salvo diversa indicazione. Tutte le Freebet bonus devono essere giocate entro 3 giorni dal ricevimento.</li><li>Le scommesse Cashout e le scommesse effettuate con fondi bonus non contano per questa promozione.</li><li>Ci riserviamo il diritto di limitare l'accesso, modificare, annullare, reclamare o rifiutare questa promozione a sua discrezione.</li><li>Si applicano i Termini e Condizioni Generali a questa promozione.</li></ol>"
+      }
+    }
+  },
+  "config": {
+    "enabled": true,
+    "ui": {
+      "bannerSection": {
+        "visible": true
+      },
+      "introSection": {
+        "visible": true,
+        "title": true,
+        "tagLabel": false,
+        "description": false
+      },
+      "calendarSection": {
+        "visible": true,
+        "dayPicker": true,
+        "tasksPanel": true,
+        "finishedCardButton": "returnToToday"
+      },
+      "footerSection": {
+        "visible": true,
+        "termsButton": true,
+        "termsModal": {
+          "visible": true
+        }
+      }
+    },
+    "startDate": "2026-12-01",
+    "endDate": "2026-12-24",
+    "timeMode": "utc",
+    "alignByWeekday": true,
+    "firstDayOfWeek": "monday",
+    "localizeDates": true,
+    "defaultLanguage": "en",
+    "supportedLanguages": ["en", "de", "fr", "it"]
+  }
+}

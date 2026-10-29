@@ -48,8 +48,8 @@ import {
   makeTime,
   ymdLocal,
   parseYMDLocal,
+  parseYMDStrict,
   isToday,
-  getTaskDate as getTaskDateLocal,
   getDaysBetween,
 } from '@/utils/dateUtils'
 
@@ -61,6 +61,7 @@ import type {
   CalendarTask,
   LocalizedText,
   SupportedLanguage,
+  TimeFns,
   UseCalendarReturn,
 } from '@/types/app-config'
 
@@ -168,11 +169,17 @@ function getTaskForDay(dayIndex: number, tasks: CalendarTask[]): CalendarTask {
 }
 
 /**
- * Checks "active" by day index relative to config.startDate (local mode helper).
+ * Offset (ms) that moves the real "today" to the ?testDate day in the active time mode.
+ * Returns 0 when the parameter is missing or is not a real YYYY-MM-DD date.
  */
-function isTaskActiveByIndex(dayIndex: number, config: CalendarConfig): boolean {
-  const taskDate = getTaskDateLocal(dayIndex, config.startDate)
-  return isToday(taskDate)
+function getTestDateOffset(testDate: string | undefined, fns: TimeFns): number {
+  if (!testDate) return 0
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(testDate) || !parseYMDStrict(testDate)) {
+    devWarn(`[testDate] Ignored invalid value "${testDate}", expected YYYY-MM-DD`)
+    return 0
+  }
+  const realToday = fns.parseYMD(fns.ymd(new Date()))
+  return fns.parseYMD(testDate).getTime() - realToday.getTime()
 }
 
 /**
@@ -247,42 +254,41 @@ function instantiateAppConfig(): UseCalendarReturn {
   else currentLanguage.value = resolveLanguage()
 
   /**
-   * Optional test date for QA (e.g., freeze "today" via ?testDate=YYYY-MM-DD).
+   * App clock. With ?testDate=YYYY-MM-DD the clock is shifted by whole days, so "today"
+   * is the test date while the time of day and the countdown keep running.
    */
-  const currentDate = ref<Date>(new Date())
-  if (queryParams.testDate) {
-    currentDate.value = new Date(queryParams.testDate)
-  } else {
-    // Start a lightweight day ticker only when not in test mode
-    let dayTicker: number | null = null
+  const clockOffsetMs = getTestDateOffset(queryParams.testDate, timeFns.value)
+  const now = (): Date => new Date(Date.now() + clockOffsetMs)
 
-    const tick = () => {
-      // Compare by YMD using time-mode aware helpers
-      const prev = timeFns.value.ymd(currentDate.value)
-      const now = new Date()
-      const next = timeFns.value.ymd(now)
-      if (next !== prev) currentDate.value = now
+  const currentDate = ref<Date>(now())
+
+  // Lightweight day ticker: checking every 30s is enough to catch midnight
+  const dayTicker = window.setInterval(() => {
+    const next = now()
+    if (timeFns.value.ymd(next) !== timeFns.value.ymd(currentDate.value)) {
+      currentDate.value = next
     }
+  }, 30_000)
 
-    // tick every 30s is enough to catch midnight; cheap & safe
-    dayTicker = window.setInterval(tick, 30_000)
+  // Re-evaluate "today" right away when the time mode changes (local <-> utc)
+  watch(
+    () => config.value.timeMode,
+    () => {
+      currentDate.value = now()
+    },
+  )
 
-    // ensure immediate correct value on timeMode change (local <-> utc)
-    watch(
-      () => config.value.timeMode,
-      () => {
-        // re-evaluate "today" right away
-        const now = new Date()
-        currentDate.value = now
-      },
-    )
+  window.addEventListener('beforeunload', () => clearInterval(dayTicker))
 
-    window.addEventListener('beforeunload', () => {
-      if (dayTicker !== null) {
-        clearInterval(dayTicker)
-      }
-    })
-  }
+  /**
+   * True when the date (YYYY-MM-DD) is today on the app clock.
+   */
+  const isTodayNow = (s: string): boolean => s === timeFns.value.ymd(currentDate.value)
+
+  /**
+   * Language for card dates: page language when config.localizeDates is on, English otherwise.
+   */
+  const dateLanguage = (): string => (config.value.localizeDates ? currentLanguage.value : 'en')
 
   /**
    * Calendar days array with attached tasks.
@@ -304,8 +310,9 @@ function instantiateAppConfig(): UseCalendarReturn {
       const taskDate = timeFns.value.getTaskDateByMode(index, config.value.startDate)
 
       day.hasTask = true
-      // "active" means "today is this task's date" considering selected time mode
-      day.isActive = timeFns.value.isToday(taskDate)
+      // "active" means "today is this task's date" on the app clock
+      day.isActive = isTodayNow(taskDate)
+      day.isToday = isTodayNow(day.date)
       day.task = task
     })
 
@@ -336,7 +343,7 @@ function instantiateAppConfig(): UseCalendarReturn {
   }
 
   function isTaskActiveLocal(date: string): boolean {
-    return isToday(date)
+    return isTodayNow(date)
   }
 
   function getTaskByIndex(index: number): CalendarTask {
@@ -344,7 +351,7 @@ function instantiateAppConfig(): UseCalendarReturn {
   }
 
   function isTaskActiveByIndexLocal(index: number): boolean {
-    return isTaskActiveByIndex(index, config.value)
+    return isTodayNow(timeFns.value.getTaskDateByMode(index, config.value.startDate))
   }
 
   /**
@@ -369,6 +376,7 @@ function instantiateAppConfig(): UseCalendarReturn {
     config,
     calendarDays,
     currentDate,
+    now,
 
     getLocalizedText,
     getTaskForDate: getTaskForDateLocal,
@@ -379,10 +387,11 @@ function instantiateAppConfig(): UseCalendarReturn {
     // Time-mode aware fns
     ymd: (d: Date) => timeFns.value.ymd(d),
     parseYMD: (s: string) => timeFns.value.parseYMD(s),
-    isToday: (s: string) => timeFns.value.isToday(s),
+    isToday: isTodayNow,
 
-    formatTaskDate: (s: string) => timeFns.value.formatTaskDateByMode(s),
-    formatDisabledTaskDate: (s: string) => timeFns.value.formatDisabledTaskDateByMode(s),
+    formatTaskDate: (s: string) => timeFns.value.formatTaskDateByMode(s, dateLanguage()),
+    formatDisabledTaskDate: (s: string) =>
+      timeFns.value.formatDisabledTaskDateByMode(s, dateLanguage()),
 
     getTaskDate: (i: number, start: string) => timeFns.value.getTaskDateByMode(i, start),
     getDaysBetween: (a: string, b: string) => timeFns.value.getDaysBetweenByMode(a, b),

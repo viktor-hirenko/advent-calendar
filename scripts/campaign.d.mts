@@ -4,8 +4,10 @@ export interface ResolvedCampaign {
   configPath: string
   imagesDir: string
   bannerPath: string | null
+  stylesPath: string | null
   theme: string
   fontsUrl: string
+  strictValidation: boolean
 }
 
 export const ROOT_DIR: string

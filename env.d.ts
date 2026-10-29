@@ -6,6 +6,9 @@ declare module '@campaign/config.json' {
   export default config
 }
 
+/** Active campaign styles (campaigns/<id>/styles.scss or an empty stylesheet). */
+declare module '@campaign-styles'
+
 /** Active campaign banner (campaigns/<id>/components/CampaignBanner.vue or the shared CalendarBanner.vue). */
 declare module '@campaign-banner' {
   import type { DefineComponent } from 'vue'
