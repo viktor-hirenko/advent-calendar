@@ -210,9 +210,7 @@ $illustrations-finished: (
   }
 
   .task-card--disabled {
-    background:
-      url('./images/cards/lock-bg.webp') center / cover no-repeat,
-      #7001bf;
+    background: linear-gradient(90deg, #20183c 0%, #5b45a2 100%);
     padding-bottom: to-rem(16px);
   }
 
