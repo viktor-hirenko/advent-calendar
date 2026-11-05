@@ -18,7 +18,10 @@
 //   --date-today-fg, --date-today-bg, --date-passed-fg, --date-passed-bg,
 //   --modal-bg, --modal-shadow, --overlay-bg, --overlay-effect
 // plus --font-page and the buttons: --button-primary-bg, --button-primary-fg,
-// --button-secondary-bg, --button-secondary-fg, --button-secondary-border.
+// --button-secondary-bg, --button-secondary-fg, --button-secondary-stroke.
+// ---
+// Font sizes, line heights and letter spacing are set here; a campaign overrides
+// the ones that differ in its own styles.scss.
 // -----------------------------------------------------------------------------
 
 $layout: "html[data-layout='carousel']";
@@ -521,8 +524,11 @@ $card-width: 288px;
   .task-card__button {
     min-height: to-rem(32px);
     padding: to-rem(4px) to-rem(12px);
-    border: var(--button-secondary-border, 0);
+    border: 0;
     border-radius: to-rem(8px);
+
+    // An outline drawn inside the button: it takes no room, so a long label keeps the full width
+    box-shadow: var(--button-secondary-stroke, none);
     background: var(--button-secondary-bg);
     color: var(--button-secondary-fg);
     margin-top: to-rem(8px);
@@ -532,7 +538,7 @@ $card-width: 288px;
   }
 
   .task-card--active .task-card__button {
-    border: 0;
+    box-shadow: none;
     background: var(--button-primary-bg);
     color: var(--button-primary-fg);
   }
@@ -651,14 +657,10 @@ $card-width: 288px;
       padding-left: to-rem(24px);
 
       li {
-        margin: 0 0 to-rem(12px);
+        margin: 0;
         color: var(--fg-secondary);
 
         @include type(16px, 24px, 400, 0.2px);
-
-        &:last-child {
-          margin-bottom: 0;
-        }
       }
     }
   }

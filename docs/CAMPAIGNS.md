@@ -50,11 +50,11 @@ campaigns/<id>/
   - картки: `--card-active-bg`, `--card-active-border`, `--card-active-shadow`, `--card-default-bg`, `--card-default-shadow` (закрита картка), `--card-passed-bg`, `--card-passed-shadow`;
   - дні: `--date-default-fg`, `--date-default-bg`, `--date-default-border`, `--date-hover-fg`, `--date-hover-bg`, `--date-hover-border`, `--date-today-fg`, `--date-today-bg`, `--date-passed-fg`, `--date-passed-bg`;
   - вікно правил: `--modal-bg`, `--modal-shadow` (від 544px), `--overlay-bg`, `--overlay-effect`;
-  - кнопки: `--button-primary-bg`, `--button-primary-fg` (кнопка завдання), `--button-secondary-bg`, `--button-secondary-fg`, `--button-secondary-border` (кнопка «повернутися до сьогоднішнього завдання»).
+  - кнопки: `--button-primary-bg`, `--button-primary-fg` (кнопка завдання), `--button-secondary-bg`, `--button-secondary-fg`, `--button-secondary-stroke` (кнопка «повернутися до сьогоднішнього завдання»; обведення — тінь усередині кнопки, наприклад `inset 0 0 0 2px <колір>`: як обведення в Figma, воно не забирає місця в напису).
   
-  Необовʼязкові: `--date-default-border`, `--card-default-shadow`, `--button-secondary-border`.
+  Необовʼязкові: `--date-default-border`, `--card-default-shadow`, `--button-secondary-stroke`.
 - Прикраса сьогоднішнього дня (наприклад, гірлянда) — у стилях кампанії: `.calendar-days__day--active::before`.
-- Банер кампанії: фон на всю ширину (`cover`, притиснутий донизу, щоб на широких екранах лишався перехід у колір сторінки) і головна картинка по центру; висота 208px до 1079px і 256px від 1080px.
+- Банер кампанії: фон на всю ширину і головна картинка по центру; висота 208px до 1079px і 256px від 1080px. Фон зберігає свої пропорції на висоті банера і стоїть по центру, а на дуже широких екранах його краї плавно переходять у колір сторінки (маска по боках).
 - Ілюстрація типу завдання — одна картинка 80×80 (`taskTypes.<type>.image`); `finishedImage` необовʼязковий.
 - Дата на картці «5 Dec» — `cardDateFormat: "day-month"` (`docs/CONFIG_GUIDE.md`).
 
@@ -105,4 +105,4 @@ CAMPAIGN=alpa-2025 npm run images:webp
 | id | Період | Примітка |
 |---|---|---|
 | `alpa-2025` | 01.12.2025–24.12.2025 | Опублікована версія 2025 року, git-мітка `alpa-2025-final` |
-| `alpa-2026` | 01.12.2026–24.12.2026 | У роботі: 24 задачі англійською з таблиці, розкладка `carousel` (тема `alpa-santa-vegas`, змінні дизайну в `styles.scss`, банер із двох шарів — фон міста на всю ширину й стадіон по центру) |
+| `alpa-2026` | 01.12.2026–24.12.2026 | У роботі: 24 задачі мовами en, de, fr, it, розкладка `carousel` (тема `alpa-santa-vegas`, змінні дизайну в `styles.scss`, банер із двох шарів — фон міста на всю ширину й стадіон по центру) |
