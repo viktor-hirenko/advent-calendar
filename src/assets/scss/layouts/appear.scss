@@ -1,0 +1,88 @@
+// -----------------------------------------------------------------------------
+// Appear animation of the page blocks
+// Switched on by `ui.appearAnimation: true` in the campaign settings; the states of
+// <html data-appear> are set by src/utils/appearAnimation.ts.
+// ---
+// Every block has its own delay and duration (--appear-delay, --appear-duration).
+// "fade up" rises by 16px while it fades in; "fade + scale" only fades and grows.
+// -----------------------------------------------------------------------------
+
+$blocks: "[role='banner'] img, .calendar__labels, .calendar__title, .calendar__description, .calendar-picker, .calendar__tasks-panel, .calendar__footer";
+
+@keyframes appear-fade-up {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 16px, 0) scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+@keyframes appear-fade-scale {
+  from {
+    opacity: 0;
+    transform: scale(0.98);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+html[data-appear='wait'] {
+  #{$blocks} {
+    opacity: 0;
+  }
+}
+
+html[data-appear='run'] {
+  #{$blocks} {
+    animation: var(--appear-name, appear-fade-up) var(--appear-duration) cubic-bezier(0.2, 0, 0, 1)
+      var(--appear-delay) both;
+  }
+
+  // The hero picture
+  [role='banner'] img {
+    --appear-name: appear-fade-scale;
+    --appear-delay: 0ms;
+    --appear-duration: 360ms;
+  }
+
+  // The line above the title
+  .calendar__labels {
+    --appear-delay: 80ms;
+    --appear-duration: 280ms;
+  }
+
+  .calendar__title {
+    --appear-delay: 140ms;
+    --appear-duration: 360ms;
+  }
+
+  // The line under the title
+  .calendar__description {
+    --appear-delay: 220ms;
+    --appear-duration: 300ms;
+  }
+
+  // Days, cards and the terms link appear together
+  .calendar-picker,
+  .calendar__tasks-panel,
+  .calendar__footer {
+    --appear-delay: 320ms;
+    --appear-duration: 420ms;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html[data-appear] {
+    #{$blocks} {
+      opacity: 1;
+      animation: none;
+    }
+  }
+}

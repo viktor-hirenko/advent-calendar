@@ -7,12 +7,15 @@
 
 import '@/design/tokens.css'
 import '@/assets/scss/main.scss'
+import '@/assets/scss/layouts/carousel.scss'
+import '@/assets/scss/layouts/appear.scss'
 import '@campaign-styles'
 
 import { createApp, watch } from 'vue'
 import App from './App.vue'
 import { createAppConfig } from '@/composables/useAppConfig'
 import { AppConfigKey } from '@/symbols/app-config'
+import { prepareAppearAnimation, runAppearAnimationWhenReady } from '@/utils/appearAnimation'
 import type { SupportedLanguage } from '@/types/app-config'
 
 const app = createApp(App)
@@ -21,7 +24,17 @@ const app = createApp(App)
 const appConfigInstance = createAppConfig()
 app.provide(AppConfigKey, appConfigInstance)
 
+// The carousel layout is styled from <html data-layout>, so the teleported terms modal follows it too
+if (appConfigInstance.config.value.ui.layout === 'carousel') {
+  document.documentElement.dataset.layout = 'carousel'
+}
+
+const appear =
+  appConfigInstance.config.value.ui.appearAnimation === true && prepareAppearAnimation()
+
 app.mount('#app')
+
+if (appear) runAppearAnimationWhenReady()
 
 // --- Localized document metadata setup ---
 const { calendarData, currentLanguage, getLocalizedText, config } = appConfigInstance

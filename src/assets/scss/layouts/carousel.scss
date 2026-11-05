@@ -1,0 +1,665 @@
+// -----------------------------------------------------------------------------
+// Carousel layout
+// Centered heading, a ribbon of cards with the active card in the middle and the
+// day grid next to it from 1080px. Phone up to 543px, tablet (a wider phone)
+// 544–1079px, desktop from 1080px.
+// ---
+// Switched on by `ui.layout: "carousel"` in the campaign settings: main.ts sets
+// <html data-layout="carousel">. Every rule starts with that selector, so it outranks
+// the shared component styles and campaigns without the setting look as before.
+// ---
+// Colors, radii and shadows come only from the campaign's design variables:
+//   --bg-page, --fg-brand, --fg-primary, --fg-secondary,
+//   --fg-success, --fg-error, --radius-card, --radius-date,
+//   --card-active-bg, --card-active-border, --card-active-shadow,
+//   --card-default-bg, --card-default-shadow, --card-passed-bg, --card-passed-shadow,
+//   --date-default-fg, --date-default-bg, --date-default-border,
+//   --date-hover-fg, --date-hover-bg, --date-hover-border,
+//   --date-today-fg, --date-today-bg, --date-passed-fg, --date-passed-bg,
+//   --modal-bg, --modal-shadow, --overlay-bg, --overlay-effect
+// plus --font-page and the buttons: --button-primary-bg, --button-primary-fg,
+// --button-secondary-bg, --button-secondary-fg, --button-secondary-border.
+// -----------------------------------------------------------------------------
+
+$layout: "html[data-layout='carousel']";
+$tablet: 544px;
+$desktop: 1080px;
+$card-width: 288px;
+
+@mixin tablet {
+  @include mq($tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @include mq($desktop) {
+    @content;
+  }
+}
+
+// Font, size, line height, weight, letter spacing and case in one line
+@mixin type($size, $lh, $weight: 400, $track: 0, $case: none) {
+  font-family: var(--font-page);
+  font-size: to-rem($size);
+  font-weight: $weight;
+  line-height: to-rem($lh);
+  letter-spacing: to-rem($track);
+  text-transform: $case;
+}
+
+#{$layout} {
+  // ---------- Page ----------
+
+  // Sizes stay the same from phone to 1079px: no smaller root font at 768px, only the 4K step
+  font-size: 100%;
+
+  @include mq(ultra) {
+    font-size: to-rem(26px);
+  }
+
+  body,
+  #app {
+    background-color: var(--bg-page);
+    font-family: var(--font-page);
+  }
+
+  // Text is drawn as thick as in the design tool (the shared "antialiased" setting draws it thinner)
+  body {
+    -webkit-font-smoothing: auto;
+    -moz-osx-font-smoothing: auto;
+  }
+
+  .main {
+    align-items: flex-start;
+    background-color: var(--bg-page);
+    font-family: var(--font-page);
+  }
+
+  .calendar {
+    margin: 0;
+    padding: to-rem(16px) 0 to-rem(48px);
+    border-radius: 0;
+    background: transparent;
+
+    @include desktop {
+      padding: to-rem(24px) 0 to-rem(80px);
+    }
+  }
+
+  // Phone and tablet: one column. Desktop: heading, then cards and days side by side, then terms.
+  .calendar__inner {
+    display: flex;
+    max-width: none;
+    margin: 0;
+    gap: to-rem(24px);
+    flex-flow: column nowrap;
+
+    @include desktop {
+      max-width: to-rem(1040px);
+      margin: 0 auto;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: to-rem(32px) 0;
+      flex-flow: row wrap;
+    }
+  }
+
+  // ---------- Heading ----------
+
+  .calendar__header {
+    width: 100%;
+    padding: 0 to-rem(16px);
+    align-items: center;
+    gap: to-rem(4px);
+    order: 0;
+
+    @include desktop {
+      padding: 0;
+      gap: to-rem(8px);
+
+      > * {
+        max-width: to-rem(512px);
+      }
+    }
+  }
+
+  .calendar__labels {
+    gap: 0;
+  }
+
+  .calendar__tag,
+  .calendar__tag--promotion {
+    height: auto;
+    padding: 0;
+    border-radius: 0;
+    background: none;
+    backdrop-filter: none;
+    color: var(--fg-brand);
+
+    @include type(16px, 20px, 700, 0.5px, uppercase);
+  }
+
+  .calendar__title {
+    color: var(--fg-primary);
+
+    @include type(32px, 34px, 700, -0.4px);
+
+    @include desktop {
+      @include type(48px, 52px, 700, -0.6px);
+    }
+  }
+
+  .calendar__description {
+    color: var(--fg-secondary);
+    text-align: center;
+
+    @include type(16px, 24px, 400, 0.2px);
+  }
+
+  // ---------- Days ----------
+
+  .calendar-picker {
+    gap: to-rem(16px);
+    order: 0;
+
+    @include desktop {
+      flex: 0 0 to-rem(496px);
+      gap: to-rem(24px);
+      order: 2;
+    }
+  }
+
+  .calendar-picker__months {
+    display: flex;
+
+    @include desktop {
+      display: none;
+    }
+  }
+
+  .calendar-picker__month-title {
+    color: var(--fg-primary);
+
+    @include type(18px, 22px, 700, -0.18px);
+  }
+
+  // Phone and tablet: one strip from edge to edge with 16px inside
+  .calendar-picker__days {
+    overflow-x: auto;
+    padding-inline: to-rem(16px);
+    flex-direction: row;
+    gap: 0;
+
+    @include desktop {
+      overflow-x: visible;
+      padding-inline: 0;
+      flex-direction: column;
+      gap: to-rem(24px);
+    }
+  }
+
+  .calendar-picker__month-group {
+    min-width: 100%;
+    flex-shrink: 0;
+    flex-direction: row;
+    gap: 0;
+
+    &::before {
+      content: none;
+    }
+
+    @include desktop {
+      min-width: auto;
+      flex-shrink: 1;
+      flex-direction: column;
+      gap: to-rem(16px);
+
+      &::before {
+        display: block;
+        color: var(--fg-primary);
+        content: attr(data-month);
+
+        @include type(20px, 24px, 700, -0.2px);
+      }
+    }
+  }
+
+  .calendar-days {
+    gap: 0;
+
+    @include desktop {
+      align-items: center;
+    }
+  }
+
+  .calendar-days__container {
+    display: flex;
+    max-width: none;
+    gap: to-rem(8px);
+
+    @include desktop {
+      display: grid;
+      max-width: to-rem(496px);
+      grid-template-columns: repeat(7, to-rem(64px));
+      padding-inline-end: 0;
+    }
+  }
+
+  .calendar-days__placeholder {
+    width: to-rem(64px);
+    height: to-rem(40px);
+    border-radius: var(--radius-date);
+  }
+
+  .calendar-days__day {
+    position: relative;
+    overflow: hidden;
+    width: to-rem(64px);
+    height: to-rem(40px);
+    padding: to-rem(8px) to-rem(16px);
+    flex-shrink: 0;
+    border: var(--date-default-border, 2px solid transparent);
+    border-radius: var(--radius-date);
+    background-color: var(--date-default-bg);
+    color: var(--date-default-fg);
+
+    @include type(14px, 23.8px, 700, 0, uppercase);
+
+    &--passed {
+      border-color: transparent;
+      background-color: var(--date-passed-bg);
+      color: var(--date-passed-fg);
+    }
+
+    &--selected:not(.calendar-days__day--active) {
+      border: var(--date-hover-border);
+      background-color: var(--date-hover-bg);
+      color: var(--date-hover-fg);
+    }
+
+    @media (hover: hover) {
+      &:hover:not(.calendar-days__day--active) {
+        border: var(--date-hover-border);
+        background-color: var(--date-hover-bg);
+        color: var(--date-hover-fg);
+      }
+    }
+
+    &--active,
+    &--active:hover {
+      border-color: transparent;
+      background-color: var(--date-today-bg);
+      color: var(--date-today-fg);
+    }
+  }
+
+  // ---------- Cards ----------
+
+  // Phone and tablet: the ribbon runs from edge to edge, the active card stops in the middle
+  .calendar__tasks-panel {
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: none;
+    margin-top: to-rem(-8px);
+    order: 0;
+
+    &::before,
+    &::after {
+      content: none;
+    }
+
+    // Desktop: a 407px window
+    @include desktop {
+      width: to-rem(407px);
+      flex: 0 0 to-rem(407px);
+      margin-top: 0;
+      order: 1;
+    }
+  }
+
+  // Spacers before the first and after the last card let both stop in the middle
+  .calendar__tasks-list {
+    position: relative;
+    max-width: none;
+    margin: 0;
+    padding: to-rem(16px) 0;
+    gap: to-rem(16px);
+    border-radius: 0;
+    mask-image: none;
+
+    &::before,
+    &::after {
+      flex: 0 0 calc(50% - #{to-rem($card-width * 0.5 + 16px)});
+      content: '';
+    }
+
+    // Desktop: neighbor cards fade out at both edges of the window
+    @include desktop {
+      mask-image: linear-gradient(
+        90deg,
+        transparent 0,
+        #000 1.5rem,
+        #000 calc(100% - 1.5rem),
+        transparent 100%
+      );
+    }
+  }
+
+  // Cards in the ribbon get the height of the tallest one
+  .calendar__tasks-list > li {
+    display: flex;
+  }
+
+  .task-card {
+    width: to-rem($card-width);
+    height: auto;
+    min-height: to-rem(240px);
+    padding: to-rem(12px);
+    gap: 0;
+    border: 0;
+    border-radius: var(--radius-card);
+    scroll-snap-align: center;
+
+    @include desktop {
+      min-height: to-rem(272px);
+      padding: to-rem(24px);
+    }
+  }
+
+  // The 2px frame is part of the card size, so the padding is 2px smaller
+  .task-card--active {
+    padding: to-rem(10px);
+    border: var(--card-active-border);
+    box-shadow: var(--card-active-shadow);
+    background: var(--card-active-bg);
+
+    @include desktop {
+      padding: to-rem(18px);
+    }
+  }
+
+  .task-card--finished {
+    box-shadow: var(--card-passed-shadow);
+    background: var(--card-passed-bg);
+  }
+
+  // Locked card: date on top, padlock in the middle, button at the bottom
+  .task-card--disabled {
+    padding: to-rem(16px);
+    justify-content: space-between;
+    box-shadow: var(--card-default-shadow, none);
+    background: var(--card-default-bg);
+
+    @include desktop {
+      padding: to-rem(24px);
+    }
+  }
+
+  .task-card__header {
+    min-height: to-rem(20px);
+    gap: to-rem(4px);
+    margin-bottom: to-rem(8px);
+
+    @include desktop {
+      gap: to-rem(8px);
+    }
+  }
+
+  .task-card__date {
+    color: var(--fg-secondary);
+
+    @include type(16px, 20px, 700);
+  }
+
+  .task-card__badge {
+    padding: 0;
+    gap: to-rem(4px);
+    border-radius: 0;
+    background: none;
+    backdrop-filter: none;
+  }
+
+  .task-card__badge--active .task-card__badge-dot {
+    background-color: var(--fg-success);
+  }
+
+  .task-card__badge--finished .task-card__badge-dot {
+    background-color: var(--fg-error);
+  }
+
+  .task-card__badge-text {
+    display: flex;
+    gap: to-rem(4px);
+    color: var(--fg-secondary);
+
+    @include type(12px, 16px, 600, 0.2px);
+  }
+
+  // The shared reset gives every element normal weight, so the parts of the badge take it explicitly
+  .task-card__badge-label,
+  .task-card__badge-time {
+    font-weight: inherit;
+  }
+
+  .task-card__badge-time {
+    color: var(--fg-primary);
+  }
+
+  // Picture, title and text sit together in the middle of the free height
+  .task-card__illustration {
+    width: to-rem(80px);
+    height: to-rem(80px);
+    align-self: center;
+    margin-top: auto;
+  }
+
+  .task-card__illustration-img {
+    position: static;
+    width: 100%;
+    height: 100%;
+    transform: none;
+  }
+
+  .task-card__content {
+    margin: 0 0 auto;
+    flex: 0 0 auto;
+    gap: 0;
+  }
+
+  .task-card__title {
+    width: 100%;
+    color: var(--fg-brand);
+    text-align: center;
+
+    @include type(16px, 20px, 700, 0.5px, uppercase);
+  }
+
+  .task-card__description {
+    width: 100%;
+    color: var(--fg-primary);
+    text-align: center;
+
+    @include type(16px, 24px, 400, 0.2px);
+  }
+
+  .task-card--finished .task-card__title,
+  .task-card--finished .task-card__description {
+    color: var(--fg-secondary);
+  }
+
+  .task-card--disabled .task-card__content {
+    display: flex;
+    margin: 0;
+    flex: 0 0 auto;
+    order: 0;
+  }
+
+  .task-card--disabled .task-card__title {
+    color: var(--fg-secondary);
+
+    @include type(12px, 16px, 400, 0.2px);
+  }
+
+  .task-card--disabled .task-card__description {
+    color: var(--fg-primary);
+    text-transform: none;
+
+    @include type(16px, 20px, 700);
+  }
+
+  .task-card--disabled .task-card__image {
+    position: static;
+    width: to-rem(124px);
+    height: to-rem(124px);
+    transform: none;
+    align-self: center;
+    order: 1;
+  }
+
+  .task-card__button {
+    min-height: to-rem(32px);
+    padding: to-rem(4px) to-rem(12px);
+    border: var(--button-secondary-border, 0);
+    border-radius: to-rem(8px);
+    background: var(--button-secondary-bg);
+    color: var(--button-secondary-fg);
+    margin-top: to-rem(8px);
+    order: 2;
+
+    @include type(14px, 16.1px, 700, -0.2px);
+  }
+
+  .task-card--active .task-card__button {
+    border: 0;
+    background: var(--button-primary-bg);
+    color: var(--button-primary-fg);
+  }
+
+  .task-card--finished .task-card__button,
+  .task-card--disabled .task-card__button {
+    background: var(--button-secondary-bg);
+    color: var(--button-secondary-fg);
+  }
+
+  .task-card--disabled .task-card__button {
+    margin-top: 0;
+  }
+
+  // ---------- Terms ----------
+
+  .calendar__footer {
+    width: 100%;
+    order: 0;
+
+    @include desktop {
+      order: 3;
+    }
+  }
+
+  .calendar__footer-button {
+    width: auto;
+    max-width: none;
+    min-height: 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: none;
+    color: var(--fg-brand);
+    text-decoration: underline;
+    text-decoration-color: color-mix(in srgb, var(--fg-brand) 40%, transparent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.2em;
+
+    @include type(16px, 24px, 600, 0.2px);
+
+    &:hover {
+      background: none;
+      text-decoration-color: var(--fg-brand);
+    }
+  }
+
+  // ---------- Terms modal (teleported to <body>) ----------
+
+  .popup {
+    background: var(--overlay-bg);
+    backdrop-filter: var(--overlay-effect);
+  }
+
+  // Phone: the whole screen. From 544px: a 432px dialog in the middle.
+  .popup__dialog {
+    width: 100%;
+    max-width: none;
+    height: 100%;
+    max-height: none;
+    padding: to-rem(16px);
+    gap: to-rem(16px);
+    border-radius: 0;
+    box-shadow: none;
+    background: var(--modal-bg);
+
+    @include tablet {
+      width: to-rem(432px);
+      height: auto;
+      max-height: min(#{to-rem(648px)}, calc(100dvh - #{to-rem(32px)}));
+      padding: to-rem(24px);
+      gap: to-rem(24px);
+      border-radius: to-rem(24px);
+      box-shadow: var(--modal-shadow);
+    }
+  }
+
+  .popup__header {
+    position: relative;
+    left: auto;
+    display: flex;
+    width: auto;
+    min-height: to-rem(24px);
+    margin: 0;
+    padding: 0 to-rem(32px);
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    transform: none;
+
+    h2 {
+      color: var(--fg-primary);
+
+      @include type(16px, 20px, 700);
+    }
+  }
+
+  .popup__close {
+    top: 50%;
+    color: var(--fg-primary);
+    transform: translateY(-50%);
+  }
+
+  .popup__content {
+    position: static;
+    overflow: hidden auto;
+    width: auto;
+    height: auto;
+    margin: 0;
+    flex: 1 1 auto;
+    color: var(--fg-secondary);
+
+    @include type(16px, 24px, 400, 0.2px);
+
+    ol {
+      padding-left: to-rem(24px);
+
+      li {
+        margin: 0 0 to-rem(12px);
+        color: var(--fg-secondary);
+
+        @include type(16px, 24px, 400, 0.2px);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

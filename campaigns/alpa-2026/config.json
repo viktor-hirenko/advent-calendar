@@ -1,7 +1,7 @@
 {
   "calendar": {
     "title": {
-      "en": "Sports Advent Calendar"
+      "en": "Sports Calendar"
     },
     "description": {
       "en": "Tasks will be updated every day at 00:00 (UTC)",
@@ -11,10 +11,7 @@
     },
     "labels": {
       "promotion": {
-        "en": "Promotion",
-        "de": "Aktion",
-        "fr": "Promotion",
-        "it": "Promozione"
+        "en": "Advent calendar"
       }
     },
     "links": {
@@ -36,7 +33,7 @@
         "it": "Ci vediamo il"
       },
       "buttonText": {
-        "en": "Return to Today's Task",
+        "en": "Return to Today’s Task",
         "de": "Zurück zur heutigen Aufgabe",
         "fr": "Retour à la tâche d'aujourd'hui",
         "it": "Torna al compito di oggi"
@@ -358,39 +355,33 @@
     ],
     "taskTypes": {
       "bet": {
-        "image": "types/bet.webp",
-        "finishedImage": "types/bet-finished.webp"
+        "image": "types/bet.webp"
       },
       "deposit": {
-        "image": "types/deposit.webp",
-        "finishedImage": "types/deposit-finished.webp"
+        "image": "types/deposit.webp"
       },
       "combo": {
-        "image": "types/combo.webp",
-        "finishedImage": "types/combo-finished.webp"
+        "image": "types/combo.webp"
       },
       "combo-football": {
-        "image": "types/combo-football.webp",
-        "finishedImage": "types/combo-football-finished.webp"
+        "image": "types/combo-football.webp"
       },
       "live": {
-        "image": "types/live.webp",
-        "finishedImage": "types/live-finished.webp"
+        "image": "types/live.webp"
       },
       "promo": {
-        "image": "types/promo.webp",
-        "finishedImage": "types/promo-finished.webp"
+        "image": "types/promo.webp"
       }
     },
     "taskStatus": {
       "finishesIn": {
-        "en": "Finishes in",
+        "en": "Expires in",
         "de": "Endet in",
         "fr": "Se termine dans",
         "it": "Finisce tra"
       },
       "finished": {
-        "en": "Finished",
+        "en": "Expired",
         "de": "Beendet",
         "fr": "Terminé",
         "it": "Finito"
@@ -403,7 +394,7 @@
       }
     },
     "termsButton": {
-      "en": "Terms and conditions",
+      "en": "Terms and Conditions",
       "de": "Geschäftsbedingungen",
       "fr": "Termes et conditions",
       "it": "Termini e condizioni"
@@ -432,14 +423,16 @@
   "config": {
     "enabled": true,
     "ui": {
+      "layout": "carousel",
+      "appearAnimation": true,
       "bannerSection": {
         "visible": true
       },
       "introSection": {
         "visible": true,
         "title": true,
-        "tagLabel": false,
-        "description": false
+        "tagLabel": true,
+        "description": true
       },
       "calendarSection": {
         "visible": true,
@@ -461,6 +454,7 @@
     "alignByWeekday": true,
     "firstDayOfWeek": "monday",
     "localizeDates": true,
+    "cardDateFormat": "day-month",
     "defaultLanguage": "en",
     "supportedLanguages": ["en", "de", "fr", "it"]
   }

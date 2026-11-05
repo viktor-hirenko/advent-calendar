@@ -393,7 +393,8 @@ function instantiateAppConfig(): UseCalendarReturn {
     parseYMD: (s: string) => timeFns.value.parseYMD(s),
     isToday: isTodayNow,
 
-    formatTaskDate: (s: string) => timeFns.value.formatTaskDateByMode(s, dateLanguage()),
+    formatTaskDate: (s: string) =>
+      timeFns.value.formatTaskDateByMode(s, dateLanguage(), config.value.cardDateFormat),
     formatDisabledTaskDate: (s: string) =>
       timeFns.value.formatDisabledTaskDateByMode(s, dateLanguage()),
 

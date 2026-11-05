@@ -50,7 +50,13 @@
     config,
     isToday,
   } = useAppConfig()
-  const isWeekAlignMode = useMediaQuery('(min-width: 768px)')
+  // The day grid aligns by weekday from the desktop layout on: 768px (stack) or 1080px (carousel)
+  const isCarousel = computed(() => config.value.ui.layout === 'carousel')
+  const isStackWide = useMediaQuery('(min-width: 768px)')
+  const isCarouselWide = useMediaQuery('(min-width: 1080px)')
+  const isWeekAlignMode = computed(() =>
+    isCarousel.value ? isCarouselWide.value : isStackWide.value,
+  )
 
   /**
    * Reactive "today" (YYYY-MM-DD) based on the current time mode.
@@ -168,6 +174,19 @@
     const btn = wrap.querySelector<HTMLElement>(`[data-day-id="${dayId}"]`)
     if (!btn) return
     scrollDayElIntoView(btn, align, opts?.instant ?? false)
+  }
+
+  /**
+   * Centers day button in the day strip.
+   * @param dayId - Day ID to center
+   * @param opts - Scroll options
+   */
+  function scrollDayCenter(dayId: number | string, opts?: { instant?: boolean }) {
+    const wrap = daysContainerRef.value
+    if (!wrap) return
+    const btn = wrap.querySelector<HTMLElement>(`[data-day-id="${dayId}"]`)
+    if (!btn) return
+    scrollDayElIntoView(btn, 'center', opts?.instant ?? false)
   }
 
   /**
@@ -463,6 +482,16 @@
 
     if (!card) return
 
+    // Carousel: the card stops in the middle of the ribbon. The list is the offset parent of its
+    // cards, so layout offsets are used: they do not change while the ribbon is scaled in.
+    if (isCarousel.value) {
+      container.scrollTo({
+        left: card.offsetLeft + card.offsetWidth / 2 - container.clientWidth / 2,
+        behavior: opts?.instant ? 'auto' : 'smooth',
+      })
+      return
+    }
+
     const target = card.offsetLeft
     container.scrollTo({
       left: Math.max(0, target),
@@ -558,7 +587,8 @@
       calendarDays.value.forEach((d) => (d.isSelected = false))
       todayDay.isSelected = true
       scrollToTaskCard(todayDay.date, { instant: true })
-      scrollDayAlign(todayDay.id, 'left', { instant: true })
+      if (isCarousel.value) scrollDayCenter(todayDay.id, { instant: true })
+      else scrollDayAlign(todayDay.id, 'left', { instant: true })
     }
 
     window.addEventListener('resize', handleResize)
@@ -614,7 +644,12 @@
             :data-month="group.month"
           >
             <h3 class="calendar-picker__month-title sr-only">{{ group.month }}</h3>
-            <CalendarDays :month="group.month" :days="group.days" @day-click="handleDayClick" />
+            <CalendarDays
+              :month="group.month"
+              :days="group.days"
+              :today-date="todayYMD"
+              @day-click="handleDayClick"
+            />
           </div>
         </div>
       </nav>

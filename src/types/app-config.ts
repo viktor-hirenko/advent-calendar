@@ -21,7 +21,7 @@ export interface TimeFns {
   ymd: (d: Date) => string
   parseYMD: (s: string) => Date
   isToday: (s: string) => boolean
-  formatTaskDateByMode: (s: string, lang?: string) => string
+  formatTaskDateByMode: (s: string, lang?: string, format?: CardDateFormat) => string
   formatDisabledTaskDateByMode: (s: string, lang?: string) => string
   getTaskDateByMode: (i: number, start: string) => string
   getDaysBetweenByMode: (a: string, b: string) => number
@@ -116,9 +116,22 @@ export interface TaskTypeImages {
 /**
  * Runtime configuration that affects date math / layout.
  */
+/** English card date: "Dec. 21" (month-day, default) or "21 Dec" (day-month). */
+export type CardDateFormat = 'month-day' | 'day-month'
+
+/**
+ * Page layout: "stack" (default) — cards stacked next to the day grid from 768px;
+ * "carousel" — centered heading, card ribbon and day grid from 1080px, styled by the
+ * campaign's design variables (see docs/CAMPAIGNS.md).
+ */
+export type CalendarLayout = 'stack' | 'carousel'
+
 export interface CalendarConfig {
   enabled: boolean
   ui: {
+    layout?: CalendarLayout
+    /** Blocks of the page appear one after another when it opens (src/utils/appearAnimation.ts). */
+    appearAnimation?: boolean
     bannerSection: {
       visible: boolean
     }
@@ -153,6 +166,8 @@ export interface CalendarConfig {
   firstDayOfWeek?: 'auto' | 'monday' | 'sunday'
   /** Format card dates in the page language; when off, dates are always English ("Dec. 4"). */
   localizeDates?: boolean
+  /** Order of day and month in English card dates; other languages use their own format. */
+  cardDateFormat?: CardDateFormat
   /** Language used when neither ?language nor the browser language is in supportedLanguages. */
   defaultLanguage: SupportedLanguage
   /** Languages of the campaign; the page language is picked only from this list. */

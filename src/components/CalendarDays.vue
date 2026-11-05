@@ -11,6 +11,8 @@
   interface CalendarDaysProps {
     month: string
     days: CalendarDay[]
+    /** Today as YYYY-MM-DD; earlier days get the "passed" modifier. */
+    todayDate?: string
   }
 
   /**
@@ -20,11 +22,15 @@
     'day-click': [day: CalendarDay]
   }
 
-  defineProps<CalendarDaysProps>()
+  const props = defineProps<CalendarDaysProps>()
   const emit = defineEmits<CalendarDaysEmits>()
 
   function handleDayClick(day: CalendarDay) {
     emit('day-click', day)
+  }
+
+  function isPassed(day: CalendarDay): boolean {
+    return !!props.todayDate && day.date < props.todayDate
   }
 </script>
 
@@ -48,6 +54,7 @@
             {
               'calendar-days__day--active': day.isActive,
               'calendar-days__day--selected': day.isSelected,
+              'calendar-days__day--passed': isPassed(day),
             },
           ]"
           :aria-selected="day.isSelected"

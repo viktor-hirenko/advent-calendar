@@ -243,10 +243,14 @@ export function makeTime(mode: TimeMode) {
   const isTodayFn = isUTC ? isTodayUTC : isToday
 
   /**
-   * Formats date to "Dec. 27" (mode-aware).
+   * Formats date to "Dec. 27", or "27 Dec" with the day-month format (mode-aware).
    * Other languages use their own short format, e.g. "27. Dez." for "de".
    */
-  function formatTaskDateByMode(dateString: string, lang = 'en'): string {
+  function formatTaskDateByMode(
+    dateString: string,
+    lang = 'en',
+    format: 'month-day' | 'day-month' = 'month-day',
+  ): string {
     const date = parseYMD(dateString)
     const timeZone = isUTC ? { timeZone: 'UTC' } : {}
     if (lang !== 'en') {
@@ -260,7 +264,7 @@ export function makeTime(mode: TimeMode) {
       ...timeZone,
     }).format(date)
     const day = isUTC ? date.getUTCDate() : date.getDate()
-    return `${month}. ${day}`
+    return format === 'day-month' ? `${day} ${month}` : `${month}. ${day}`
   }
 
   /**

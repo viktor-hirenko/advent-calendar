@@ -88,8 +88,10 @@
     getLocalizedText(calendarData.value.taskStatus?.dayUnit || { en: 'd' }, props.language),
   )
 
-  // Timer
-  const timer = computed(() => {
+  const isCarousel = computed(() => config.value.ui.layout === 'carousel')
+
+  // Time left of the active task: "05d 12 : 01 : 57" or "12 : 01 : 57"
+  const timerTime = computed(() => {
     if (!isTaskActive.value) return undefined
 
     const now = currentTime.value
@@ -110,10 +112,13 @@
     const mm = minutes.toString().padStart(2, '0')
     const ss = seconds.toString().padStart(2, '0')
 
-    const core = days > 0 ? `${dd}${dayUnit.value} ${hh} : ${mm} : ${ss}` : `${hh} : ${mm} : ${ss}`
-
-    return `${finishesInText.value}: ${core}`
+    return days > 0 ? `${dd}${dayUnit.value} ${hh} : ${mm} : ${ss}` : `${hh} : ${mm} : ${ss}`
   })
+
+  // Timer
+  const timer = computed(() =>
+    timerTime.value ? `${finishesInText.value}: ${timerTime.value}` : undefined,
+  )
 
   // Badge calculations
   const badgeVariant = computed<'active' | 'finished' | 'none'>(() => {
@@ -273,7 +278,12 @@
         :role="badgeVariant === 'finished' ? 'status' : undefined"
       >
         <span class="task-card__badge-dot" />
-        <span class="task-card__badge-text">{{ badgeText }}</span>
+        <!-- Carousel layout colors the label and the time differently -->
+        <span v-if="isCarousel && badgeVariant === 'active'" class="task-card__badge-text">
+          <span class="task-card__badge-label">{{ finishesInText }}:</span>
+          <span class="task-card__badge-time">{{ timerTime }}</span>
+        </span>
+        <span v-else class="task-card__badge-text">{{ badgeText }}</span>
       </div>
     </div>
 

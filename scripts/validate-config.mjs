@@ -193,6 +193,21 @@ function validateConfig(config, { strict = false, imagesDir } = {}) {
     }
   }
 
+  const layout = config.config?.ui?.layout
+  if (layout !== undefined && !['stack', 'carousel'].includes(layout)) {
+    errors.push(`Invalid ui.layout: ${layout}. Must be 'stack' or 'carousel'`)
+  }
+
+  const appearAnimation = config.config?.ui?.appearAnimation
+  if (appearAnimation !== undefined && typeof appearAnimation !== 'boolean') {
+    errors.push(`Invalid ui.appearAnimation: ${appearAnimation}. Must be true or false`)
+  }
+
+  const cardDateFormat = config.config?.cardDateFormat
+  if (cardDateFormat !== undefined && !['month-day', 'day-month'].includes(cardDateFormat)) {
+    errors.push(`Invalid cardDateFormat: ${cardDateFormat}. Must be 'month-day' or 'day-month'`)
+  }
+
   const finishedCardButton = config.config?.ui?.calendarSection?.finishedCardButton
   if (finishedCardButton !== undefined && !['task', 'returnToToday'].includes(finishedCardButton)) {
     errors.push(`Invalid ui.calendarSection.finishedCardButton: ${finishedCardButton}. Must be 'task' or 'returnToToday'`)

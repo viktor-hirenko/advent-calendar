@@ -40,6 +40,24 @@ campaigns/<id>/
 - Картка завдання має атрибут `data-type` зі значенням `tasks[].type`. За ним стилі кампанії ставлять ілюстрацію кожного типу на її місце з макета, наприклад `.task-card--active[data-type='live'] .task-card__illustration-img`.
 - Картинки з макета — це експорт шару з Figma у PNG 2× з прозорим фоном, переведений у WebP. Шар вивантажується цілим, разом зі світінням і тінями, які в ньому намальовані. Не вирізати картинки зі скриншотів, не збирати їх із частин і не домальовувати світіння стилями.
 
+### Розкладка `carousel` і змінні дизайну
+
+- Вмикається в `config.json`: `"ui": { "layout": "carousel" }`. `src/main.ts` ставить `<html data-layout="carousel">`, спільні стилі розкладки — `src/assets/scss/layouts/carousel.scss`; кожне правило там починається з `html[data-layout='carousel']`, тож кампанії без цього поля виглядають як раніше.
+- Ширини: телефон до 543px, планшет 544–1079px (та сама розкладка, що на телефоні), десктоп від 1080px. Розміри від телефона до 1079px не змінюються, корінний шрифт не зменшується на 768px.
+- Кольори, радіуси й тіні беруться тільки зі змінних, які кампанія задає в `styles.scss` під селектором своєї теми:
+  - сторінка й текст: `--bg-page`, `--bg-transparent`, `--fg-brand`, `--fg-primary`, `--fg-secondary`, `--fg-success`, `--fg-error`, `--font-page`;
+  - радіуси: `--radius-card`, `--radius-date`;
+  - картки: `--card-active-bg`, `--card-active-border`, `--card-active-shadow`, `--card-default-bg`, `--card-default-shadow` (закрита картка), `--card-passed-bg`, `--card-passed-shadow`;
+  - дні: `--date-default-fg`, `--date-default-bg`, `--date-default-border`, `--date-hover-fg`, `--date-hover-bg`, `--date-hover-border`, `--date-today-fg`, `--date-today-bg`, `--date-passed-fg`, `--date-passed-bg`;
+  - вікно правил: `--modal-bg`, `--modal-shadow` (від 544px), `--overlay-bg`, `--overlay-effect`;
+  - кнопки: `--button-primary-bg`, `--button-primary-fg` (кнопка завдання), `--button-secondary-bg`, `--button-secondary-fg`, `--button-secondary-border` (кнопка «повернутися до сьогоднішнього завдання»).
+  
+  Необовʼязкові: `--date-default-border`, `--card-default-shadow`, `--button-secondary-border`.
+- Прикраса сьогоднішнього дня (наприклад, гірлянда) — у стилях кампанії: `.calendar-days__day--active::before`.
+- Банер кампанії: фон на всю ширину (`cover`, притиснутий донизу, щоб на широких екранах лишався перехід у колір сторінки) і головна картинка по центру; висота 208px до 1079px і 256px від 1080px.
+- Ілюстрація типу завдання — одна картинка 80×80 (`taskTypes.<type>.image`); `finishedImage` необовʼязковий.
+- Дата на картці «5 Dec» — `cardDateFormat: "day-month"` (`docs/CONFIG_GUIDE.md`).
+
 Після зміни `campaign.json` dev-сервер перезапускається сам, щоб підхопити тему й шрифти.
 
 ## 2. Вибір кампанії
@@ -87,4 +105,4 @@ CAMPAIGN=alpa-2025 npm run images:webp
 | id | Період | Примітка |
 |---|---|---|
 | `alpa-2025` | 01.12.2025–24.12.2025 | Опублікована версія 2025 року, git-мітка `alpa-2025-final` |
-| `alpa-2026` | 01.12.2026–24.12.2026 | У роботі: 24 задачі англійською з таблиці, вигляд Santa Vegas 2026 за макетом (тема `alpa-santa-vegas`, `styles.scss`, власний банер із двох картинок — для телефона й для ширших екранів, як у 2025) |
+| `alpa-2026` | 01.12.2026–24.12.2026 | У роботі: 24 задачі англійською з таблиці, розкладка `carousel` (тема `alpa-santa-vegas`, змінні дизайну в `styles.scss`, банер із двох шарів — фон міста на всю ширину й стадіон по центру) |
