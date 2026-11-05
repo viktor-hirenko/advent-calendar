@@ -487,6 +487,11 @@ $card-width: 288px;
     @include type(16px, 24px, 400, 0.2px);
   }
 
+  // An amount in bold stays on one line
+  .task-card__description strong {
+    white-space: nowrap;
+  }
+
   .task-card--finished .task-card__title,
   .task-card--finished .task-card__description {
     color: var(--fg-secondary);
