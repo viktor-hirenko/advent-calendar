@@ -1,7 +1,10 @@
 {
   "calendar": {
     "title": {
-      "en": "Sports Calendar"
+      "en": "Santa Sports",
+      "de": "Santa Sports",
+      "fr": "Le Père Noël fait du sport",
+      "it": "Santa Sports"
     },
     "description": {
       "en": "Tasks will be updated every day at 00:00 (UTC)",
@@ -11,7 +14,10 @@
     },
     "labels": {
       "promotion": {
-        "en": "Advent calendar"
+        "en": "Advent calendar",
+        "de": "Adventskalender",
+        "fr": "Calendrier de l’Avent",
+        "it": "Calendario dell’Avvento"
       }
     },
     "links": {
@@ -44,312 +50,528 @@
         "id": "day-01",
         "type": "bet",
         "title": {
-          "en": "Snow Kick-Off"
+          "en": "Let It Kick!",
+          "de": "Lass es kicken!",
+          "fr": "Coup d’envoi des fêtes !",
+          "it": "Che il calcio abbia inizio!"
         },
         "description": {
-          "en": "Place 3 any bets of <strong>€20</strong> or more at odds of 1.70 or higher and get a <strong>€5</strong> Freebet."
+          "en": "Place 3 bets of <strong>20 EUR</strong> + each at odds of 1.70+ per bet to get a <strong>5 EUR</strong> Freebet.",
+          "de": "Platziere 3 Wetten von je mindestens <strong>20 EUR</strong> mit einer Quote ab 1.70 pro Wette und erhalte eine <strong>5 EUR</strong> Freebet.",
+          "fr": "Placez 3 paris de <strong>20 EUR</strong> + chacun à une cote de 1.70+ pour recevoir un Freebet de <strong>5 EUR</strong>.",
+          "it": "Piazzi 3 scommesse da almeno <strong>20 EUR</strong> ciascuna, con quota pari o superiore a 1.70 per scommessa, per ottenere un Freebet da <strong>5 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Bet now",
+          "de": "Jetzt wetten",
+          "fr": "Parier maintenant",
+          "it": "Scommetti ora"
         }
       },
       {
         "id": "day-02",
         "type": "deposit",
         "title": {
-          "en": "Hot Chocolate Deposit"
+          "en": "Festive Warm-Up",
+          "de": "Festliches Aufwärmen",
+          "fr": "Échauffement festif",
+          "it": "Riscaldamento festivo"
         },
         "description": {
-          "en": "Make a deposit of <strong>€30</strong> or more and get a <strong>€10</strong> Freebet."
+          "en": "Deposit <strong>30 EUR</strong> + to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Zahle mindestens <strong>30 EUR</strong> ein und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Déposez <strong>30 EUR</strong> + pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Depositi almeno <strong>30 EUR</strong> per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make deposit"
+          "en": "Deposit now",
+          "de": "Jetzt einzahlen",
+          "fr": "Déposer maintenant",
+          "it": "Deposita ora"
         }
       },
       {
         "id": "day-03",
         "type": "combo-football",
         "title": {
-          "en": "Snowball Combo"
+          "en": "Snowball Combo",
+          "de": "Schneeball-Kombi",
+          "fr": "Combiné de neige",
+          "it": "Multipla a palla di neve"
         },
         "description": {
-          "en": "Place a combo bet with at least 3 selections (football) at combined odds of 3.50 or higher and a stake of <strong>€15</strong> or more to get a <strong>€10</strong> Freebet."
+          "en": "Bet <strong>15 EUR</strong> + on a football combo with 3+ selections and total odds of 3.50+ to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Setze mindestens <strong>15 EUR</strong> auf eine Fußball-Kombiwette mit mindestens 3 Auswahlen und einer Gesamtquote ab 3.50 und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Misez <strong>15 EUR</strong> + sur un combiné football de 3+ sélections à une cote totale de 3.50+ pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Punti almeno <strong>15 EUR</strong> su una multipla di calcio con almeno 3 selezioni e quota totale pari o superiore a 3.50 per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Build a combo",
+          "de": "Kombi erstellen",
+          "fr": "Créer un combiné",
+          "it": "Crea una multipla"
         }
       },
       {
         "id": "day-04",
         "type": "live",
         "title": {
-          "en": "Live Sleigh Ride"
+          "en": "Santa Goes Live",
+          "de": "Santa geht live",
+          "fr": "Père Noël en Live",
+          "it": "Babbo Natale va in live"
         },
         "description": {
-          "en": "Place 3 live single bets of <strong>€15</strong> or more each at odds of 1.60 or higher and get a <strong>€10</strong> Freebet."
+          "en": "Place 3 Live single bets of <strong>15 EUR</strong> + each at odds of 1.60+ per bet to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Platziere 3 Live-Einzelwetten von je mindestens <strong>15 EUR</strong> mit einer Quote ab 1.60 pro Wette und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Placez 3 paris simples Live de <strong>15 EUR</strong> + chacun à une cote de 1.60+ pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Piazzi 3 scommesse singole live da almeno <strong>15 EUR</strong> ciascuna, con quota pari o superiore a 1.60 per scommessa, per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Bet Live",
+          "de": "Live wetten",
+          "fr": "Parier en Live",
+          "it": "Scommetti live"
         }
       },
       {
         "id": "day-05",
         "type": "combo",
         "title": {
-          "en": "Gingerbread Combo"
+          "en": "Four Under the Tree",
+          "de": "Vier unterm Baum",
+          "fr": "Quatre sous le sapin",
+          "it": "Quattro sotto l’albero"
         },
         "description": {
-          "en": "Place a combo bet with 4 selections, combined odds of 3.50 or higher, with a stake of <strong>€15</strong> or more, and get a <strong>€10</strong> Freebet."
+          "en": "Bet <strong>15 EUR</strong> + on a 4-selection combo with total odds of 3.50+ to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Setze mindestens <strong>15 EUR</strong> auf eine Kombiwette mit 4 Auswahlen und einer Gesamtquote ab 3.50 und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Misez <strong>15 EUR</strong> + sur un combiné de 4 sélections à une cote totale de 3.50+ pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Punti almeno <strong>15 EUR</strong> su una multipla di 4 selezioni con quota totale pari o superiore a 3.50 per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Build a combo",
+          "de": "Kombi erstellen",
+          "fr": "Créer un combiné",
+          "it": "Crea una multipla"
         }
       },
       {
         "id": "day-06",
         "type": "bet",
         "title": {
-          "en": "Second Candle, Second Chance"
+          "en": "Santa’s Second Chance",
+          "de": "Santas zweite Chance",
+          "fr": "Seconde chance du Père Noël",
+          "it": "La seconda chance di Babbo Natale"
         },
         "description": {
-          "en": "Place any bet of <strong>€25</strong> or more at odds of 2.50 or higher. If the bet loses, get a <strong>€10</strong> Only Win Freebet."
+          "en": "Bet <strong>25 EUR</strong> + at odds of 2.50+. If it loses, get a <strong>10 EUR</strong> Only Win Freebet.",
+          "de": "Setze mindestens <strong>25 EUR</strong> mit einer Quote ab 2.50. Verliert die Wette, erhältst du eine <strong>10 EUR</strong> Only Win Freebet.",
+          "fr": "Misez <strong>25 EUR</strong> + à une cote de 2.50+. Si le pari est perdant, recevez un Freebet Only Win de <strong>10 EUR</strong>.",
+          "it": "Punti almeno <strong>25 EUR</strong> con quota pari o superiore a 2.50. Se la scommessa è perdente, riceverà un Only Win Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Bet now",
+          "de": "Jetzt wetten",
+          "fr": "Parier maintenant",
+          "it": "Scommetti ora"
         }
       },
       {
         "id": "day-07",
         "type": "bet",
         "title": {
-          "en": "Active Monday (soccer)"
+          "en": "Hat-Trick for Santa",
+          "de": "Hattrick für Santa",
+          "fr": "Triplé du Père Noël",
+          "it": "Una tripletta per Babbo Natale"
         },
         "description": {
-          "en": "Place 3 bets on football of <strong>€25</strong> or more each at odds of 1.60 or higher on any sport and get a <strong>€10</strong> Freebet."
+          "en": "Place 3 football bets of <strong>25 EUR</strong> + each at odds of 1.60+ per bet to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Platziere 3 Fußballwetten von je mindestens <strong>25 EUR</strong> mit einer Quote ab 1.60 pro Wette und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Placez 3 paris football de <strong>25 EUR</strong> + chacun à une cote de 1.60+ pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Piazzi 3 scommesse sul calcio da almeno <strong>25 EUR</strong> ciascuna, con quota pari o superiore a 1.60 per scommessa, per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Bet now",
+          "de": "Jetzt wetten",
+          "fr": "Parier maintenant",
+          "it": "Scommetti ora"
         }
       },
       {
         "id": "day-08",
         "type": "combo-football",
         "title": {
-          "en": "Champions Night Combo"
+          "en": "Champions in Lights",
+          "de": "Champions im Lichterglanz",
+          "fr": "Champions en lumière",
+          "it": "Campioni sotto i riflettori"
         },
         "description": {
-          "en": "Place a combo bet on 4 Champions League matches, with odds of 1.50 or higher for each selection and a stake of <strong>€10</strong> or more, and get a <strong>€10</strong> Freebet."
+          "en": "Bet <strong>10 EUR</strong> + on a combo covering 4 Champions League matches, with odds of 1.50+ per selection, to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Setze mindestens <strong>10 EUR</strong> auf eine Kombiwette mit 4 Champions-League-Spielen und einer Quote ab 1.50 pro Auswahl und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Misez <strong>10 EUR</strong> + sur un combiné de 4 matchs de Ligue des Champions à une cote de 1.50+ par sélection pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Punti almeno <strong>10 EUR</strong> su una multipla che includa 4 partite di Champions League, con quota pari o superiore a 1.50 per selezione, per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Build a combo",
+          "de": "Kombi erstellen",
+          "fr": "Créer un combiné",
+          "it": "Crea una multipla"
         }
       },
       {
         "id": "day-09",
         "type": "deposit",
         "title": {
-          "en": "Fireplace Deposit"
+          "en": "Stocking Top-Up",
+          "de": "Stiefel-Aufladung",
+          "fr": "Dépôt de Noël",
+          "it": "Ricarica la calza di Natale"
         },
         "description": {
-          "en": "Make a deposit of <strong>€50</strong> or more and get a <strong>€15</strong> Freebet."
+          "en": "Deposit <strong>50 EUR</strong> + to get a <strong>15 EUR</strong> Freebet.",
+          "de": "Zahle mindestens <strong>50 EUR</strong> ein und erhalte eine <strong>15 EUR</strong> Freebet.",
+          "fr": "Déposez <strong>50 EUR</strong> + pour recevoir un Freebet de <strong>15 EUR</strong>.",
+          "it": "Depositi almeno <strong>50 EUR</strong> per ottenere un Freebet da <strong>15 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make deposit"
+          "en": "Deposit now",
+          "de": "Jetzt einzahlen",
+          "fr": "Déposer maintenant",
+          "it": "Deposita ora"
         }
       },
       {
         "id": "day-10",
         "type": "combo-football",
         "title": {
-          "en": "Europe After Dark"
+          "en": "Bets Under the Lights",
+          "de": "Wetten unter Flutlicht",
+          "fr": "Paris sous les lumières",
+          "it": "Scommesse sotto i riflettori"
         },
         "description": {
-          "en": "Place a combo bet with at least 4 selections at odds of 1.50 or higher per selection and a stake of <strong>€20</strong> or more to get a <strong>€10</strong> Freebet."
+          "en": "Bet <strong>20 EUR</strong> + on a combo with 4+ selections at odds of 1.50+ per selection to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Setze mindestens <strong>20 EUR</strong> auf eine Kombiwette mit mindestens 4 Auswahlen und einer Quote ab 1.50 pro Auswahl und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Misez <strong>20 EUR</strong> + sur un combiné de 4+ sélections à une cote de 1.50+ par sélection pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Punti almeno <strong>20 EUR</strong> su una multipla con almeno 4 selezioni, con quota pari o superiore a 1.50 per selezione, per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Build a combo",
+          "de": "Kombi erstellen",
+          "fr": "Créer un combiné",
+          "it": "Crea una multipla"
         }
       },
       {
         "id": "day-11",
         "type": "live",
         "title": {
-          "en": "Live"
+          "en": "Sleigh It Live",
+          "de": "Live-Schlittenfahrt",
+          "fr": "Traîneau en Live",
+          "it": "La slitta va in live"
         },
         "description": {
-          "en": "Place 2 live single bets of <strong>€20</strong> or more each at odds of 1.80 or higher and get a <strong>€10</strong> Freebet."
+          "en": "Place 2 Live single bets of <strong>20 EUR</strong> + each at odds of 1.80+ per bet to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Platziere 2 Live-Einzelwetten von je mindestens <strong>20 EUR</strong> mit einer Quote ab 1.80 pro Wette und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Placez 2 paris simples Live de <strong>20 EUR</strong> + chacun à une cote de 1.80+ pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Piazzi 2 scommesse singole live da almeno <strong>20 EUR</strong> ciascuna, con quota pari o superiore a 1.80 per scommessa, per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Bet Live",
+          "de": "Live wetten",
+          "fr": "Parier en Live",
+          "it": "Scommetti live"
         }
       },
       {
         "id": "day-12",
         "type": "combo",
         "title": {
-          "en": "Mistletoe Combo"
+          "en": "Five-Fold Festivities",
+          "de": "Fünffach-Festtage",
+          "fr": "Fêtes en cinq sélections",
+          "it": "Festa a cinque"
         },
         "description": {
-          "en": "Place a combo bet with 5 selections, each at odds of 1.50 or higher, with a stake of <strong>€10</strong> or more, and get a <strong>€10</strong> Freebet."
+          "en": "Bet <strong>10 EUR</strong> + on a 5-selection combo at odds of 1.50+ per selection to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Setze mindestens <strong>10 EUR</strong> auf eine Kombiwette mit 5 Auswahlen und einer Quote ab 1.50 pro Auswahl und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Misez <strong>10 EUR</strong> + sur un combiné de 5 sélections à une cote de 1.50+ par sélection pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Punti almeno <strong>10 EUR</strong> su una multipla di 5 selezioni, con quota pari o superiore a 1.50 per selezione, per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Build a combo",
+          "de": "Kombi erstellen",
+          "fr": "Créer un combiné",
+          "it": "Crea una multipla"
         }
       },
       {
         "id": "day-13",
         "type": "bet",
         "title": {
-          "en": "Third Candle, Second Chance"
+          "en": "Combo Comeback",
+          "de": "Kombi-Comeback",
+          "fr": "Le retour du combiné",
+          "it": "La rivincita della multipla"
         },
         "description": {
-          "en": "Place a combo bet of <strong>€20</strong> or more with at least 3 selections at combined odds of 4.00 or higher. If the bet loses, get a <strong>€10</strong> Only Win Freebet."
+          "en": "Bet <strong>20 EUR</strong> + on a combo with 3+ selections and total odds of 4.00+. If it loses, get a <strong>10 EUR</strong> Only Win Freebet.",
+          "de": "Setze mindestens <strong>20 EUR</strong> auf eine Kombiwette mit mindestens 3 Auswahlen und einer Gesamtquote ab 4.00. Verliert die Wette, erhältst du eine <strong>10 EUR</strong> Only Win Freebet.",
+          "fr": "Misez <strong>20 EUR</strong> + sur un combiné de 3+ sélections à une cote totale de 4.00+. Si le pari est perdant, recevez un Freebet Only Win de <strong>10 EUR</strong>.",
+          "it": "Punti almeno <strong>20 EUR</strong> su una multipla con almeno 3 selezioni e quota totale pari o superiore a 4.00. Se la scommessa è perdente, riceverà un Only Win Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Build a combo",
+          "de": "Kombi erstellen",
+          "fr": "Créer un combiné",
+          "it": "Crea una multipla"
         }
       },
       {
         "id": "day-14",
         "type": "bet",
         "title": {
-          "en": "Active Monday (soccer)"
+          "en": "Santa’s Starting XI",
+          "de": "Santas Startelf",
+          "fr": "Le onze du Père Noël",
+          "it": "Gli undici titolari di Babbo Natale"
         },
         "description": {
-          "en": "Place 3 bets on football of <strong>€25</strong> or more each at odds of 1.60 or higher on any sport and get a <strong>€10</strong> Freebet."
+          "en": "Place 3 football bets of <strong>25 EUR</strong> + each at odds of 1.60+ per bet to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Platziere 3 Fußballwetten von je mindestens <strong>25 EUR</strong> mit einer Quote ab 1.60 pro Wette und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Placez 3 paris football de <strong>25 EUR</strong> + chacun à une cote de 1.60+ pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Piazzi 3 scommesse sul calcio da almeno <strong>25 EUR</strong> ciascuna, con quota pari o superiore a 1.60 per scommessa, per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Bet now",
+          "de": "Jetzt wetten",
+          "fr": "Parier maintenant",
+          "it": "Scommetti ora"
         }
       },
       {
         "id": "day-15",
         "type": "combo",
         "title": {
-          "en": "Spotlight Match"
+          "en": "Triple Gift Combo",
+          "de": "Dreifach-Geschenk-Kombi",
+          "fr": "Combiné triple cadeau",
+          "it": "Multipla dal triplo regalo"
         },
         "description": {
-          "en": "Place a combo bet on 3 selections any sport, with odds of 1.50 or higher for each selection and a stake of <strong>€10</strong> or more, and get a <strong>€10</strong> Freebet."
+          "en": "Bet <strong>10 EUR</strong> + on a 3-selection combo at odds of 1.50+ per selection to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Setze mindestens <strong>10 EUR</strong> auf eine Kombiwette mit 3 Auswahlen und einer Quote ab 1.50 pro Auswahl und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Misez <strong>10 EUR</strong> + sur un combiné de 3 sélections à une cote de 1.50+ par sélection pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Punti almeno <strong>10 EUR</strong> su una multipla di 3 selezioni, con quota pari o superiore a 1.50 per selezione, per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Build a combo",
+          "de": "Kombi erstellen",
+          "fr": "Créer un combiné",
+          "it": "Crea una multipla"
         }
       },
       {
         "id": "day-16",
         "type": "deposit",
         "title": {
-          "en": "Gift Wrap Deposit"
+          "en": "Special Delivery",
+          "de": "Sonderlieferung",
+          "fr": "Livraison spéciale",
+          "it": "Consegna speciale"
         },
         "description": {
-          "en": "Make a deposit of <strong>€30</strong> or more and get a <strong>€10</strong> Freebet."
+          "en": "Deposit <strong>30 EUR</strong> + to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Zahle mindestens <strong>30 EUR</strong> ein und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Déposez <strong>30 EUR</strong> + pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Depositi almeno <strong>30 EUR</strong> per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make deposit"
+          "en": "Deposit now",
+          "de": "Jetzt einzahlen",
+          "fr": "Déposer maintenant",
+          "it": "Deposita ora"
         }
       },
       {
         "id": "day-17",
         "type": "combo-football",
         "title": {
-          "en": "Conference Finale Combo"
+          "en": "Conference & Confetti",
+          "de": "Konferenz & Konfetti",
+          "fr": "Conférence et confettis",
+          "it": "Conference e coriandoli"
         },
         "description": {
-          "en": "Place a combo bet with at least 4 selections at odds of 1.50 or higher per selection and a stake of <strong>€20</strong> or more to get a <strong>€10</strong> Freebet."
+          "en": "Bet <strong>20 EUR</strong> + on a combo with 4+ selections at odds of 1.50+ per selection to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Setze mindestens <strong>20 EUR</strong> auf eine Kombiwette mit mindestens 4 Auswahlen und einer Quote ab 1.50 pro Auswahl und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Misez <strong>20 EUR</strong> + sur un combiné de 4+ sélections à une cote de 1.50+ par sélection pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Punti almeno <strong>20 EUR</strong> su una multipla con almeno 4 selezioni, con quota pari o superiore a 1.50 per selezione, per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Build a combo",
+          "de": "Kombi erstellen",
+          "fr": "Créer un combiné",
+          "it": "Crea una multipla"
         }
       },
       {
         "id": "day-18",
         "type": "live",
         "title": {
-          "en": "Live Lights Friday"
+          "en": "Live from SantaVegas",
+          "de": "Live aus SantaVegas",
+          "fr": "En Live de SantaVegas",
+          "it": "In live da SantaVegas"
         },
         "description": {
-          "en": "Place 3 live single bets of <strong>€15</strong> or more each at odds of 1.60 or higher and get a <strong>€10</strong> Freebet."
+          "en": "Place 3 Live single bets of <strong>15 EUR</strong> + each at odds of 1.60+ per bet to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Platziere 3 Live-Einzelwetten von je mindestens <strong>15 EUR</strong> mit einer Quote ab 1.60 pro Wette und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Placez 3 paris simples Live de <strong>15 EUR</strong> + chacun à une cote de 1.60+ pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Piazzi 3 scommesse singole live da almeno <strong>15 EUR</strong> ciascuna, con quota pari o superiore a 1.60 per scommessa, per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Bet Live",
+          "de": "Live wetten",
+          "fr": "Parier en Live",
+          "it": "Scommetti live"
         }
       },
       {
         "id": "day-19",
         "type": "combo",
         "title": {
-          "en": "Candy Cane Combo"
+          "en": "Candy Cane Combo",
+          "de": "Zuckerstangen-Kombi",
+          "fr": "Le combiné sucre d’orge",
+          "it": "Multipla al bastoncino di zucchero"
         },
         "description": {
-          "en": "Place a combo bet with 4 selections, each at odds of 1.50 or higher, with a stake of <strong>€10</strong> or more, and get a <strong>€10</strong> Freebet."
+          "en": "Bet <strong>10 EUR</strong> + on a 4-selection combo at odds of 1.50+ per selection to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Setze mindestens <strong>10 EUR</strong> auf eine Kombiwette mit 4 Auswahlen und einer Quote ab 1.50 pro Auswahl und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Misez <strong>10 EUR</strong> + sur un combiné de 4 sélections à une cote de 1.50+ par sélection pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Punti almeno <strong>10 EUR</strong> su una multipla di 4 selezioni, con quota pari o superiore a 1.50 per selezione, per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Build a combo",
+          "de": "Kombi erstellen",
+          "fr": "Créer un combiné",
+          "it": "Crea una multipla"
         }
       },
       {
         "id": "day-20",
         "type": "bet",
         "title": {
-          "en": "Fourth Candle, Second Chance"
+          "en": "Santa’s Backup Plan",
+          "de": "Santas Plan B",
+          "fr": "Le plan B du Père Noël",
+          "it": "Il piano B di Babbo Natale"
         },
         "description": {
-          "en": "Place 2 any bet of <strong>€20</strong> or more at odds of 2.50 or higher. If the bet loses, get a <strong>€10</strong> Only Win Freebet."
+          "en": "Place 2 bets of <strong>20 EUR</strong> + each at odds of 2.50+ per bet. If at least one loses, get a <strong>10 EUR</strong> Only Win Freebet.",
+          "de": "Platziere 2 Wetten von je mindestens <strong>20 EUR</strong> mit einer Quote ab 2.50 pro Wette. Verliert mindestens eine davon, erhältst du eine <strong>10 EUR</strong> Only Win Freebet.",
+          "fr": "Placez 2 paris de <strong>20 EUR</strong> + chacun à une cote de 2.50+. Si au moins un est perdant, recevez un Freebet Only Win de <strong>10 EUR</strong>.",
+          "it": "Piazzi 2 scommesse da almeno <strong>20 EUR</strong> ciascuna, con quota pari o superiore a 2.50 per scommessa. Se almeno una delle due è perdente, riceverà un Only Win Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Bet now",
+          "de": "Jetzt wetten",
+          "fr": "Parier maintenant",
+          "it": "Scommetti ora"
         }
       },
       {
         "id": "day-21",
         "type": "bet",
         "title": {
-          "en": "Active Monday (soccer)"
+          "en": "Ho-Ho-Hat-Trick!",
+          "de": "Ho-Ho-Hattrick!",
+          "fr": "Ho-ho-ho, le triplé !",
+          "it": "Ho-ho-tripletta!"
         },
         "description": {
-          "en": "Place 3 bets on football of <strong>€25</strong> or more each at odds of 1.60 or higher on any sport and get a <strong>€10</strong> Freebet."
+          "en": "Place 3 football bets of <strong>25 EUR</strong> + each at odds of 1.60+ per bet to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Platziere 3 Fußballwetten von je mindestens <strong>25 EUR</strong> mit einer Quote ab 1.60 pro Wette und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Placez 3 paris football de <strong>25 EUR</strong> + chacun à une cote de 1.60+ pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Piazzi 3 scommesse sul calcio da almeno <strong>25 EUR</strong> ciascuna, con quota pari o superiore a 1.60 per scommessa, per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Bet now",
+          "de": "Jetzt wetten",
+          "fr": "Parier maintenant",
+          "it": "Scommetti ora"
         }
       },
       {
         "id": "day-22",
         "type": "combo",
         "title": {
-          "en": "Three Days to Go Combo"
+          "en": "Three for the Sleigh",
+          "de": "Drei für den Schlitten",
+          "fr": "Trois pour le traîneau",
+          "it": "Tre per la slitta"
         },
         "description": {
-          "en": "Place a combo bet on 3 selectios any sport, with odds of 1.50 or higher for each selection and a stake of <strong>€10</strong> or more, and get a <strong>€10</strong> Freebet."
+          "en": "Bet <strong>10 EUR</strong> + on a 3-selection combo at odds of 1.50+ per selection to get a <strong>10 EUR</strong> Freebet.",
+          "de": "Setze mindestens <strong>10 EUR</strong> auf eine Kombiwette mit 3 Auswahlen und einer Quote ab 1.50 pro Auswahl und erhalte eine <strong>10 EUR</strong> Freebet.",
+          "fr": "Misez <strong>10 EUR</strong> + sur un combiné de 3 sélections à une cote de 1.50+ par sélection pour recevoir un Freebet de <strong>10 EUR</strong>.",
+          "it": "Punti almeno <strong>10 EUR</strong> su una multipla di 3 selezioni, con quota pari o superiore a 1.50 per selezione, per ottenere un Freebet da <strong>10 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make bet"
+          "en": "Build a combo",
+          "de": "Kombi erstellen",
+          "fr": "Créer un combiné",
+          "it": "Crea una multipla"
         }
       },
       {
         "id": "day-23",
         "type": "deposit",
         "title": {
-          "en": "Last-Minute Gift Deposit"
+          "en": "Santa’s Last Delivery",
+          "de": "Santas letzte Lieferung",
+          "fr": "Dernière livraison du Père Noël",
+          "it": "L’ultima consegna di Babbo Natale"
         },
         "description": {
-          "en": "Make a deposit of <strong>€50</strong> or more and get a <strong>€15</strong> Freebet."
+          "en": "Deposit <strong>50 EUR</strong> + to get a <strong>15 EUR</strong> Freebet.",
+          "de": "Zahle mindestens <strong>50 EUR</strong> ein und erhalte eine <strong>15 EUR</strong> Freebet.",
+          "fr": "Déposez <strong>50 EUR</strong> + pour recevoir un Freebet de <strong>15 EUR</strong>.",
+          "it": "Depositi almeno <strong>50 EUR</strong> per ottenere un Freebet da <strong>15 EUR</strong>."
         },
         "buttonText": {
-          "en": "Make deposit"
+          "en": "Deposit now",
+          "de": "Jetzt einzahlen",
+          "fr": "Déposer maintenant",
+          "it": "Deposita ora"
         }
       },
       {
         "id": "day-24",
         "type": "promo",
         "title": {
-          "en": "Christmas Eve Gift"
+          "en": "Santa’s Secret Stash",
+          "de": "Santas geheimes Versteck",
+          "fr": "Le trésor du Père Noël",
+          "it": "La scorta segreta di Babbo Natale"
         },
         "description": {
-          "en": "Enter the promo code BONUS2027 in the Promotions section to receive a Secret Bonus  \"Hunting\" <strong>€30</strong>."
+          "en": "Enter BONUS2027 in Promotions to get a <strong>30 EUR</strong> Hunting Bonus.",
+          "de": "Gib BONUS2027 unter Aktionen ein und erhalte einen <strong>30 EUR</strong> Hunting Bonus.",
+          "fr": "Saisissez BONUS2027 dans Promotions pour recevoir un Bonus Hunting de <strong>30 EUR</strong>.",
+          "it": "Inserisca BONUS2027 nella sezione Promozioni per ottenere un Hunting Bonus da <strong>30 EUR</strong>."
         },
         "buttonText": {
-          "en": "Get bonus"
+          "en": "Get bonus",
+          "de": "Bonus holen",
+          "fr": "Obtenir le bonus",
+          "it": "Ottieni il bonus"
         }
       }
     ],
