@@ -120,6 +120,12 @@
     timerTime.value ? `${finishesInText.value}: ${timerTime.value}` : undefined,
   )
 
+  // The time cut into characters for the carousel layout. There every digit sits in a box of the
+  // same width, so the timer does not shift each second in a font whose digits differ in width.
+  const timerChars = computed(() =>
+    [...(timerTime.value ?? '')].map((char) => ({ char, isDigit: char >= '0' && char <= '9' })),
+  )
+
   // Badge calculations
   const badgeVariant = computed<'active' | 'finished' | 'none'>(() => {
     if (isTaskActive.value && timer.value) return 'active'
@@ -281,7 +287,18 @@
         <!-- Carousel layout colors the label and the time differently -->
         <span v-if="isCarousel && badgeVariant === 'active'" class="task-card__badge-text">
           <span class="task-card__badge-label">{{ finishesInText }}:</span>
-          <span class="task-card__badge-time">{{ timerTime }}</span>
+          <span class="task-card__badge-time">
+            <!-- Screen readers get the time as one string; the boxes below are only for the eye -->
+            <span class="sr-only">{{ timerTime }}</span>
+            <span aria-hidden="true">
+              <span
+                v-for="(item, index) in timerChars"
+                :key="index"
+                :class="{ 'task-card__badge-digit': item.isDigit }"
+                >{{ item.char }}</span
+              >
+            </span>
+          </span>
         </span>
         <span v-else class="task-card__badge-text">{{ badgeText }}</span>
       </div>

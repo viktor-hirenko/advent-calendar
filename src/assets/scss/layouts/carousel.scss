@@ -442,12 +442,21 @@ $card-width: 288px;
 
   // The shared reset gives every element normal weight, so the parts of the badge take it explicitly
   .task-card__badge-label,
-  .task-card__badge-time {
+  .task-card__badge-time,
+  .task-card__badge-time span {
     font-weight: inherit;
   }
 
   .task-card__badge-time {
     color: var(--fg-primary);
+  }
+
+  // Every digit of the timer is as wide as a zero, so the timer stays still while it counts.
+  // Equal-width digits of the font (tabular-nums) are not enough: Poppins has none.
+  .task-card__badge-digit {
+    display: inline-block;
+    width: 1ch;
+    text-align: center;
   }
 
   // Picture, title and text sit together in the middle of the free height
