@@ -3,7 +3,7 @@
 import type { Ref, ComputedRef } from 'vue'
 
 // export type SupportedLanguage = 'en' | 'de' | 'fr' | 'it' | 'es' | 'pt'
-export type SupportedLanguage = 'en' | 'de' | 'fr' | 'it'
+export type SupportedLanguage = 'en' | 'de' | 'fr' | 'it' | 'el'
 
 /**
  * Localized string map.
@@ -153,7 +153,9 @@ export interface CalendarConfig {
   firstDayOfWeek?: 'auto' | 'monday' | 'sunday'
   /** Format card dates in the page language; when off, dates are always English ("Dec. 4"). */
   localizeDates?: boolean
+  /** Language used when neither ?language nor the browser language is in supportedLanguages. */
   defaultLanguage: SupportedLanguage
+  /** Languages of the campaign; the page language is picked only from this list. */
   supportedLanguages: SupportedLanguage[]
 }
 

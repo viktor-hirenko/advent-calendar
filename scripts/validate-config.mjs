@@ -25,7 +25,7 @@ import { existsSync } from 'node:fs'
 import { join } from 'node:path'
 import { resolveCampaign } from './campaign.mjs'
 
-const LANGUAGE_KEYS = ['en', 'de', 'fr', 'it', 'es', 'pt']
+const LANGUAGE_KEYS = ['en', 'de', 'fr', 'it', 'el', 'es', 'pt']
 
 /**
  * Collects localized text objects (only language keys: en, de, ...) found anywhere inside a value.

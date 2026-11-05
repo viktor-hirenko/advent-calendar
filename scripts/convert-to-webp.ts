@@ -1,5 +1,6 @@
 #!/usr/bin/env tsx
 
+import { existsSync } from 'fs'
 import { readdir, stat } from 'fs/promises'
 import { join, extname, basename, dirname } from 'path'
 import sharp from 'sharp'
@@ -15,6 +16,12 @@ const SUPPORTED_EXTENSIONS = ['.png', '.jpg', '.jpeg']
  */
 async function convertToWebP() {
   console.log(`🖼️  Converting images to WebP (campaign: ${campaign.id})...`)
+
+  // A campaign without its own images is valid: there is nothing to convert
+  if (!existsSync(IMAGES_DIR)) {
+    console.log(`ℹ️  No images folder in campaigns/${campaign.id}, nothing to convert.`)
+    return
+  }
 
   try {
     let convertedCount = 0

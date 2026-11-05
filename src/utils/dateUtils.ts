@@ -65,6 +65,25 @@ export function formatYMDAsDMY(s: string): string {
 }
 
 /**
+ * Month name for a standalone label, e.g. above the day picker.
+ * Taken from a month-and-year format: in languages with grammatical cases `{ month: 'long' }`
+ * alone gives the genitive (Greek "Δεκεμβρίου"), while a label needs the nominative ("Δεκέμβριος").
+ * @param date - Any date in the month
+ * @param lang - Language code
+ * @returns Month name in the given language
+ * @example formatMonthName(new Date(2026, 11, 1), 'el') === "Δεκέμβριος"
+ */
+export function formatMonthName(date: Date, lang: string): string {
+  const parts = new Intl.DateTimeFormat(lang, { month: 'long', year: 'numeric' }).formatToParts(
+    date,
+  )
+  return (
+    parts.find((part) => part.type === 'month')?.value ??
+    date.toLocaleDateString(lang, { month: 'long' })
+  )
+}
+
+/**
  * Calculates task date based on index and start date.
  * @param taskIndex - task index in array (starting from 0)
  * @param startDate - start date in YYYY-MM-DD format

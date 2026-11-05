@@ -230,9 +230,13 @@ function instantiateAppConfig(): UseCalendarReturn {
 
   /**
    * Query parameters and locale configuration.
+   * Only the campaign's languages (config.supportedLanguages) are accepted.
    */
-  const queryParams = useQueryParams()
-  const { currentLanguage, resolveLanguage } = useLocale()
+  const queryParams = useQueryParams(raw.config.supportedLanguages)
+  const { currentLanguage, resolveLanguage } = useLocale({
+    supported: raw.config.supportedLanguages,
+    fallback: raw.config.defaultLanguage,
+  })
 
   /**
    * Raw configuration as reactive computed properties.

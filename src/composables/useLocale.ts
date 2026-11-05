@@ -7,6 +7,18 @@ import { ref, type Ref } from 'vue'
 import type { SupportedLanguage } from '@/types/app-config'
 
 /**
+ * Options for useLocale.
+ */
+export interface UseLocaleOptions {
+  /** Languages the page can be shown in (the campaign's supportedLanguages). */
+  supported: readonly SupportedLanguage[]
+  /** Language used when no candidate is in the supported list (the campaign's defaultLanguage). */
+  fallback: SupportedLanguage
+  /** Optional ref with a preferred language. */
+  userLanguageRef?: Ref<string | undefined>
+}
+
+/**
  * Return type for useLocale composable.
  */
 export interface UseLocaleReturn {
@@ -16,16 +28,21 @@ export interface UseLocaleReturn {
 
 /**
  * Locale management composable with fallback chain.
- * @param userLanguageRef - Optional ref for user language
+ * Only languages from `supported` are accepted.
+ * @param options - Supported languages, fallback language and optional preferred-language ref
  * @returns Locale management functions and state
  */
-export function useLocale(userLanguageRef?: Ref<string | undefined>): UseLocaleReturn {
-  const currentLanguage = ref<SupportedLanguage>('en')
+export function useLocale({
+  supported,
+  fallback,
+  userLanguageRef,
+}: UseLocaleOptions): UseLocaleReturn {
+  const currentLanguage = ref<SupportedLanguage>(fallback)
 
   function resolveLanguage(userLanguage?: string): SupportedLanguage {
     // First check passed language
     if (userLanguage) {
-      const candidate = userLanguage.split('-')[0] as SupportedLanguage
+      const candidate = userLanguage.split('-')[0] ?? ''
       if (isValidLanguage(candidate)) {
         return candidate
       }
@@ -33,30 +50,28 @@ export function useLocale(userLanguageRef?: Ref<string | undefined>): UseLocaleR
 
     // Then check language from ref
     if (userLanguageRef?.value) {
-      const candidate = userLanguageRef.value.split('-')[0] as SupportedLanguage
+      const candidate = userLanguageRef.value.split('-')[0] ?? ''
       if (isValidLanguage(candidate)) {
         return candidate
       }
     }
 
     // Then check browser language
-    const navLanguage = (navigator.language || 'en').split('-')[0] as SupportedLanguage
+    const navLanguage = (navigator.language || 'en').split('-')[0] ?? ''
     if (isValidLanguage(navLanguage)) {
       return navLanguage
     }
 
-    // Default to English
-    return 'en'
+    return fallback
   }
 
   /**
-   * Validates if a language code is supported.
+   * Validates if a language code is in the supported list.
    * @param lang - Language code to validate
    * @returns True if language is supported, false otherwise
    */
   function isValidLanguage(lang: string): lang is SupportedLanguage {
-    // return ['en', 'de', 'fr', 'it', 'es', 'pt'].includes(lang)
-    return ['en', 'de', 'fr', 'it'].includes(lang)
+    return (supported as readonly string[]).includes(lang)
   }
 
   // Initialize language

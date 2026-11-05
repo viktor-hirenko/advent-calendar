@@ -21,7 +21,7 @@
   import { useAppConfig } from '@/composables/useAppConfig'
 
   // Utilities
-  import { formatYMDAsDMY, getFirstDayOfWeekFromLang } from '@/utils/dateUtils'
+  import { formatMonthName, formatYMDAsDMY, getFirstDayOfWeekFromLang } from '@/utils/dateUtils'
 
   // Components
   import CalendarDays from './CalendarDays.vue'
@@ -271,7 +271,7 @@
       const sample = parseYMD(days[0]!.date)
       const year = sample.getFullYear()
       const monthIndex = sample.getMonth()
-      const monthLabel = sample.toLocaleDateString(currentLanguage.value, { month: 'long' })
+      const monthLabel = formatMonthName(sample, currentLanguage.value)
 
       if (!align) {
         result.push({ month: monthLabel, days })

@@ -8,7 +8,7 @@
 campaigns/<id>/
 ├── campaign.json              # дані для збірки: тема і шрифти
 ├── config.json                # період, задачі, тексти, посилання (docs/CONFIG_GUIDE.md)
-├── images/                    # картинки, на які посилається config.json
+├── images/                    # картинки, на які посилається config.json (папки може не бути, поки картинок немає)
 ├── styles.scss                # необовʼязково: власний вигляд кампанії
 └── components/
     └── CampaignBanner.vue     # необовʼязково: власний банер кампанії

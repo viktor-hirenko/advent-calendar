@@ -7,9 +7,10 @@ import type { SupportedLanguage, QueryParams } from '@/types/app-config'
 
 /**
  * Parses URL query parameters and returns validated values.
+ * @param supported - Languages accepted from ?language (the campaign's supportedLanguages)
  * @returns Parsed and validated query parameters
  */
-export function useQueryParams(): QueryParams {
+export function useQueryParams(supported: readonly SupportedLanguage[]): QueryParams {
   try {
     const fullURL = window.location.href || ''
     const qIndex = fullURL.indexOf('?')
@@ -18,7 +19,10 @@ export function useQueryParams(): QueryParams {
     const query = fullURL.slice(qIndex + 1)
     const params = parseQueryString(query)
 
-    const language: SupportedLanguage | undefined = isValidLanguage(params.language || '')
+    const language: SupportedLanguage | undefined = isValidLanguage(
+      params.language || '',
+      supported,
+    )
       ? (params.language as SupportedLanguage)
       : undefined
 
@@ -36,12 +40,16 @@ export function useQueryParams(): QueryParams {
 }
 
 /**
- * Validates if a language code is supported.
+ * Validates if a language code is in the supported list.
  * @param lang - Language code to validate
+ * @param supported - Supported language codes
  * @returns True if language is supported, false otherwise
  */
-function isValidLanguage(lang: string): lang is SupportedLanguage {
-  return ['en', 'de', 'fr', 'it', 'es', 'pt'].includes(lang)
+function isValidLanguage(
+  lang: string,
+  supported: readonly SupportedLanguage[],
+): lang is SupportedLanguage {
+  return (supported as readonly string[]).includes(lang)
 }
 
 /**
