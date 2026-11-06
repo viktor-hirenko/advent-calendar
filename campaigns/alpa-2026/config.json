@@ -1,16 +1,16 @@
 {
   "calendar": {
     "title": {
-      "en": "Santa Sports",
-      "de": "Santa Sports",
-      "fr": "Le Père Noël fait du sport",
-      "it": "Santa Sports"
+      "en": "Jingle Bets",
+      "de": "Jingle Bets",
+      "fr": "Noël fait ses paris",
+      "it": "Jingle Bets"
     },
     "description": {
-      "en": "Tasks will be updated every day at 00:00 (UTC)",
-      "de": "Die Aufgaben werden jeden Tag um 00:00 (UTC) aktualisiert.",
-      "fr": "Les tâches seront mises à jour chaque jour à 00:00 (UTC).",
-      "it": "Le attività verranno aggiornate ogni giorno alle 00:00 (UTC)."
+      "en": "Santa’s bringing more than presents this December! Open a card, complete a sports betting task and claim your reward. Come back daily for festive combos, bonuses and more!",
+      "de": "Der Weihnachtsmann bringt diesen Dezember mehr als nur Geschenke! Öffne eine Karte, erfülle eine Sportwetten-Aufgabe und hol dir deine Belohnung. Schau täglich vorbei für festliche Kombis, Boni und mehr!",
+      "fr": "En décembre, le Père Noël ne vient pas seulement avec des cadeaux ! Ouvrez une carte, accomplissez une mission de paris sportifs et recevez votre récompense. Revenez chaque jour pour profiter de combinés festifs, de bonus et de bien plus encore !",
+      "it": "Questo dicembre, Babbo Natale ha in serbo molto più che regali! Aprite una carta, completate una missione di scommesse sportive e riscattate la vostra ricompensa. Tornate ogni giorno per scoprire scommesse multiple a tema natalizio, bonus e molto altro!"
     },
     "labels": {
       "promotion": {
@@ -197,10 +197,10 @@
         "id": "day-07",
         "type": "bet",
         "title": {
-          "en": "Hat-Trick for Santa",
-          "de": "Hattrick für Santa",
-          "fr": "Triplé du Père Noël",
-          "it": "Una tripletta per Babbo Natale"
+          "en": "Active Monday",
+          "de": "Aktiver Montag",
+          "fr": "Offre du lundi",
+          "it": "Lunedì Attivo"
         },
         "description": {
           "en": "Place 3 football bets of <strong>25 EUR</strong> + each at odds of 1.60+ per bet to get a <strong>10 EUR</strong> Freebet.",
@@ -351,10 +351,10 @@
         "id": "day-14",
         "type": "bet",
         "title": {
-          "en": "Santa’s Starting XI",
-          "de": "Santas Startelf",
-          "fr": "Le onze du Père Noël",
-          "it": "Gli undici titolari di Babbo Natale"
+          "en": "Active Monday",
+          "de": "Aktiver Montag",
+          "fr": "Offre du lundi",
+          "it": "Lunedì Attivo"
         },
         "description": {
           "en": "Place 3 football bets of <strong>25 EUR</strong> + each at odds of 1.60+ per bet to get a <strong>10 EUR</strong> Freebet.",
@@ -505,10 +505,10 @@
         "id": "day-21",
         "type": "bet",
         "title": {
-          "en": "Ho-Ho-Hat-Trick!",
-          "de": "Ho-Ho-Hattrick!",
-          "fr": "Ho-ho-ho, le triplé !",
-          "it": "Ho-ho-tripletta!"
+          "en": "Active Monday",
+          "de": "Aktiver Montag",
+          "fr": "Offre du lundi",
+          "it": "Lunedì Attivo"
         },
         "description": {
           "en": "Place 3 football bets of <strong>25 EUR</strong> + each at odds of 1.60+ per bet to get a <strong>10 EUR</strong> Freebet.",
@@ -632,14 +632,14 @@
     },
     "termsButton": {
       "en": "Terms and Conditions",
-      "de": "Geschäftsbedingungen",
+      "de": "Teilnahmebedingungen",
       "fr": "Termes et conditions",
       "it": "Termini e condizioni"
     },
     "termsModal": {
       "title": {
         "en": "Terms and conditions",
-        "de": "Allgemeine Geschäftsbedingungen",
+        "de": "Teilnahmebedingungen",
         "fr": "Termes et conditions",
         "it": "Termini e Condizioni"
       },
@@ -650,10 +650,10 @@
         "it": "Chiudi"
       },
       "html": {
-        "en": "<ol><li>This promotion is available to all registered players on the website, which are eligible to receive bonuses.</li><li>Sports Advent Calendar Promotion starts at 00:00 (UTC) {startDate} and runs until 23:59 (UTC) {endDate}.</li><li>Tasks are updated daily at 00:00 (UTC). Each daily task is valid from 00:00 (UTC) to 23:59 (UTC).</li><li>To receive a daily bonus, each player must meet the specified bet or deposit requirements set for the eligible daily task.</li><li>Each task can only be completed once; the player gets one bonus per completed task.</li><li>Freebets bonuses are credited as OnlyWin Freebets unless otherwise stated and must be used within 3 days.</li><li>Cashout bets and bets made with bonus funds do not count in this promotion.</li><li>We reserve the right to amend, cancel, reclaim or refuse this promotion at our discretion.</li><li>General Terms and Conditions apply to this promotion.</li></ol>",
-        "de": "<ol><li>Diese Promotion steht allen registrierten Nutzern der Website zur Verfügung, die berechtigt sind, Boni zu erhalten</li><li>Die Sport-Adventskalender-Promotion beginnt um 00:00 (UTC) am {startDate} und läuft bis 23:59 (UTC) am {endDate}</li><li>Die Aufgaben werden täglich um 00:00 (UTC) aktualisiert. Jede tägliche Aufgabe ist von 00:00 (UTC) bis 23:59 (UTC) gültig</li><li>Um einen täglichen Bonus zu erhalten, muss jeder Spieler die festgelegten Wett- oder Einzahlungsvoraussetzungen der jeweiligen täglichen Aufgabe erfüllen. Um die Aufgabe abzuschließen, müssen alle festgelegten Wetten platziert werden</li><li>Jede Aufgabe kann nur einmal abgeschlossen werden. Dementsprechend erhält der Spieler nur einen Bonus für jede abgeschlossene Aufgabe</li><li>Die Freebet-Boni werden den Spielern als OnlyWin-Freebets gutgeschrieben, sofern nicht anders angegeben. Alle Bonus-Freebets müssen innerhalb von 3 Tagen nach Erhalt eingesetzt werden.</li><li>Cashout-Wetten und Wetten, die mit Bonusgeldern platziert wurden, zählen nicht für diese Promotion</li><li>Wir behalten uns das Recht vor, den Zugang zu dieser Promotion zu beschränken, sie zu ändern, zu stornieren, zurückzufordern oder nach eigenem Ermessen abzulehnen</li><li>Die allgemeinen Geschäftsbedingungen gelten für diese Promotion</li></ol>",
-        "fr": "<ol><li>Cette promotion est disponible pour tous les joueurs enregistrés sur le site, qui sont éligibles pour recevoir des bonus.</li><li>La Promotion du Calendrier de l'Avent Sportif commence à 00:00 (UTC) le {startDate} et se termine à 23:59 (UTC) le {endDate}.</li><li>Les tâches sont mises à jour quotidiennement à 00:00 (UTC). Chaque tâche quotidienne est valable de 00:00 (UTC) à 23:59 (UTC).</li><li>Pour recevoir un bonus quotidien, chaque joueur doit remplir les conditions de pari ou de dépôt spécifiées pour la tâche quotidienne éligible. Pour compléter la tâche, les participants doivent placer tous les paris spécifiés.</li><li>Chaque tâche ne peut être complétée qu'une seule fois. Par conséquent, le joueur reçoit un seul bonus par tâche complétée.</li><li>Les bonus Freebet sont crédités en tant que Freebets OnlyWin sauf indication contraire. Tous les Freebets bonus doivent être utilisés dans les 3 jours suivant leur réception.</li><li>Les paris Cashout et les paris effectués avec des fonds bonus ne comptent pas pour cette promotion.</li><li>Nous nous réservons le droit de limiter l'accès, de modifier, d'annuler, de récupérer ou de refuser cette promotion à notre discrétion.</li><li>Les Conditions Générales s'appliquent à cette promotion.</li></ol>",
-        "it": "<ol><li>Questa promozione è disponibile per tutti gli utenti registrati sul sito, che sono idonei a ricevere bonus.</li><li>La Promozione del Calendario dell'Avvento Sportivo inizia alle 00:00 (UTC) del {startDate} e termina alle 23:59 (UTC) del {endDate}.</li><li>Le attività saranno aggiornate ogni giorno alle 00:00 (UTC). Ogni attività giornaliera è valida dalle 00:00 (UTC) fino alle 23:59 (UTC).</li><li>Per ricevere un bonus giornaliero, ogni giocatore deve soddisfare i requisiti di scommessa o di deposito specificati per l'attività giornaliera idonea. Per completare l'attività, i partecipanti devono piazzare tutte le scommesse specificate.</li><li>Ogni attività può essere completata solo una volta. Di conseguenza, il giocatore riceve solo un bonus per ogni attività completata.</li><li>I bonus Freebet saranno accreditati ai giocatori come Freebet OnlyWin, salvo diversa indicazione. Tutte le Freebet bonus devono essere giocate entro 3 giorni dal ricevimento.</li><li>Le scommesse Cashout e le scommesse effettuate con fondi bonus non contano per questa promozione.</li><li>Ci riserviamo il diritto di limitare l'accesso, modificare, annullare, reclamare o rifiutare questa promozione a sua discrezione.</li><li>Si applicano i Termini e Condizioni Generali a questa promozione.</li></ol>"
+        "en": "<ol><li>The Jingle Bets Advent Calendar promotion is available to all registered users who are eligible to receive bonuses.</li><li>The promotion runs from 01.12.2026 at 00:00 UTC until 24.12.2026 at 23:59 UTC.</li><li>New tasks and bonus offers will become available according to the schedule displayed in the Jingle Bets Advent Calendar. Each task is valid only during its specified period.</li><li>To receive a bonus, players must meet all betting or deposit requirements for the relevant task within its validity period. All qualifying bets must be placed and settled on the same calendar day (UTC).</li><li>Each task can be completed only once per player. Each successfully completed task entitles the player to one corresponding bonus.</li><li>Unless otherwise stated, Freebet rewards will be credited as OnlyWin Freebets. All Freebet rewards must be used within 3 days of being credited.</li><li>Cash Out bets and bets placed using bonus funds do not count towards the promotion requirements.</li><li>Additional offers may be available during the promotion period and may have separate eligibility requirements and terms.</li><li>We reserve the right to restrict access to the promotion, amend, suspend or cancel it, reclaim bonuses or refuse participation at our discretion.</li><li>Our General Terms and Conditions also apply to this promotion.</li></ol>",
+        "de": "<ol><li>Die Aktion Jingle Bets Advent Calendar steht allen registrierten Nutzern offen, die zum Erhalt von Boni berechtigt sind.</li><li>Die Aktion läuft vom 01.12.2026 um 00:00 Uhr UTC bis zum 24.12.2026 um 23:59 Uhr UTC.</li><li>Neue Aufgaben und Bonusangebote werden gemäß dem im Jingle Bets Advent Calendar angezeigten Zeitplan freigeschaltet. Jede Aufgabe ist nur während des jeweils angegebenen Zeitraums gültig.</li><li>Um einen Bonus zu erhalten, musst du alle Wett- oder Einzahlungsanforderungen der jeweiligen Aufgabe innerhalb ihres Gültigkeitszeitraums erfüllen. Alle qualifizierenden Wetten müssen am selben Kalendertag (UTC) platziert und abgerechnet werden.</li><li>Jede Aufgabe kann pro Spieler nur einmal abgeschlossen werden. Für jede erfolgreich abgeschlossene Aufgabe erhältst du einen entsprechenden Bonus.</li><li>Sofern nicht anders angegeben, werden Freebet-Belohnungen als OnlyWin Freebets gutgeschrieben. Alle Freebet-Belohnungen müssen innerhalb von 3 Tagen nach der Gutschrift genutzt werden.</li><li>Cash-Out-Wetten und mit Bonusguthaben platzierte Wetten zählen nicht zur Erfüllung der Aktionsanforderungen.</li><li>Während des Aktionszeitraums können zusätzliche Angebote verfügbar sein, für die gesonderte Teilnahmevoraussetzungen und Bedingungen gelten können.</li><li>Wir behalten uns das Recht vor, nach eigenem Ermessen den Zugang zur Aktion einzuschränken, die Aktion zu ändern, auszusetzen oder abzubrechen, Boni zurückzufordern oder die Teilnahme zu verweigern.</li><li>Für diese Aktion gelten zusätzlich unsere Allgemeinen Geschäftsbedingungen.</li></ol>",
+        "fr": "<ol><li>La promotion « Calendrier de l’Avent : Noël fait ses paris » est ouverte à tous les utilisateurs inscrits qui peuvent bénéficier de bonus.</li><li>La promotion se déroule du 01.12.2026 à 00:00 UTC au 24.12.2026 à 23:59 UTC.</li><li>De nouvelles missions et offres de bonus seront disponibles selon le programme affiché dans le Calendrier de l’Avent : Noël fait ses paris. Chaque mission est valable uniquement pendant la période indiquée.</li><li>Pour recevoir un bonus, les joueurs doivent remplir toutes les conditions de mise ou de dépôt de la mission concernée pendant sa période de validité. Tous les paris éligibles doivent être placés et réglés le même jour calendaire (UTC).</li><li>Chaque mission ne peut être accomplie qu’une seule fois par joueur. Chaque mission réussie donne droit au bonus correspondant.</li><li>Sauf indication contraire, les récompenses en Freebets seront créditées sous forme de Freebets OnlyWin. Toutes les récompenses en Freebets doivent être utilisées dans les 3 jours suivant leur attribution.</li><li>Les paris réglés par Cash Out et ceux placés avec des fonds bonus ne comptent pas pour les conditions de la promotion.</li><li>Des offres supplémentaires peuvent être proposées pendant la promotion et être soumises à des critères d’éligibilité et à des conditions distincts.</li><li>Nous nous réservons le droit de restreindre l’accès à la promotion, de la modifier, de la suspendre ou de l’annuler, de récupérer les bonus ou de refuser la participation à notre discrétion.</li><li>Nos Conditions générales s’appliquent également à cette promotion.</li></ol>",
+        "it": "<ol><li>La promozione Calendario dell’Avvento Jingle Bets è disponibile per tutte le persone registrate che soddisfano i requisiti per ricevere bonus.</li><li>La promozione si svolge dal 01.12.2026 alle 00:00 UTC al 24.12.2026 alle 23:59 UTC.</li><li>Nuove missioni e offerte bonus saranno disponibili secondo il programma indicato nel Calendario dell’Avvento Jingle Bets. Ogni missione è valida esclusivamente durante il periodo specificato.</li><li>Per ricevere un bonus, i partecipanti devono soddisfare tutti i requisiti di scommessa o di deposito previsti dalla relativa missione entro il suo periodo di validità. Tutte le scommesse valide ai fini della promozione devono essere piazzate e liquidate nello stesso giorno di calendario (UTC).</li><li>Ogni missione può essere completata una sola volta per persona. Ogni missione completata con successo dà diritto a un solo bonus corrispondente.</li><li>Salvo diversa indicazione, le ricompense in Freebet saranno accreditate sotto forma di Freebet OnlyWin. Tutte le ricompense in Freebet devono essere utilizzate entro 3 giorni dall’accredito.</li><li>Le scommesse per cui è stato effettuato il Cash Out e quelle piazzate con fondi bonus non concorrono al soddisfacimento dei requisiti della promozione.</li><li>Durante la promozione potrebbero essere disponibili offerte aggiuntive, soggette a requisiti di idoneità e condizioni separati.</li><li>Ci riserviamo il diritto, a nostra discrezione, di limitare l’accesso alla promozione, modificarla, sospenderla o annullarla, recuperare i bonus o rifiutare la partecipazione.</li><li>Alla presente promozione si applicano anche i nostri Termini e condizioni generali.</li></ol>"
       }
     }
   },
