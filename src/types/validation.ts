@@ -91,6 +91,8 @@ export const CalendarDataSchema = z.object({
   description: LocalizedTextSchema,
   labels: z.object({
     promotion: LocalizedTextSchema,
+    dayPicker: LocalizedTextSchema.optional(),
+    dayList: LocalizedTextSchema.optional(),
   }),
   disabledTask: DisabledTaskSchema,
   tasks: z.array(CalendarTaskSchema).min(1, 'At least one task is required'),

@@ -237,6 +237,20 @@
     getLocalizedText(calendarData.value.termsButton, currentLanguage.value),
   )
 
+  // Names of the day picker and the list of days for screen readers; English when not configured
+  const dayPickerLabel = computed(() =>
+    getLocalizedText(
+      calendarData.value.labels.dayPicker ?? { en: 'Choose date' },
+      currentLanguage.value,
+    ),
+  )
+  const dayListLabel = computed(() =>
+    getLocalizedText(
+      calendarData.value.labels.dayList ?? { en: 'Calendar days' },
+      currentLanguage.value,
+    ),
+  )
+
   /**
    * Terms & Conditions modal bindings sourced from configuration.
    * Kept local to this component; no cross-module side effects.
@@ -628,7 +642,7 @@
       <nav
         v-if="config.ui.calendarSection.visible"
         class="calendar-picker"
-        aria-label="Choose date"
+        :aria-label="dayPickerLabel"
       >
         <div class="calendar-picker__months">
           <h3 class="calendar-picker__month-title">
@@ -648,6 +662,7 @@
               :month="group.month"
               :days="group.days"
               :today-date="todayYMD"
+              :list-label="dayListLabel"
               @day-click="handleDayClick"
             />
           </div>

@@ -61,6 +61,10 @@ export interface CalendarData {
   description: LocalizedText
   labels: {
     promotion: LocalizedText
+    /** Name of the day picker read by screen readers; "Choose date" when not set. */
+    dayPicker?: LocalizedText
+    /** Name of the list of days read by screen readers; "Calendar days" when not set. */
+    dayList?: LocalizedText
   }
   disabledTask: DisabledTask
   tasks: CalendarTask[]

@@ -13,6 +13,8 @@
     days: CalendarDay[]
     /** Today as YYYY-MM-DD; earlier days get the "passed" modifier. */
     todayDate?: string
+    /** Name of the list read by screen readers, in the page language. */
+    listLabel?: string
   }
 
   /**
@@ -36,7 +38,7 @@
 
 <template>
   <div class="calendar-days">
-    <div class="calendar-days__container" role="listbox" aria-label="Calendar days">
+    <div class="calendar-days__container" role="listbox" :aria-label="listLabel ?? 'Calendar days'">
       <template
         v-for="(day, i) in days"
         :key="day.isPlaceholder ? `ph-${month}-${i}` : `d-${day.id}`"
