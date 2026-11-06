@@ -18,6 +18,18 @@
         "de": "Adventskalender",
         "fr": "Calendrier de l’Avent",
         "it": "Calendario dell’Avvento"
+      },
+      "dayPicker": {
+        "en": "Choose date",
+        "de": "Datum wählen",
+        "fr": "Choisir une date",
+        "it": "Scegli una data"
+      },
+      "dayList": {
+        "en": "Calendar days",
+        "de": "Kalendertage",
+        "fr": "Jours du calendrier",
+        "it": "Giorni del calendario"
       }
     },
     "links": {
@@ -26,7 +38,10 @@
     "images": {
       "banner": {
         "alt": {
-          "en": "Neon football stadium with Christmas trees in front of a night city"
+          "en": "Neon football stadium with Christmas trees in front of a night city",
+          "de": "Fußballstadion mit Neonlicht und Weihnachtsbäumen vor einer nächtlichen Stadt",
+          "fr": "Stade de football illuminé de néons, avec des sapins de Noël, devant une ville de nuit",
+          "it": "Stadio di calcio con luci al neon e alberi di Natale davanti a una città di notte"
         }
       },
       "disabledTaskIcon": "cards/lock.webp"
