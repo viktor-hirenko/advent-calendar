@@ -90,7 +90,8 @@
 
   const isCarousel = computed(() => config.value.ui.layout === 'carousel')
 
-  // Time left of the active task: "05d 12 : 01 : 57" or "12 : 01 : 57"
+  // Time left of the active task: "5d 12 : 01 : 57" or "12 : 01 : 57".
+  // Days are written without a leading zero; hours, minutes and seconds always take two digits.
   const timerTime = computed(() => {
     if (!isTaskActive.value) return undefined
 
@@ -107,7 +108,7 @@
     const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60))
     const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000)
 
-    const dd = days.toString().padStart(2, '0')
+    const dd = days.toString()
     const hh = hours.toString().padStart(2, '0')
     const mm = minutes.toString().padStart(2, '0')
     const ss = seconds.toString().padStart(2, '0')

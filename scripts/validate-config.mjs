@@ -180,12 +180,24 @@ function validateConfig(config, { strict = false, imagesDir } = {}) {
     if (!task.id) report.push(`tasks[${i}] has no id`)
     else if (ids.has(task.id)) report.push(`tasks[${i}]: id "${task.id}" is repeated`)
     ids.add(task.id)
+    if (task.targetUrl !== undefined && !/^(https?:\/\/|\/(?!\/))/.test(String(task.targetUrl))) {
+      errors.push(`tasks[${i}].targetUrl must be a full address (https://…) or a path starting with "/"`)
+    }
     if (task.type !== undefined && (typeof task.type !== 'string' || !task.type)) {
       errors.push(`tasks[${i}].type must be a non-empty string`)
     } else if (task.type && calendar.taskTypes && !calendar.taskTypes[task.type]) {
       report.push(`tasks[${i}].type "${task.type}" is not listed in calendar.taskTypes`)
     }
   })
+
+  // Paths ("/sport") lead to the site that shows the calendar; opened on its own it needs links.site
+  const usesPaths = tasks.some((task) => typeof task.targetUrl === 'string' && task.targetUrl.startsWith('/'))
+  const site = calendar.links?.site
+  if (site !== undefined && !/^https?:\/\//.test(String(site))) {
+    errors.push(`links.site must be a full address (https://…)`)
+  } else if (usesPaths && !site) {
+    warnings.push('Task links are paths and links.site is not set: buttons work only inside the site that shows the calendar')
+  }
 
   for (const [type, value] of Object.entries(calendar.taskTypes || {})) {
     if (!value || typeof value.image !== 'string' || !value.image) {

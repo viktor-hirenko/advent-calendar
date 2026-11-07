@@ -31,7 +31,7 @@ export const CalendarTaskSchema = z.object({
   buttonText: LocalizedTextSchema,
   timer: LocalizedTextSchema.optional(),
   image: z.string().url().optional(),
-  targetUrl: z.string().url().optional(),
+  targetUrl: z.union([z.string().url(), z.string().regex(/^\/(?!\/)/)]).optional(),
 })
 
 /**
@@ -49,6 +49,8 @@ export const DisabledTaskSchema = z.object({
 export const CalendarLinksSchema = z
   .object({
     primary: z.union([z.string().url(), LocalizedTextSchema]).optional(),
+    site: z.string().url().optional(),
+    languagePaths: z.record(SupportedLanguageSchema, z.string().regex(/^\/[^/]/)).optional(),
   })
   .optional()
 

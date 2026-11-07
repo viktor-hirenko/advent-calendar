@@ -359,9 +359,32 @@ function instantiateAppConfig(): UseCalendarReturn {
   }
 
   /**
+   * The site whose page shows the calendar in a frame; null when the calendar is opened on its own.
+   * Browsers give the frame the site's address (not the page path), which is all a link needs.
+   */
+  function getHostSite(): string | null {
+    if (window.parent === window) return null
+    const ancestor = window.location.ancestorOrigins?.[0]
+    if (ancestor && ancestor !== 'null') return ancestor
+    try {
+      const origin = document.referrer ? new URL(document.referrer).origin : ''
+      if (origin && origin !== 'null' && origin !== window.location.origin) return origin
+    } catch {
+      // A referrer that is not an address gives nothing
+    }
+    return null
+  }
+
+  const hostSite = getHostSite()
+
+  /**
    * Resolve link URL for a task:
    * - task.targetUrl wins
    * - fallback to calendar.links.primary (supports LocalizedText or string)
+   * A path such as "/sport" leads to the site that shows the calendar (where the player is
+   * signed in) or, when the calendar is opened on its own, to links.site; the language version
+   * of the site (links.languagePaths, e.g. "/de") goes before the path. Without a site the
+   * button gets no link.
    */
   function resolveTargetUrl(task?: { targetUrl?: string }) {
     const links = calendarData.value.links
@@ -371,7 +394,13 @@ function instantiateAppConfig(): UseCalendarReturn {
         : getLocalizedText(links.primary as LocalizedText, currentLanguage.value)
       : undefined
 
-    return task?.targetUrl ?? globalPrimary ?? null
+    const url = task?.targetUrl ?? globalPrimary ?? null
+    if (!url || !url.startsWith('/') || url.startsWith('//')) return url
+
+    const site = hostSite ?? links?.site
+    if (!site) return null
+    const languagePath = links?.languagePaths?.[currentLanguage.value] ?? ''
+    return `${site.replace(/\/+$/, '')}${languagePath}${url}`
   }
 
   const instance: UseCalendarReturn = {

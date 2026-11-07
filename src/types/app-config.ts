@@ -38,6 +38,7 @@ export interface CalendarTask {
   buttonText: LocalizedText
   timer?: LocalizedText
   image?: string
+  /** Where the button leads: a full address, or a path on the site ("/sport"), see links.site. */
   targetUrl?: string
   /** Task mechanic (e.g. "bet", "deposit", "combo"); free-form, defined by the campaign. */
   type?: string
@@ -87,6 +88,13 @@ export interface CalendarData {
   links?: {
     /** Global primary link; can be localized or plain string. */
     primary?: string | LocalizedText
+    /**
+     * Site for links written as a path ("/sport") when the calendar is opened on its own.
+     * Inside another site's page the buttons lead to that site, where the player is signed in.
+     */
+    site?: string
+    /** Part of the address of each language version of the site, put before the path ("/de" for German). */
+    languagePaths?: Partial<Record<SupportedLanguage, string>>
   }
   images?: {
     banner?: {
