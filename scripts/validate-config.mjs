@@ -31,8 +31,11 @@ const LANGUAGE_KEYS = ['en', 'de', 'fr', 'it', 'el', 'es', 'pt']
  * Collects localized text objects (only language keys: en, de, ...) found anywhere inside a value.
  * Returns pairs of [path, object].
  */
+// Language keys that hold parts of a site address, not texts: no English value is needed
+const NOT_TEXT_PATHS = ['calendar.links.languagePaths']
+
 function collectLocalizedTexts(value, path = 'calendar', out = []) {
-  if (!value || typeof value !== 'object') return out
+  if (!value || typeof value !== 'object' || NOT_TEXT_PATHS.includes(path)) return out
   if (Array.isArray(value)) {
     value.forEach((item, i) => collectLocalizedTexts(item, `${path}[${i}]`, out))
     return out
