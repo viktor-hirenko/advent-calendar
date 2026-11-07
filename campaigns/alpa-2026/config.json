@@ -33,7 +33,12 @@
       }
     },
     "links": {
-      "primary": "https://bet.rocketplay19.com/"
+      "site": "https://rocketplay.com",
+      "languagePaths": {
+        "de": "/de",
+        "fr": "/fr-CA",
+        "it": "/it"
+      }
     },
     "images": {
       "banner": {
@@ -81,7 +86,8 @@
           "de": "Jetzt wetten",
           "fr": "Parier maintenant",
           "it": "Scommetti ora"
-        }
+        },
+        "targetUrl": "/sport"
       },
       {
         "id": "day-02",
@@ -103,7 +109,8 @@
           "de": "Jetzt einzahlen",
           "fr": "Déposer maintenant",
           "it": "Deposita ora"
-        }
+        },
+        "targetUrl": "/deposit"
       },
       {
         "id": "day-03",
@@ -125,7 +132,8 @@
           "de": "Kombi erstellen",
           "fr": "Créer un combiné",
           "it": "Crea una multipla"
-        }
+        },
+        "targetUrl": "/sport/soccer"
       },
       {
         "id": "day-04",
@@ -147,7 +155,8 @@
           "de": "Live wetten",
           "fr": "Parier en Live",
           "it": "Scommetti live"
-        }
+        },
+        "targetUrl": "/sport"
       },
       {
         "id": "day-05",
@@ -169,7 +178,8 @@
           "de": "Kombi erstellen",
           "fr": "Créer un combiné",
           "it": "Crea una multipla"
-        }
+        },
+        "targetUrl": "/sport"
       },
       {
         "id": "day-06",
@@ -191,7 +201,8 @@
           "de": "Jetzt wetten",
           "fr": "Parier maintenant",
           "it": "Scommetti ora"
-        }
+        },
+        "targetUrl": "/sport"
       },
       {
         "id": "day-07",
@@ -213,7 +224,8 @@
           "de": "Jetzt wetten",
           "fr": "Parier maintenant",
           "it": "Scommetti ora"
-        }
+        },
+        "targetUrl": "/sport/soccer"
       },
       {
         "id": "day-08",
@@ -235,7 +247,8 @@
           "de": "Kombi erstellen",
           "fr": "Créer un combiné",
           "it": "Crea una multipla"
-        }
+        },
+        "targetUrl": "/sport/soccer"
       },
       {
         "id": "day-09",
@@ -257,7 +270,8 @@
           "de": "Jetzt einzahlen",
           "fr": "Déposer maintenant",
           "it": "Deposita ora"
-        }
+        },
+        "targetUrl": "/deposit"
       },
       {
         "id": "day-10",
@@ -279,7 +293,8 @@
           "de": "Kombi erstellen",
           "fr": "Créer un combiné",
           "it": "Crea una multipla"
-        }
+        },
+        "targetUrl": "/sport"
       },
       {
         "id": "day-11",
@@ -301,7 +316,8 @@
           "de": "Live wetten",
           "fr": "Parier en Live",
           "it": "Scommetti live"
-        }
+        },
+        "targetUrl": "/sport"
       },
       {
         "id": "day-12",
@@ -323,7 +339,8 @@
           "de": "Kombi erstellen",
           "fr": "Créer un combiné",
           "it": "Crea una multipla"
-        }
+        },
+        "targetUrl": "/sport"
       },
       {
         "id": "day-13",
@@ -345,7 +362,8 @@
           "de": "Kombi erstellen",
           "fr": "Créer un combiné",
           "it": "Crea una multipla"
-        }
+        },
+        "targetUrl": "/sport"
       },
       {
         "id": "day-14",
@@ -367,7 +385,8 @@
           "de": "Jetzt wetten",
           "fr": "Parier maintenant",
           "it": "Scommetti ora"
-        }
+        },
+        "targetUrl": "/sport/soccer"
       },
       {
         "id": "day-15",
@@ -389,7 +408,8 @@
           "de": "Kombi erstellen",
           "fr": "Créer un combiné",
           "it": "Crea una multipla"
-        }
+        },
+        "targetUrl": "/sport"
       },
       {
         "id": "day-16",
@@ -411,7 +431,8 @@
           "de": "Jetzt einzahlen",
           "fr": "Déposer maintenant",
           "it": "Deposita ora"
-        }
+        },
+        "targetUrl": "/deposit"
       },
       {
         "id": "day-17",
@@ -433,7 +454,8 @@
           "de": "Kombi erstellen",
           "fr": "Créer un combiné",
           "it": "Crea una multipla"
-        }
+        },
+        "targetUrl": "/sport"
       },
       {
         "id": "day-18",
@@ -455,7 +477,8 @@
           "de": "Live wetten",
           "fr": "Parier en Live",
           "it": "Scommetti live"
-        }
+        },
+        "targetUrl": "/sport"
       },
       {
         "id": "day-19",
@@ -477,7 +500,8 @@
           "de": "Kombi erstellen",
           "fr": "Créer un combiné",
           "it": "Crea una multipla"
-        }
+        },
+        "targetUrl": "/sport"
       },
       {
         "id": "day-20",
@@ -499,7 +523,8 @@
           "de": "Jetzt wetten",
           "fr": "Parier maintenant",
           "it": "Scommetti ora"
-        }
+        },
+        "targetUrl": "/sport"
       },
       {
         "id": "day-21",
@@ -521,7 +546,8 @@
           "de": "Jetzt wetten",
           "fr": "Parier maintenant",
           "it": "Scommetti ora"
-        }
+        },
+        "targetUrl": "/sport/soccer"
       },
       {
         "id": "day-22",
@@ -543,7 +569,8 @@
           "de": "Kombi erstellen",
           "fr": "Créer un combiné",
           "it": "Crea una multipla"
-        }
+        },
+        "targetUrl": "/sport"
       },
       {
         "id": "day-23",
@@ -565,7 +592,8 @@
           "de": "Jetzt einzahlen",
           "fr": "Déposer maintenant",
           "it": "Deposita ora"
-        }
+        },
+        "targetUrl": "/deposit"
       },
       {
         "id": "day-24",
@@ -587,7 +615,8 @@
           "de": "Bonus holen",
           "fr": "Obtenir le bonus",
           "it": "Ottieni il bonus"
-        }
+        },
+        "targetUrl": "/profile/gifts"
       }
     ],
     "taskTypes": {
